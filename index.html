@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link href="numerology.css" rel="stylesheet" /> 
+	<script src="numerology.js"></script>
+
+	<title>Motivational Numerology</title>
+
+	<meta name="description" content="Get the numerology numbers derived from your birthdate and name." />
+	<meta name="keywords" content="Numerology Character Soul Urge Hidden Agenda Destiny Personality Attitude" />
+</head>
+
+<body>
+
+	<h1>Motivational Numerology</h1>
+
+	<div class="name">
+		<label>Full name</label>
+		<input id="txt" value="" onKeyUp="calcName()"/>
+	</div>
+	<div id="report1"></div>
+	
+	<div class="bdate">
+		<label>Birth date</label>
+			<select id="month" name="month" onChange="calcBDay()">
+				<option value="0"> - </option>
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+	        </select>
+		<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31"/>
+		<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1900"/>
+	</div>
+	<div id="report2"></div>
+
+	<div class="copy"><a href="https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974">Motivational Numerology</a> by Sally Faubion</div>
+</body>
+
+</html>
