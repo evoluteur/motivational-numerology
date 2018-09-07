@@ -62,7 +62,8 @@ letterCV = {
 },
 plus = '<span class="spaced">+</span>',
 equal = '<span class="spaced">=</span>',
-br = '<br/>'
+br = '<br/>',
+boldText = function(txt){return '<div class="bold">'+txt+'</div>'}
 
 function nameReport(name){
 	var uName = name.toUpperCase(),
@@ -113,7 +114,9 @@ function nameCalc(title, name, nums){
 	}else{
 		txt = 'N/A' + equal + '0'
 	}
-	return '<h2>' + title + equal + sum + '</h2>' + txt
+	return '<h2>' + title + equal + sum + '</h2>' 
+		+ (title==='Character' ? boldText(meaning.character[sum]) : '')
+		+ txt
 }
 
 function sumString(numSting){
@@ -153,7 +156,9 @@ function dateReport(nMonth, nDay, nYear){
 	sum = '' + eval([nMonth, nDay, nYear].join('+'));
 	txt += equal + sum;
 	loopNumbers()
-	var destiny = '<h2>Destiny = ' + sum + '</h2>' + txt;
+	var destiny = '<h2>Destiny = ' + sum + '</h2>' 
+		+ boldText(meaning.destiny[sum])
+		+ txt;
 
 	var personality = '<h2>Personality = ' + nDay + '</h2>' + nDay;
 
