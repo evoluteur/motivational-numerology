@@ -3,6 +3,7 @@ body {
   margin: 20px 40px;
   font-size: 1.2em;
   background-image: url("bg.gif");
+  font-family: "Century Gothic",Verdana, Arial;
 }
 body > div{
 	margin-bottom: 20px;
@@ -25,6 +26,7 @@ h2{
 }
 input, select, button{
   font-size: 1.2em;
+  font-family: "Century Gothic",Verdana, Arial;
 }
 
 label{
