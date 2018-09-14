@@ -7,6 +7,7 @@
 	<link href="numerology.css" rel="stylesheet" />
 	<script src="meaning.js"></script>
 	<script src="numerology.js"></script>
+	<link rel="shortcut icon" href="favicon.gif">
 
 	<title>Motivational Numerology</title>
 
@@ -18,12 +19,15 @@
 
 	<h1>Motivational Numerology</h1>
 
+	<section>
 	<div class="name">
 		<label>Full name</label>
 		<input id="txt" value="" onKeyUp="calcName()"/>
 	</div>
 	<div id="report1"></div>
+	</section>
 	
+	<section>
 	<div class="bdate">
 		<label>Birth date</label>
 			<select id="month" name="month" onChange="calcBDay()">
@@ -45,8 +49,13 @@
 		<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1900"/>
 	</div>
 	<div id="report2"></div>
-
-	<div class="copy"><a href="https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974">Motivational Numerology</a> by <a href="https://www.sfnumber.com">Sally Faubion</a>.</div>
+	</section>
+	
+	<div class="copy">
+		This 
+		<a href="https://github.com/evoluteur/motivational-numerology">Code</a> is based on the book  
+		<a href="https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974">Motivational Numerology</a> by <a href="https://www.sfnumber.com">Sally Faubion</a>.
+	</div>
 </body>
 
 </html>
