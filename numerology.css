@@ -1,6 +1,6 @@
 
 body {
-  margin: 20px 40px;
+  margin: 20px;
   font-size: 1.2em;
   font-family: "Century Gothic",Verdana, Arial;
 }
@@ -10,26 +10,28 @@ body > div{
 
 a {
   text-decoration: none;
-  background-color: rgba(187,239,253,0.3);
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid #0091ea;
   color: #1a1a1a;
 }
 a:hover {
   background-color: #bbeffd;
-  border-bottom-color: #1a1a1a;
+  border-bottom-color: #0091ea;
 }
 
+h1{
+  margin: 10px 0 40px;
+}
 h2{
-	margin: 10px 0 5px;
-	font-size: 1.2em;
+  margin: 12px 0 5px;
+  font-size: 1.2em;
+}
+label{
+  color: #0091ea;
+  display: block;
 }
 input, select, button{
   font-size: 1.2em;
   font-family: "Century Gothic",Verdana, Arial;
-}
-
-label{
-	display: block;
 }
 
 #day{
@@ -39,26 +41,35 @@ label{
 	width: 100px;
 }
 .name > input{
-	width: 500px;
+	width: 100%;
 }
 .spaced{
 	margin: 0 10px;
 }
 
-#report1, #report2{
-	margin-top: 20px;
+.field{
+	margin-bottom: 20px;
 }
 section {
     background-color: rgb(241, 248, 255);
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid rgb(200, 225, 255);
+    border: 2px solid rgb(200, 225, 255);
+    border-radius: 4px;
 }
 
-.bold{
-	margin-bottom: 10px;
-	color: navy;
+.meaning{
+	margin: 10px 0;
+}
+.calc > div {
+  color: #0091ea;
+  padding-left: 10px;
+  margin: 5px 0;
+  border-left: 2px solid rgb(200, 225, 255);
 }
 .copy{
 	margin-top: 400px;
+}
+.grey{
+  color: silver;
 }

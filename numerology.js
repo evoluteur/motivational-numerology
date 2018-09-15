@@ -59,13 +59,28 @@ letterCV = {
 	"X": 1,
 	"Y": 1, // ?
 	"Z": 1,
-},
-plus = '<span class="spaced">+</span>',
-equal = '<span class="spaced">=</span>',
-br = '<br/>',
-boldText = function(txt){return '<div class="bold">'+txt+'</div>'}
+}
 
-function nameReport(name){
+var equal = ' = ', 
+	plus = ' + '
+
+function purposeInfo(destiny, character){
+	var m = meaning.purpose,
+		sumOp = destiny + plus + character,
+		sum = '' + eval(sumOp),
+		txt = [m.func + equal + sumOp + equal + sum]
+	
+	sum = reduceNumber(sum, txt)
+
+	return {
+		title: m.title,
+		number: sum,
+		calc: txt,
+		meaning: m[sum] || '',
+	}
+}
+
+function nameInfo(name){
 	var uName = name.toUpperCase(),
 		uNameV = '',
 		uNameC = '',
@@ -91,88 +106,97 @@ function nameReport(name){
 				uNameV += letter
 			}
 		}
-		return nameCalc('Character', uName, num) + br +
-				nameCalc('Soul Urge', uNameV, numV) + br +
-				nameCalc('Hidden Agenda', uNameC, numC)
-	}else{
-		return ''
-	}
-}
 
-function nameCalc(title, name, nums){
-	var txt, sumStr, sum;
-	if(name){
-		txt = name + br;
-		sumStr = nums.join('+');
-		sum = ''+eval(sumStr);
-		txt += sumStr.replace(/\+0\+/g, plus) + equal + sum
-		while(sum.length>1 && sum!=='11' && sum!=='22'){
-			sumStr = sumString(sum)
-			sum = ''+eval(sumStr)
-			txt += br + sumStr + equal + sum
-		}
-	}else{
-		txt = 'N/A' + equal + '0'
-	}
-	return '<h2>' + title + equal + sum + '</h2>' 
-		+ (title==='Character' ? boldText(meaning.character[sum]) : '')
-		+ txt
-}
-
-function sumString(numSting){
-	return numSting.split('').join('+');
-}
-
-function getValue(id, defaultVal){
-	return document.getElementById(id).value || defaultVal;
-}
-
-function sumDigitsReduced(n) {
-  return (n - 1) % 9 + 1;
-}
-
-function dateReport(nMonth, nDay, nYear){
-	if(nMonth+nDay+nYear==='000'){
-		return ''
-	}
-	var txt, sum,
-		m = sumString(nMonth),
-		d = sumString(nDay),
-		y = sumString(nYear);
-
-	function loopNumbers(){
-		while(sum.length>1 && sum!=='11' && sum!=='22'){
-			sumStr = sumString(sum);
-			sum = '' + eval(sumStr);
-			txt += br + sumStr + equal + sum;
+		return {
+			character: nameCalc('character', uName, num),
+			soul: nameCalc('soul', uNameV, numV),
+			agenda: nameCalc('agenda', uNameC, numC),
 		}
 	}
+}
 
-	function numReduc(strNum){
-		return strNum.length>1 ? ('('+sumString(strNum)+')') : strNum
+function nameCalc(category, name, nums){
+	var txt = [], sumOp, sum;
+	var m = meaning[category]
+
+	if(name && name.replace(/ /, '')){
+		txt.push(m.func + equal + name);
+		sumOp = nums.join(plus);
+		sum = ''+eval(sumOp);
+		txt.push(sumOp.replace(/\+0\+/g, plus) + equal + sum)
+		sum = reduceNumber(sum, txt)
+	}else{
+		txt = [m.func + ' = N/A = 0']
 	}
 
-	txt = nMonth + plus + nDay + plus + nYear;
-	sum = '' + eval([nMonth, nDay, nYear].join('+'));
-	txt += equal + sum;
-	loopNumbers()
-	var destiny = '<h2>Destiny = ' + sum + '</h2>' 
-		+ boldText(meaning.destiny[sum])
-		+ txt;
-
-	var personality = '<h2>Personality = ' + nDay + '</h2>' + nDay;
-
-	sum = '' + eval(numReduc(nMonth) + '+' + numReduc(nDay))
-	txt = sumString(nMonth) + plus + sumString(nDay) + equal + sum
-	loopNumbers()
-	var attitude = '<h2>Attitude = ' + sum + '</h2>' + txt;
-
-	return destiny + personality + attitude
+	return {
+		title: m.title,
+		number: sum || 'N/A',
+		meaning: m[sum] || '',
+		calc: txt,
+	}
 }
 
-function calcName(){
-	document.getElementById('report1').innerHTML = nameReport(getValue('txt', ''));
+function reduceNumber(number, steps){
+	var sumOp;
+	while(number.length>1 && number!=='11' && number!=='22'){
+		sumOp = sumString(number)
+		number = ''+eval(sumOp)
+		steps.push(sumOp + equal + number) 
+	}
+	return number
 }
-function calcBDay(){
-	document.getElementById('report2').innerHTML = dateReport(getValue('month', '0'), getValue('day', '0'), getValue('year', '0'));
+
+function sumString(number){
+	return (''+number).split('').join(plus);
+}
+
+function dateInfo(month, day, year){
+	var m, txt, sum, sumOp, rpt={}, buffer;
+
+	m = meaning.destiny
+	buffer = month + plus + day + plus + year;
+	sum = '' + eval(buffer);
+	txt = [m.func + equal + buffer + equal + sum];
+	sum = reduceNumber(sum, txt)
+	rpt.destiny = {
+		title: m.title,
+		number: sum,
+		meaning: m[sum],
+		calc: txt,
+	}
+
+	m = meaning.personality
+	rpt.personality = {
+		title: m.title,
+		number: day,
+		meaning: m[day],
+		calc: [m.func + equal + day],
+	}
+
+	m = meaning.attitude
+	buffer = sumString(month) + plus + sumString(day)
+	sum = '' + eval(buffer)
+	txt = [m.func + equal + buffer + equal + sum]
+	sum = reduceNumber(sum, txt)
+	rpt.attitude = {
+		title: m.title,
+		number: sum,
+		meaning: m[day],
+		calc: txt,
+	}
+
+	return rpt
+}
+
+function fullInfo(name, month, day, year){
+	var buffer = nameInfo(name),
+		rpt = dateInfo(month, day, year);
+
+	rpt.character = buffer.character
+	rpt.soul = buffer.soul
+	rpt.agenda = buffer.agenda
+	rpt.purpose = purposeInfo(rpt.destiny.number, rpt.character.number)
+
+	return rpt
 }
