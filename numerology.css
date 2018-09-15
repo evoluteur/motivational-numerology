@@ -14,7 +14,7 @@ a {
   color: #1a1a1a;
 }
 a:hover {
-  background-color: #bbeffd;
+  background-color: rgb(241, 248, 255);
   border-bottom-color: #0091ea;
 }
 
