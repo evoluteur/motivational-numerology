@@ -1,3 +1,6 @@
+// (c) 2018 Sally Faubion 
+// https://www.sfnumber.com
+
 var meaning = {
 
 	destiny: {
