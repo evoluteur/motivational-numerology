@@ -57,7 +57,7 @@ letterCV = {
 	"V": 1,
 	"W": 1,
 	"X": 1,
-	"Y": 1, // ?
+	"Y": 0, // ?
 	"Z": 1,
 }
 
@@ -86,24 +86,45 @@ function nameInfo(name){
 		uNameC = '',
 		num = [],
 		numV = [],
-		numC = [];
+		numC = [],
+		ln = uName.length,
+		prevLetterCat = null;
+
+	function addV(letter, lNum){
+		numV.push(lNum)
+		uNameV += letter
+		prevLetterCat = 0
+	}
+	function addC(letter, lNum){
+		numC.push(lNum)
+		uNameC += letter
+		prevLetterCat = 1
+	}
 
 	if(name){
-		for(var i=0;i<uName.length;i++){
+		for(var i=0;i<ln;i++){
 			var letter = uName[i],
-				lNum = letter2number[letter] || 0
+				lNum = letter2number[letter] || 0,
+				cv = letterCV[letter]
 			num.push(lNum)
-			if(letterCV[letter]==1){
-				numC.push(lNum)
-				uNameC += letter
-			}else if(letterCV[letter]===0){
-				numV.push(lNum)
-				uNameV += letter
+			if(cv===1){
+				addC(letter, lNum)
+			}else if(cv===0){
+				if(letter==='Y'){
+					if(prevLetterCat===1){
+						addV(letter, lNum)
+					}else if(i<ln-1 && letterCV[uName[i+1]]===0){
+						addC(letter, lNum)
+					}else{
+						addV(letter, lNum)
+					}
+				}else{
+					addV(letter, lNum)
+				}
 			}else{
-				numC.push(0)
-				numV.push(0)
-				uNameC += letter
-				uNameV += letter
+				addC(letter, 0)
+				addV(letter, 0)
+				prevLetterCat = null
 			}
 		}
 
