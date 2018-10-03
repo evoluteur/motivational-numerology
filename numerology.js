@@ -115,15 +115,11 @@ function nameInfo(name){
 						addV(letter, lNum)
 					}else if(i<ln-1){
 						nextLetterCat = letterCV[uName[i+1]]
-						if(prevLetterCat===null){
-							if(nextLetterCat===1){
-								addV(letter, lNum)
-							}else{
-								addC(letter, lNum)
-							}
+						if(nextLetterCat===1){
+							addV(letter, lNum)
 						}else{
 							addC(letter, lNum)
-						}						
+						}					
 					}else{
 						addV(letter, lNum)
 					}
