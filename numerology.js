@@ -1,4 +1,5 @@
 // Motivational-Numerology
+// http://sallysnumbers.com
 
 // letters to number map
 var letter2number = {

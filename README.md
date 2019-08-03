@@ -7,4 +7,4 @@ Simple web page to get the numerology numbers derived from your name and birth d
 - Full name => Character + Soul Urge + Hidden Agenda
 - Destiny + Character => Divine Purpose
 
-The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](https://www.sfnumber.com/).
+The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
