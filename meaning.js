@@ -1,5 +1,5 @@
-// (c) 2018 Sally Faubion 
-// https://www.sfnumber.com
+// (c) 2020 Sally Faubion 
+// https://www.sallysnumbers.com
 
 var meaning = {
 

@@ -1,5 +1,6 @@
 // Motivational-Numerology
-// http://sallysnumbers.com
+// (c) 2020 Sally Faubion 
+// https://www.sallysnumbers.com
 
 // letters to number map
 var letter2number = {
