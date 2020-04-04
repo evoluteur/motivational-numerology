@@ -12,17 +12,17 @@
 	<title>Motivational Numerology</title>
 
 	<meta name="description" content="Get the numerology numbers derived from your birthdate and name." />
-	<meta name="keywords" content="Numerology Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude" />
+	<meta name="keywords" content="Free Numerology Chart Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude" />
 
-	<script>
+<script>
 var dest, char;
 
 function dateReport(month, day, year){
-	if(month && day && year){
+	if(month && day && year && parseInt(day)>0 && parseInt(year)>1900){
 		var info = dateInfo(month, day, year);
 		dest = info.destiny.number
 		return ['destiny', 'personality', 'attitude'].map(function(id){
-				return htmlParagraph(info[id])
+				return htmlSection(info[id])
 			}).join('')		
 	}
 	dest = ''
@@ -34,7 +34,7 @@ function nameReport(name){
 		var info = nameInfo(name);
 		char = info.character.number
 		return ['character', 'soul', 'agenda'].map(function(id){
-				return htmlParagraph(info[id])
+				return htmlSection(info[id])
 			}).join('')
 	}
 	char = ''
@@ -42,41 +42,49 @@ function nameReport(name){
 }
 
 function purposeReport(){
-	if(dest && char){
-		return htmlParagraph(purposeInfo(dest, char))
-	}
-	return '';
+	return (dest && char) ? htmlSection(purposeInfo(dest, char)) : '';
 }
 
-function htmlParagraph(rpt){
-	html = '<h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
-	if(rpt.meaning){
-		html += '<div class="meaning">' + rpt.meaning + '</div>'
-	}
+function htmlMeaning(number, meaning){
+	return '<div class="meaning"><div class="num c' + number + '">' + number + '</div><div>' + (meaning || 'N/A') + '</div></div>'
+}
+
+function htmlSection(rpt){
+	html = '<article><h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
+	html += '<div class="desc">' + rpt.description + '</div>'
 	if(rpt.calc){
-		html += '<div class="calc"><div>' + rpt.calc.join('</div><div>') + '</div></div>'
+		html += '<div class="calc"><div>'
+			+ rpt.calc.join('</div><div>') + (rpt.master ? ' (Master number)' : '') + '</div>'
+			+ htmlMeaning(rpt.number, rpt.meaning)
+		if(rpt.master && rpt.category!=='personality') {
+			html += '<div>' + rpt.calc2 + '</div>' + htmlMeaning(rpt.number2, rpt.meaning2)
+		}
+		html += '</div>'
 	}
+	html += '</article>'
 	return html
 }
 
+function elem(id){
+	return document.getElementById(id);
+}
 function getValue(id){
-	return document.getElementById(id).value || '';
+	return elem(id).value || '';
 }
 
 function calcName(){
-	document.getElementById('report1').innerHTML = nameReport(getValue('txt'));
+	elem('report1').innerHTML = nameReport(getValue('txt'));
 	calcExtra();
 }
-
 function calcBDay(){
-	document.getElementById('report2').innerHTML = dateReport(getValue('month'), getValue('day'), getValue('year'));
+	elem('report2').innerHTML = dateReport(getValue('month'), getValue('day'), getValue('year'));
 	calcExtra();
 }
 function calcExtra(){
-	document.getElementById('report3').innerHTML = purposeReport(getValue('txt'));
+	elem('sally').style.display = 'block';
+	elem('report3').innerHTML = purposeReport(getValue('txt'));
 }
-
-	</script>
+</script>
 </head>
 
 <body>
@@ -85,7 +93,7 @@ function calcExtra(){
 
 	<section>
 		<div class="field name">
-			<label>Full name</label>
+			<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
 			<input id="txt" value="" onKeyUp="calcName()"/>
 		</div>
 		<div id="report1"></div>
@@ -93,7 +101,7 @@ function calcExtra(){
 	
 	<section>
 		<div class="field bdate">
-			<label>Birth date <span class="grey">(Month/Day/Year)</label>
+			<label>Birth date <span class="grey">(Month/Day/Year)</span></label>
 				<select id="month" name="month" onChange="calcBDay()">
 					<option></option>
 					<option value="1">January</option>
@@ -119,10 +127,15 @@ function calcExtra(){
 		<div id="report3"></div>
 	</section>
 
+	<section id="sally">
+		<div>
+			This content contains only a brief explanation of the wonderful qualities you possess. 
+			<a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. Numerology is a future forecasting science. 
+		</div>
+	</section>
+
 	<div class="copy">
-		This 
-		<a href="https://github.com/evoluteur/motivational-numerology">Code</a> is based on the book  
-		<a href="https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974">Motivational Numerology</a> by <a href="http://sallysnumbers.com">Sally Faubion</a>.
+		&#169; 2020 <a href="http://sallysnumbers.com">Sally Faubion</a> - Code available at <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a>.
 	</div>
 </body>
 

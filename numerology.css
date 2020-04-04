@@ -2,53 +2,54 @@
 body {
   margin: 20px;
   font-size: 1.2em;
-  font-family: "Century Gothic",Verdana, Arial;
+  font-family: sans-serif;
+  color: #1d1d1d;
 }
-body > div{
+body > div {
 	margin-bottom: 20px;
 }
-
 a {
   text-decoration: none;
   border-bottom: 1px solid #0091ea;
-  color: #1a1a1a;
+  color: #1d1d1d;
 }
 a:hover {
   background-color: rgb(241, 248, 255);
   border-bottom-color: #0091ea;
 }
-
-h1{
+h1 {
   margin: 10px 0 40px;
 }
-h2{
+h2 {
   margin: 12px 0 5px;
   font-size: 1.2em;
 }
-label{
-  color: black;
+label {
+  color: #1d1d1d;
   display: block;
+  margin-bottom: 3px;
 }
-input, select, button{
+input, select {
+  padding-left: 4px;
   font-size: 1.2em;
-  font-family: "Century Gothic",Verdana, Arial;
+  font-family: sans-serif;
 }
 
-#day{
+#day {
 	width: 60px;
 }
-#year{
+#year {
 	width: 100px;
 }
-.name > input{
+.name > input {
 	width: 100%;
 }
-.spaced{
+.spaced {
 	margin: 0 10px;
 }
 
-.field{
-	margin-bottom: 20px;
+.field {
+	margin-bottom: 30px;
 }
 section {
     background-color: rgb(241, 248, 255);
@@ -58,18 +59,89 @@ section {
     border-radius: 4px;
 }
 
-.meaning{
-	margin: 10px 0;
+.desc {
+	margin: 10px 0 20px;
+}
+
+.calc {
+  display: block;
+  margin: 5px 0 25px;
 }
 .calc > div {
   color: #0091ea;
   padding-left: 10px;
   margin: 5px 0;
-  border-left: 2px solid rgb(200, 225, 255);
+  border-left: 5px solid rgb(200, 225, 255);
 }
-.copy{
-	margin-top: 400px;
+.calc > .meaning {
+  margin: 20px 0 15px -10px;
+  color: #1a1a1a;
+  border-left: none;
+  min-height: 50px;
 }
-.grey{
+.meaning {
+  position: relative;
+  width: 100%;
+}
+.meaning > div {
+  padding: 7px 0 0 55px;
+}
+.meaning > .num {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+}
+.num {
+  border: 4px solid grey;
+  background-color: white;
+}
+
+.c1, .c10, .c28 { border-color: #f44336}
+.c2, .c19, .c20 { border-color: #ff9800}
+.c3, .c12, .c21, .c30 { border-color: #ffeb3b}
+.c4, .c13, .c31 { border-color: #4caf50}
+.c5, .c14, .c23 { border-color: #08e8de}
+.c6, .c15, .c24 { border-color: #2196f3}
+.c7, .c16, .c25 { border-color: #9c27b0}
+.c8, .c17, .c26 { border-color: #ff00ff}
+.c9, .c18, .c27 { border-color: #ffc107}
+.c11, .c29 { border-color: #6a0dad}
+.c22 { border-color: #3f51b5}
+
+.copy {
+	margin: 50px 0 20px;
+  color: gray;
+}
+.grey {
   color: silver;
+}
+#sally {
+  display: none;
+}
+
+@media print {
+
+  @page {
+    margin: 0.5cm 1cm;
+  }
+  article {
+    page-break-inside: avoid;
+    margin-bottom: 40px;
+  }
+  a::after{
+    content: " (" attr(href) ") ";
+  }
+
+  section {
+    border: none;
+    border-bottom: 2px solid silver;
+  }
+
 }
