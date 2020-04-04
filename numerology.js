@@ -30,8 +30,6 @@ var letter2number = {
 	"X": 6,
 	"Y": 7,
 	"Z": 8,
-	' ': 0,
-	'-': 0,
 },
 // Vowel/Consonant map
 letterCV = {
@@ -59,12 +57,36 @@ letterCV = {
 	"V": 1,
 	"W": 1,
 	"X": 1,
-	"Y": 0, // ?
+	"Y": 0, // or 1
 	"Z": 1,
 }
 
 var equal = ' = ', 
 	plus = ' + '
+
+function isMasterNumber(num) {
+	return num == '11' || num == '22'
+}
+
+function makeReport(category, number, calc) {
+	var m = meaning[category],
+		rpt = {
+			title: m.title,
+			category: category,
+			number: number,
+			calc: calc,
+			meaning: m[number],
+			description: m.description,
+		}
+
+	if(isMasterNumber(number)) {
+		rpt.master = true;
+		rpt.number2 = number === '11' ? '2' : '4';
+		rpt.calc2 = number === '11' ? '1 + 1 = 2' : '2 + 2 = 4';
+		rpt.meaning2 = m[rpt.number2]
+	}
+	return rpt
+}
 
 function purposeInfo(destiny, character){
 	var m = meaning.purpose,
@@ -74,12 +96,7 @@ function purposeInfo(destiny, character){
 	
 	sum = reduceNumber(sum, txt)
 
-	return {
-		title: m.title,
-		number: sum,
-		calc: txt,
-		meaning: m[sum] || '',
-	}
+	return makeReport('purpose', sum, txt)
 }
 
 function nameInfo(name){
@@ -157,20 +174,15 @@ function nameCalc(category, name, nums){
 		txt = [m.func + ' = N/A = 0']
 	}
 
-	return {
-		title: m.title,
-		number: sum || 'N/A',
-		meaning: m[sum] || '',
-		calc: txt,
-	}
+	return makeReport(category, sum || '0', txt)
 }
 
 function reduceNumber(number, steps){
 	var sumOp;
-	while(number.length>1 && number!=='11' && number!=='22'){
+	while(number.length>1 && !isMasterNumber(number)){
 		sumOp = sumString(number)
 		number = ''+eval(sumOp)
-		steps.push(sumOp + equal + number) 
+		steps.push(sumOp + equal + number)
 	}
 	return number
 }
@@ -180,39 +192,24 @@ function sumString(number){
 }
 
 function dateInfo(month, day, year){
-	var m, txt, sum, sumOp, rpt={}, buffer;
+	var txt, sum, rpt={}, buffer;
 
-	m = meaning.destiny
+	// - Destiny
 	buffer = month + plus + day + plus + year;
 	sum = '' + eval(buffer);
-	txt = [m.func + equal + buffer + equal + sum];
+	txt = [meaning.destiny.func + equal + buffer + equal + sum];
 	sum = reduceNumber(sum, txt)
-	rpt.destiny = {
-		title: m.title,
-		number: sum,
-		meaning: m[sum],
-		calc: txt,
-	}
+	rpt.destiny = makeReport('destiny', sum, txt)
 
-	m = meaning.personality
-	rpt.personality = {
-		title: m.title,
-		number: day,
-		meaning: m[day],
-		calc: [m.func + equal + day],
-	}
+	// - Personality
+	rpt.personality = makeReport('personality', day, [meaning.personality.func + equal + day])
 
-	m = meaning.attitude
+	// - Attitude
 	buffer = sumString(month) + plus + sumString(day)
 	sum = '' + eval(buffer)
-	txt = [m.func + equal + buffer + equal + sum]
+	txt = [meaning.attitude.func + equal + buffer + equal + sum]
 	sum = reduceNumber(sum, txt)
-	rpt.attitude = {
-		title: m.title,
-		number: sum,
-		meaning: m[day],
-		calc: txt,
-	}
+	rpt.attitude = makeReport('attitude', sum, txt)
 
 	return rpt
 }
