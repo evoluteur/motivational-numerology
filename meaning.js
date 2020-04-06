@@ -88,7 +88,7 @@ var meaning = {
 		8: 'Your commanding, exemplary teacher-of-teachers, judge/jury, producer/director persona possesses a sixth sense that enables you to readily distinguish right from wrong.',
 		9: 'As a born sage, aristocratic, socially pleasing humanitarian, you gravitate toward the community that can benefit most; from  "selfless server" mission.',
 		11: 'As an empathetic, enlightened and understanding counselor or community leader, you belong in the limelight; the 11 is known as the sign of illumination.',
-		22: 'As a high-minded builder of empires and spiritually-oriented organizer, you are best suited to help pubic causes and companies that appreciate your straightforward style.',
+		22: 'As a high-minded builder of empires and spiritually-oriented organizer, you are best suited to help public causes and companies that appreciate your straightforward style.',
 	},
 
 	soul: {
