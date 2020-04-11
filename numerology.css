@@ -102,15 +102,29 @@ section {
   border: 4px solid grey;
   background-color: white;
 }
-
+.artnum {
+  border-left: 10px solid grey;
+  padding-left: 20px;
+}
+#allNumbers {margin: 0 0 20px 0;
+}
+#allNumbers > span {
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
 .c1, .c10, .c28 { border-color: #f44336}
 .c2, .c19, .c20 { border-color: #ff9800}
 .c3, .c12, .c21, .c30 { border-color: #ffeb3b}
 .c4, .c13, .c31 { border-color: #4caf50}
-.c5, .c14, .c23 { border-color: #08e8de}
+.c5, .c14, .c23 { border-color: #48d1cc}/*  #08e8de} */
 .c6, .c15, .c24 { border-color: #2196f3}
 .c7, .c16, .c25 { border-color: #9c27b0}
-.c8, .c17, .c26 { border-color: #ff00ff}
+.c8, .c17, .c26 { border-color: #d000d0} /* #ff00ff */
 .c9, .c18, .c27 { border-color: #ffc107}
 .c11, .c29 { border-color: #6a0dad}
 .c22 { border-color: #3f51b5}
@@ -125,12 +139,16 @@ section {
 #sally {
   display: none;
 }
+#sally li {
+  margin-bottom: 10px;
+}
 
 @media print {
 
   @page {
     margin: 0.5cm 1cm;
   }
+  #sally,
   article {
     page-break-inside: avoid;
     margin-bottom: 40px;

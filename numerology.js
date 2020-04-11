@@ -179,10 +179,12 @@ function nameCalc(category, name, nums){
 
 function reduceNumber(number, steps){
 	var sumOp;
-	while(number.length>1 && !isMasterNumber(number)){
-		sumOp = sumString(number)
-		number = ''+eval(sumOp)
-		steps.push(sumOp + equal + number)
+	if(number!='NaN'){
+		while(number.length>1 && !isMasterNumber(number)){
+			sumOp = sumString(number)
+			number = ''+eval(sumOp)
+			steps.push(sumOp + equal + number)
+		}
 	}
 	return number
 }

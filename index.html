@@ -15,34 +15,51 @@
 	<meta name="keywords" content="Free Numerology Chart Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude" />
 
 <script>
+// use showCalc = true to show the Math for redution to single digit
+var showCalc = false;
+// use showPurpose = true to show "Divine Purpose" number
+var showPurpose = true;
+
+var myNumbers = {};
+
 var dest, char;
 
 function dateReport(month, day, year){
 	if(month && day && year && parseInt(day)>0 && parseInt(year)>1900){
 		var info = dateInfo(month, day, year);
+		myNumbers.date = info;
 		dest = info.destiny.number
 		return ['destiny', 'personality', 'attitude'].map(function(id){
 				return htmlSection(info[id])
 			}).join('')		
 	}
 	dest = ''
+	myNumbers.date = null;
 	return '';
 }
 
 function nameReport(name){
 	if(name){
 		var info = nameInfo(name);
+		myNumbers.name = info;
 		char = info.character.number
 		return ['character', 'soul', 'agenda'].map(function(id){
 				return htmlSection(info[id])
 			}).join('')
 	}
 	char = ''
+	myNumbers.name = null;
 	return '';
 }
 
 function purposeReport(){
-	return (dest && char) ? htmlSection(purposeInfo(dest, char)) : '';
+	if(showPurpose){
+		const p = purposeInfo(dest, char)
+		myNumbers.purpose = {purpose: p};
+		return (dest && char) ? htmlSection(p) : '';
+	}
+	myNumbers.purpose = null;
+	return '';
 }
 
 function htmlMeaning(number, meaning){
@@ -50,14 +67,23 @@ function htmlMeaning(number, meaning){
 }
 
 function htmlSection(rpt){
-	html = '<article><h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
+	html = '<article class="artnum c'+rpt.number + '""><h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
 	html += '<div class="desc">' + rpt.description + '</div>'
 	if(rpt.calc){
-		html += '<div class="calc"><div>'
-			+ rpt.calc.join('</div><div>') + (rpt.master ? ' (Master number)' : '') + '</div>'
-			+ htmlMeaning(rpt.number, rpt.meaning)
+		html += '<div class="calc"><div>';
+			if(showCalc){
+					html += rpt.calc.join('</div><div>')
+					html +=  (rpt.master ? ' (Master number)' : '')
+			}else{
+				html +=  (rpt.master ? ' Master number' : '')
+			}
+			html +=  '</div>'
+				+ htmlMeaning(rpt.number, rpt.meaning)
 		if(rpt.master && rpt.category!=='personality') {
-			html += '<div>' + rpt.calc2 + '</div>' + htmlMeaning(rpt.number2, rpt.meaning2)
+			if(showCalc){
+				html += '<div>' + rpt.calc2 + '</div>';
+			}
+			html += htmlMeaning(rpt.number2, rpt.meaning2)
 		}
 		html += '</div>'
 	}
@@ -82,7 +108,39 @@ function calcBDay(){
 }
 function calcExtra(){
 	elem('sally').style.display = 'block';
-	elem('report3').innerHTML = purposeReport(getValue('txt'));
+	if(showPurpose){
+		elem('report3').innerHTML = purposeReport(getValue('txt'));
+	}else{
+		elem('report3').innerHTML = '';
+	}
+
+	var numNumbers = [];
+	const collectNumbers = section => category => {
+		let cat = section[category]
+		let number = parseInt(cat.number)
+		if(cat){
+			if(number>0 && numNumbers.indexOf(number)<0){
+				numNumbers.push(number)
+			}
+		}
+		number = cat.number2 ? parseInt(cat.number2) : null
+		if(number>0 &&  numNumbers.indexOf(number)<0){
+			numNumbers.push(number)
+		}
+	}
+	
+	if(myNumbers.name){
+		['character','soul','agenda'].forEach(collectNumbers(myNumbers.name))
+	}
+	if(myNumbers.date){
+		['attitude','personality','destiny'].forEach(collectNumbers(myNumbers.date))
+	}
+	if(myNumbers.purpose){
+		collectNumbers(myNumbers.purpose)('purpose')
+	}
+	numNumbers = numNumbers.sort(function(a, b){return a-b});
+	elem('allNumbers').innerHTML = numNumbers.map(num => '<span class="num c' + num + '">' + num + '</span>').join('')
+
 }
 </script>
 </head>
@@ -96,10 +154,6 @@ function calcExtra(){
 			<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
 			<input id="txt" value="" onKeyUp="calcName()"/>
 		</div>
-		<div id="report1"></div>
-	</section>
-	
-	<section>
 		<div class="field bdate">
 			<label>Birth date <span class="grey">(Month/Day/Year)</span></label>
 				<select id="month" name="month" onChange="calcBDay()">
@@ -120,17 +174,23 @@ function calcExtra(){
 			<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31" maxlength="="2" />
 			<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1900" maxlength="4" />
 		</div>
-		<div id="report2"></div>
 	</section>
 	
 	<section>
+		<div id="report1"></div>
+		<div id="report2"></div>
 		<div id="report3"></div>
 	</section>
 
 	<section id="sally">
+		<div id="allNumbers"></div>
 		<div>
-			This content contains only a brief explanation of the wonderful qualities you possess. 
-			<a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. Numerology is a future forecasting science. 
+			<p>This content is only a brief explanation of the wonderful qualities you possess. 
+			</p>
+			<p>To learn more
+					<ul><li><a href="http://sallysnumbers.com" target="_blank">Subscribe to Sally's Newsletter</a></li>
+			<li><a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. </li>
+			</ul>
 		</div>
 	</section>
 
