@@ -25,37 +25,39 @@ var myNumbers = {};
 var dest, char;
 
 function dateReport(month, day, year){
+	const cats = ['destiny', 'personality', 'attitude']
 	if(month && day && year && parseInt(day)>0 && parseInt(year)>1900){
 		var info = dateInfo(month, day, year);
-		myNumbers.date = info;
+		cats.forEach(cat => myNumbers[cat] = info[cat])
 		dest = info.destiny.number
-		return ['destiny', 'personality', 'attitude'].map(function(id){
-				return htmlSection(info[id])
-			}).join('')		
+		return cats.map(id => htmlSection(info[id])).join('')		
 	}
 	dest = ''
-	myNumbers.date = null;
+	cats.forEach(cat => myNumbers[cat] = null)
+	myNumbers.purpose = null;
 	return '';
 }
 
 function nameReport(name){
+	const cats = ['character', 'soul', 'agenda']
 	if(name){
 		var info = nameInfo(name);
-		myNumbers.name = info;
+		cats.forEach(cat => myNumbers[cat] = info[cat])
 		char = info.character.number
-		return ['character', 'soul', 'agenda'].map(function(id){
+		return cats.map(function(id){
 				return htmlSection(info[id])
 			}).join('')
 	}
 	char = ''
-	myNumbers.name = null;
+	cats.forEach(cat => myNumbers[cat] = null)
+	myNumbers.purpose = null;
 	return '';
 }
 
 function purposeReport(){
 	if(showPurpose){
 		const p = purposeInfo(dest, char)
-		myNumbers.purpose = {purpose: p};
+		myNumbers.purpose = p
 		return (dest && char) ? htmlSection(p) : '';
 	}
 	myNumbers.purpose = null;
@@ -114,29 +116,34 @@ function calcExtra(){
 		elem('report3').innerHTML = '';
 	}
 
+	// - Numbers on star
+	elem('star-holder').innerHTML = '<div id="star-five"></div>' +
+		Object.keys(myNumbers).map(cat => {
+			if(myNumbers[cat]){
+				const num = myNumbers[cat].number
+				return '<div class="'+cat+' num c'+num+'">'+num+'<span>'+myNumbers[cat].title+'</span></div>'
+			}
+			return ''
+		}).join('')
+
+	// - Summary list of all numbers
 	var numNumbers = [];
 	const collectNumbers = section => category => {
 		let cat = section[category]
-		let number = parseInt(cat.number)
+		let number = cat ? parseInt(cat.number) : null;
 		if(cat){
 			if(number>0 && numNumbers.indexOf(number)<0){
 				numNumbers.push(number)
 			}
-		}
-		number = cat.number2 ? parseInt(cat.number2) : null
-		if(number>0 &&  numNumbers.indexOf(number)<0){
-			numNumbers.push(number)
+			number = cat.number2 ? parseInt(cat.number2) : null
+			if(number>0 &&  numNumbers.indexOf(number)<0){
+				numNumbers.push(number)
+			}
 		}
 	}
 	
-	if(myNumbers.name){
-		['character','soul','agenda'].forEach(collectNumbers(myNumbers.name))
-	}
-	if(myNumbers.date){
-		['attitude','personality','destiny'].forEach(collectNumbers(myNumbers.date))
-	}
-	if(myNumbers.purpose){
-		collectNumbers(myNumbers.purpose)('purpose')
+	if(myNumbers){
+		['character','soul','agenda','attitude','personality','destiny','purpose'].forEach(collectNumbers(myNumbers))
 	}
 	numNumbers = numNumbers.sort(function(a, b){return a-b});
 	elem('allNumbers').innerHTML = numNumbers.map(num => '<span class="num c' + num + '">' + num + '</span>').join('')
@@ -147,33 +154,39 @@ function calcExtra(){
 
 <body>
 
-	<h1>Motivational Numerology</h1>
+	<h1>Motivational Numerology <span>by Sally Faubion</span></h1>
 
-	<section>
-		<div class="field name">
-			<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
-			<input id="txt" value="" onKeyUp="calcName()"/>
+	<section class="inputForm">
+		<div id="star-holder">
+			<div id="star-five"></div>
 		</div>
-		<div class="field bdate">
-			<label>Birth date <span class="grey">(Month/Day/Year)</span></label>
-				<select id="month" name="month" onChange="calcBDay()">
-					<option></option>
-					<option value="1">January</option>
-					<option value="2">February</option>
-					<option value="3">March</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-		        </select>
-			<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31" maxlength="="2" />
-			<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1900" maxlength="4" />
+		<div class="ml210">
+			<div class="field name">
+				<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
+				<input id="txt" value="" onKeyUp="calcName()"/>
+			</div>
+			<div class="field bdate">
+				<label>Birth date <span class="grey">(Month/Day/Year)</span></label>
+					<select id="month" name="month" onChange="calcBDay()">
+						<option></option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+				<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31" maxlength="="2" />
+				<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1900" maxlength="4" />
+			</div>
 		</div>
+		<div class="print-only"><a href="http://sallysnumbers.com">Sally Faubion</a></div>
 	</section>
 	
 	<section>
@@ -188,14 +201,16 @@ function calcExtra(){
 			<p>This content is only a brief explanation of the wonderful qualities you possess. 
 			</p>
 			<p>To learn more
-					<ul><li><a href="http://sallysnumbers.com" target="_blank">Subscribe to Sally's Newsletter</a></li>
-			<li><a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. </li>
+			<ul>
+				<li><a href="http://sallysnumbers.com" target="_blank">Subscribe to Sally's Newsletter</a></li>
+				<li><a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. </li>
 			</ul>
 		</div>
 	</section>
 
 	<div class="copy">
-		&#169; 2020 <a href="http://sallysnumbers.com">Sally Faubion</a> - Code available at <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a>.
+		<div>Code available at <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a>.</div>
+		<div><br>&#169; 2020 <a href="http://sallysnumbers.com">Sally Faubion</a></div>
 	</div>
 </body>
 

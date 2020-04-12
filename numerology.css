@@ -1,6 +1,6 @@
 
 body {
-  margin: 20px;
+  margin: 30px;
   font-size: 1.2em;
   font-family: sans-serif;
   color: #1d1d1d;
@@ -20,6 +20,11 @@ a:hover {
 h1 {
   margin: 10px 0 40px;
 }
+h1 > span {
+  font-weight: 300;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
 h2 {
   margin: 12px 0 5px;
   font-size: 1.2em;
@@ -34,7 +39,9 @@ input, select {
   font-size: 1.2em;
   font-family: sans-serif;
 }
-
+section {
+  position: relative;
+}
 #day {
 	width: 60px;
 }
@@ -57,6 +64,9 @@ section {
     padding: 20px;
     border: 2px solid rgb(200, 225, 255);
     border-radius: 4px;
+}
+.inputForm{
+  min-height: 190px;
 }
 
 .desc {
@@ -94,19 +104,23 @@ section {
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
-  height: 24px;
-  width: 24px;
-  text-align: center;
 }
 .num {
   border: 4px solid grey;
   background-color: white;
+  height: 24px;
+  width: 24px;
+  text-align: center;
 }
 .artnum {
   border-left: 10px solid grey;
   padding-left: 20px;
 }
-#allNumbers {margin: 0 0 20px 0;
+.ml210{
+  margin-left: 250px;
+}
+#allNumbers {
+  margin: 0 0 20px 0;
 }
 #allNumbers > span {
   padding: 5px;
@@ -142,11 +156,14 @@ section {
 #sally li {
   margin-bottom: 10px;
 }
+.print-only{
+  display: none;
+}
 
 @media print {
 
   @page {
-    margin: 0.5cm 1cm;
+    margin: 1cm 1cm;
   }
   #sally,
   article {
@@ -156,10 +173,119 @@ section {
   a::after{
     content: " (" attr(href) ") ";
   }
-
+  .field > label > span.grey {
+    display: none;
+  }
   section {
     border: none;
     border-bottom: 2px solid silver;
   }
-
+  .print-only{
+    margin: 40px 0 30px;
+    display: inline-block;
+  }
 }
+
+/*
+    Star (5-points) via Kit MacAllister
+    https://css-tricks.com/the-shapes-of-css/
+*/
+
+#star-five {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: rgb(200, 225, 255);
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(200, 225, 255);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+#star-five:before {
+  border-bottom: 80px solid rgb(200, 225, 255);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: rgb(200, 225, 255);
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(200, 225, 255);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+/* added for Motivational-Numerology */
+
+#star-holder {
+  padding: 20px;
+  left: 10px;
+  top:10px;
+  position: absolute;
+  height: 240px;
+  width: 240px;
+}
+#star-holder > .num {
+  position: absolute;
+  padding: 4px;
+  border-radius: 50%;
+}
+#star-holder > .num > span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 17px;
+  left: -34px;
+  width: 100px;
+  z-index: 100;
+  font-size: .9rem;
+}
+#star-holder > .num:hover > span { 
+  opacity: 1;
+  transition: opacity .5s .4s;
+}
+
+#star-holder > .character{
+  top: 21px;
+  left: 95px;
+}  
+#star-holder > .soul{
+  top: 66px;
+  left: 28px;
+}
+#star-holder > .agenda{
+  top: 68px;
+  left: 163px;
+}
+#star-holder > .attitude{
+  top: 144px;
+  left: 142px;
+}
+#star-holder > .personality{
+  top: 146px;
+  left: 52px;
+}
+#star-holder > .destiny{
+  top: 88px;
+  left: 95px;
+}
+/**/
+#star-holder > .purpose{
+  display: none;
+} 

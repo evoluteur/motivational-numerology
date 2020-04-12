@@ -90,8 +90,8 @@ function makeReport(category, number, calc) {
 
 function purposeInfo(destiny, character){
 	var m = meaning.purpose,
-		sumOp = destiny + plus + character,
-		sum = '' + eval(sumOp),
+		sumOp = (destiny && character) ? (destiny + plus + character) : '',
+		sum = sumOp ? '' + eval(sumOp) : '',
 		txt = [m.func + equal + sumOp + equal + sum]
 	
 	sum = reduceNumber(sum, txt)
