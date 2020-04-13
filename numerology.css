@@ -39,6 +39,10 @@ input, select {
   font-size: 1.2em;
   font-family: sans-serif;
 }
+article {
+  padding: 5px 0 20px;
+  margin: 0 0 10px 0;
+}
 section {
   position: relative;
 }
@@ -70,12 +74,13 @@ section {
 }
 
 .desc {
+  display: inline-block;
 	margin: 10px 0 20px;
 }
 
 .calc {
   display: block;
-  margin: 5px 0 25px;
+  margin: 10px 0;
 }
 .calc > div {
   color: #0091ea;
@@ -84,7 +89,7 @@ section {
   border-left: 5px solid rgb(200, 225, 255);
 }
 .calc > .meaning {
-  margin: 20px 0 15px -10px;
+  margin: 10px 0 15px -10px;
   color: #1a1a1a;
   border-left: none;
   min-height: 50px;
@@ -94,7 +99,7 @@ section {
   width: 100%;
 }
 .meaning > div {
-  padding: 7px 0 0 55px;
+  padding: 7px 0 0 60px;
 }
 .meaning > .num {
   position: absolute;
