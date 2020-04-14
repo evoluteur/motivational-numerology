@@ -117,14 +117,25 @@ function calcExtra(){
 	}
 
 	// - Numbers on star
-	elem('star-holder').innerHTML = '<div id="star-five"></div>' +
-		Object.keys(myNumbers).map(cat => {
+	elem('star-holder').innerHTML = Object.keys(myNumbers).map(cat => {
 			if(myNumbers[cat]){
 				const num = myNumbers[cat].number
 				return '<div class="'+cat+' num c'+num+'">'+num+'<span>'+myNumbers[cat].title+'</span></div>'
 			}
 			return ''
 		}).join('')
+	var h = ''
+	if(myNumbers.destiny){
+		h += '<span class="t0 k'+(myNumbers.destiny ? myNumbers.destiny.number : '')+'"></span>'
+	}else{
+		h += '<span class="t0"></span>'
+	}
+	['character', 'agenda', 'attitude', 'personality', 'soul'].forEach((cat, idx) => {
+		const num = myNumbers[cat] ? myNumbers[cat].number : ''
+		h += '<div class="t'+(idx+1)+' k'+num+'"></div>'
+	})
+	elem('star').innerHTML = h
+
 
 	// - Summary list of all numbers
 	var numNumbers = [];
@@ -157,9 +168,18 @@ function calcExtra(){
 	<h1>Motivational Numerology <span>by Sally Faubion</span></h1>
 
 	<section class="inputForm">
-		<div id="star-holder">
-			<div id="star-five"></div>
+	
+		<div id="star" class="star">
+			<span class="t0"></span>
+			<div class="t1"></div>
+			<div class="t2"></div>
+			<div class="t3"></div>
+			<div class="t4"></div>
+			<div class="t5 "></div>
 		</div>
+		<div id="star-holder">
+		</div>
+			
 		<div class="ml210">
 			<div class="field name">
 				<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
@@ -195,16 +215,23 @@ function calcExtra(){
 		<div id="report3"></div>
 	</section>
 
-	<section id="sally">
-		<div id="allNumbers"></div>
+	<section>
 		<div>
-			<p>This content is only a brief explanation of the wonderful qualities you possess. 
+				<div id="allNumbers"></div>
+			<p id="sally">This content is only a brief explanation of the wonderful qualities you possess. 
 			</p>
-			<p>To learn more
-			<ul>
-				<li><a href="http://sallysnumbers.com" target="_blank">Subscribe to Sally's Newsletter</a></li>
-				<li><a href="http://sallysnumbers.com/services/" target="_blank">Book a personal reading with Sally</a> to obtain a more thorough understanding of those qualities and what your present and future hold in store for you. </li>
-			</ul>
+			<div class="fl"><a href="http://sallysnumbers.com" target="news"><img src="sally.jpg"></a></div>
+			<div class="fl">
+				<p>Learn more about your numbers and what they mean for you with <strong><a href="http://sallysnumbers.com" target="news">Sally Faubion</a></strong>: </p>
+				<ul class="linespace">
+					<li>Subscribe to <a href="http://sallysnumbers.com" target="news">Sally's Newsletter</a></li>
+					<li>Get Sally's <a href="https://smile.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974" target="book">Motivational Numerology</a> book</li>
+					<li>Get Sally's <a href="https://apps.apple.com/ua/app/cosmicmates/id438482504" target="app">CosmicMates</a> iPhone App</li>
+					<li>Book a <a href="http://sallysnumbers.com/services/" target="reading">personal reading with Sally</a></li>
+				</ul>
+			</div>
+			<div class="clearer"></div>
+
 		</div>
 	</section>
 

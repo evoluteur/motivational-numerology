@@ -1,3 +1,4 @@
+/* (c) 2020 Sally Faubion */
 
 body {
   margin: 30px;
@@ -58,7 +59,12 @@ section {
 .spaced {
 	margin: 0 10px;
 }
-
+.linespace > li {
+  margin: 10px;
+}
+.linespace > li > a {
+  font-weight: 600;
+}
 .field {
 	margin-bottom: 30px;
 }
@@ -117,12 +123,24 @@ section {
   width: 24px;
   text-align: center;
 }
+.fl {
+  float: left;
+  margin: 10px 30px;
+}
+.fl > a {
+  border-bottom: none;
+}
+.clearer {
+  clear: both;
+  height: 0;
+  width: 0;
+}
 .artnum {
   border-left: 10px solid grey;
-  padding-left: 20px;
+  padding: 10px 40px;
 }
 .ml210{
-  margin-left: 250px;
+  margin-left: 260px;
 }
 #allNumbers {
   margin: 0 0 20px 0;
@@ -147,6 +165,30 @@ section {
 .c9, .c18, .c27 { border-color: #ffc107}
 .c11, .c29 { border-color: #6a0dad}
 .c22 { border-color: #3f51b5}
+
+.k1, .k10, .k28 { border-bottom-color: #f44336 !important}
+.k2, .k19, .k20 { border-bottom-color: #ff9800 !important}
+.k3, .k12, .k21, .k30 { border-bottom-color: #ffeb3b !important}
+.k4, .k13, .k31 { border-bottom-color: #4caf50 !important}
+.k5, .k14, .k23 { border-bottom-color: #48d1cc !important}/*  #08e8de !important} */
+.k6, .k15, .k24 { border-bottom-color: #2196f3 !important}
+.k7, .k16, .k25 { border-bottom-color: #9c27b0 !important}
+.k8, .k17, .k26 { border-bottom-color: #d000d0 !important} /* #ff00ff */
+.k9, .k18, .k27 { border-bottom-color: #ffc107 !important}
+.k11, .k29 { border-bottom-color: #6a0dad !important}
+.k22 { border-bottom-color: #3f51b5 !important}
+
+.t0.k1, .t0.k10, .t0.k28 { background-color: #f44336 !important}
+.t0.k2, .t0.k19, .t0.k20 { background-color: #ff9800 !important}
+.t0.k3, .t0.k12, .t0.k21, .t0.k30 { background-color: #ffeb3b !important}
+.t0.k4, .t0.k13, .t0.k31 { background-color: #4caf50 !important}
+.t0.k5, .t0.k14, .t0.k23 { background-color: #48d1cc !important}/*  #08e8de !important} */
+.t0.k6, .t0.k15, .t0.k24 { background-color: #2196f3 !important}
+.t0.k7, .t0.k16, .t0.k25 { background-color: #9c27b0 !important}
+.t0.k8, .t0.k17, .t0.k26 { background-color: #d000d0 !important} /* #ff00ff */
+.t0.k9, .t0.k18, .t0.k27 { background-color: #ffc107 !important}
+.t0.k11, .t0.k29 { background-color: #6a0dad !important}
+.t0.k22 { background-color: #3f51b5 !important}
 
 .copy {
 	margin: 50px 0 20px;
@@ -191,54 +233,8 @@ section {
   }
 }
 
-/*
-    Star (5-points) via Kit MacAllister
-    https://css-tricks.com/the-shapes-of-css/
-*/
-
-#star-five {
-  margin: 50px 0;
-  position: relative;
-  display: block;
-  color: rgb(200, 225, 255);
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid rgb(200, 225, 255);
-  border-left: 100px solid transparent;
-  transform: rotate(35deg);
-}
-#star-five:before {
-  border-bottom: 80px solid rgb(200, 225, 255);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: -45px;
-  left: -65px;
-  display: block;
-  content: '';
-  transform: rotate(-35deg);
-}
-#star-five:after {
-  position: absolute;
-  display: block;
-  color: rgb(200, 225, 255);
-  top: 3px;
-  left: -105px;
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid rgb(200, 225, 255);
-  border-left: 100px solid transparent;
-  transform: rotate(-70deg);
-  content: '';
-}
-
-/* added for Motivational-Numerology */
-
 #star-holder {
+  z-index: 200;
   padding: 20px;
   left: 10px;
   top:10px;
@@ -267,24 +263,24 @@ section {
 }
 
 #star-holder > .character{
-  top: 21px;
+  top: 0px;
   left: 95px;
 }  
 #star-holder > .soul{
   top: 66px;
-  left: 28px;
+  left: 9px;
 }
 #star-holder > .agenda{
-  top: 68px;
-  left: 163px;
+  top: 65px;
+  left: 179px;
 }
 #star-holder > .attitude{
-  top: 144px;
-  left: 142px;
+  top: 158px;
+  left: 144px;
 }
 #star-holder > .personality{
-  top: 146px;
-  left: 52px;
+  top: 158px;
+  left: 44px;
 }
 #star-holder > .destiny{
   top: 88px;
@@ -294,3 +290,63 @@ section {
 #star-holder > .purpose{
   display: none;
 } 
+#star-holder > .character > span{
+  left: 12px;
+  top: 0;
+}
+#star-holder > .destiny > span{
+  left: 28px;
+  top: 0;
+}
+#star-holder > .agenda > span{
+  top: 22px;
+  left: -28px;
+}
+
+.star > div {
+  z-index: 110;
+  width: 0;
+  height: 0;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 64px solid rgb(200, 225, 255);
+}
+.t0 {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  top: 80px;
+  left: 86px;
+  height: 78px;
+  width: 78px;
+  background-color: rgb(200, 225, 255);
+}
+.t1 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+}
+.t2 {
+  transform: rotate(72deg);
+  position: absolute;
+  top: 68px;
+  left: 163px;
+}
+.t3 {
+  transform: rotate(144deg);
+  position: absolute;
+  top: 139px;
+  left: 140px;
+}
+.t4 {
+  transform: rotate(-144deg);
+  position: absolute;
+  top: 139px;
+  left: 64px;
+}
+.t5 {
+  transform: rotate(-72deg);
+  position: absolute;
+  top: 68px;
+  left: 41px;
+}
