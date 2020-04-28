@@ -37,8 +37,9 @@ label {
 }
 input, select {
   padding-left: 4px;
-  font-size: 1.2em;
+  font-size: 20px;
   font-family: sans-serif;
+  height: 32px;
 }
 article {
   padding: 5px 0 20px;
@@ -242,12 +243,12 @@ section {
   height: 240px;
   width: 240px;
 }
-#star-holder > .num {
+#star-holder .num {
   position: absolute;
   padding: 4px;
   border-radius: 50%;
 }
-#star-holder > .num > span {
+#star-holder .num > span {
   display: block;
   opacity: 0;
   position: relative;
@@ -257,48 +258,48 @@ section {
   z-index: 100;
   font-size: .9rem;
 }
-#star-holder > .num:hover > span { 
+#star-holder .num:hover > span { 
   opacity: 1;
   transition: opacity .5s .4s;
 }
 
-#star-holder > .character{
+#star-holder .character{
   top: 0px;
   left: 95px;
 }  
-#star-holder > .soul{
+#star-holder .soul{
   top: 66px;
   left: 9px;
 }
-#star-holder > .agenda{
+#star-holder .agenda{
   top: 65px;
   left: 179px;
 }
-#star-holder > .attitude{
+#star-holder .attitude{
   top: 158px;
   left: 144px;
 }
-#star-holder > .personality{
+#star-holder .personality{
   top: 158px;
   left: 44px;
 }
-#star-holder > .destiny{
+#star-holder .destiny{
   top: 88px;
   left: 95px;
 }
 /**/
-#star-holder > .purpose{
+#star-holder .purpose{
   display: none;
 } 
-#star-holder > .character > span{
+#star-holder .character > span{
   left: 12px;
   top: 0;
 }
-#star-holder > .destiny > span{
+#star-holder .destiny > span{
   left: 28px;
   top: 0;
 }
-#star-holder > .agenda > span{
+#star-holder .agenda > span{
   top: 22px;
   left: -28px;
 }

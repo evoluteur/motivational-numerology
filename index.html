@@ -69,7 +69,8 @@ function htmlMeaning(number, meaning){
 }
 
 function htmlSection(rpt){
-	html = '<article class="artnum c'+rpt.number + '""><h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
+	html = '<a name="'+rpt.category + '">'
+	html += '<article class="artnum c'+rpt.number + '""><h2>' + rpt.title + ' = ' + rpt.number + '</h2>'
 	html += '<div class="desc">' + rpt.description + '</div>'
 	if(rpt.calc){
 		html += '<div class="calc"><div>';
@@ -120,7 +121,7 @@ function calcExtra(){
 	elem('star-holder').innerHTML = Object.keys(myNumbers).map(cat => {
 			if(myNumbers[cat]){
 				const num = myNumbers[cat].number
-				return '<div class="'+cat+' num c'+num+'">'+num+'<span>'+myNumbers[cat].title+'</span></div>'
+				return '<a href="#'+cat+'"><div class="'+cat+' num c'+num+'">'+num+'<span>'+myNumbers[cat].title+'</span></div></a>'
 			}
 			return ''
 		}).join('')
