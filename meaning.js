@@ -52,9 +52,9 @@ var meaning = {
 		26: 'Your personality is like that of a five-star general – steadfast and in command with a fondness for protocol. Your “sixth sense” enables you to readily intuit right from wrong and set an exemplary example for others.',
 		27: 'Like Old King Cole, you are an "old soul", and you possess vast innate knowledge and extraordinary perceptivity. Travel and change are essential to your well-being.',
 		28: 'You are charming, independent, a born diplomat, and your character is that of an achiever and leader. Your high ideals and principles enable you to accomplish your goals.',
-		29: 'Your gentle, sensitive nature is complimented by a combination of energy and charisma that draws people to you like a magnet. You posses as "sixth sense" that enables you help the many who seek out your "big shoulders".',
+		29: 'Your gentle, sensitive nature is complimented by a combination of energy and charisma that draws people to you like a magnet. You possess as "sixth sense" that enables you help the many who seek out your "big shoulders".',
 		30: 'You are intelligent, creative, fun-loving, and blessed with a great sense of humor, and exceptionally talented when involved in any creative endeavor. Your socially adept nature enables you to stand out among the many.',
-		31: 'You are creative, innovative, and posses a vast amount of knowledge. Conscientious, dependable and timely, you are also a creature of habit and can be devoted mate and friend.',
+		31: 'You are creative, innovative, and possess a vast amount of knowledge. Conscientious, dependable and timely, you are also a creature of habit and can be devoted mate and friend.',
 	},
 
 	attitude: {
@@ -78,7 +78,7 @@ var meaning = {
 		title: 'Character',
 		description: 'This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.',
 		func: 'Letters',
-		1: 'Possessing an original and innovative mind, with a steadfast focus on your goals qualifies you as a leader',
+		1: 'Possessing an original and innovative mind, with a steadfast focus on your goals qualifies you as a leader.',
 		2: 'Being naturally diplomatic, good-natured and a peacemaker, your pubic persona is like that of an ambassador for the people.',
 		3: 'Your optimistic, enthusiastic, and creative abilities give you the capacity to engage, inspire, and entertain others in any line of work you choose.',
 		4: 'Your conscientious, organized, systematic and reliable public persona makes you a sought-after worker-bee or Chairman of the Board.',
@@ -98,7 +98,7 @@ var meaning = {
 		1: 'Your Soul\'s Urge is to be innovative, creative, and lead the masses to a higher realm of consciousness and understanding that engenders compassion for all.',
 		2: 'Your Soul\'s Urge is to effect peace, harmony, and finesse to bring about greater nurturing and loving qualities in those you know and comfort.',
 		3: 'Your Soul\'s Urge is to bring JOY, enthusiasm, passion, and arouse the imagination of others with creativity and heart-warming concepts and interests.',
-		4: 'Your Soul\'s Urge is to deliver honesty, dependability, practicality, and determination to help others and yourself achieve inspiring and enlightening outcomes',
+		4: 'Your Soul\'s Urge is to deliver honesty, dependability, practicality, and determination to help others and yourself achieve inspiring and enlightening outcomes.',
 		5: 'Your Soul\'s Urge is to use your abounding energy, broad-mindedness and progressive mental attributes to help bring forth high-minded contributions to mankind.',
 		6: 'Your Soul\'s Urge is to be responsible, conscientious, caring and kind to one and all, and to teach, counsel, and comfort to maintain those qualities yourself.',
 		7: 'Your Soul\'s Urge is to use your analytical, research-oriented and questioning nature to discover or uncover something meaningful that will help the many, as opposed to a few.',
@@ -122,7 +122,7 @@ var meaning = {
 		8: 'This agenda expresses an innate desire for power, acclaim and amassing huge amounts of money, or being an enlightened teacher of the masses.',
 		9: 'This agenda affects an innate desire to attain the finest of everything from clothing and cars to entertainment, or an inordinate need to live a wholly humanitarian life without a thought for self.',
 		11: 'This agenda incites an innate need to minister, counsel, or participate in the healing arts in a way that helps the many, or to become known for your humanitarian services.',
-		22: 'This agenda inspires an innate desire to do something grand for mankind. This Master Number gives you the ability to scale the highest mountains or invent an exemplary product or philosophy',
+		22: 'This agenda inspires an innate desire to do something grand for mankind. This Master Number gives you the ability to scale the highest mountains or invent an exemplary product or philosophy.',
 	},
 
 	purpose: {
