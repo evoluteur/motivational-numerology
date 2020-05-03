@@ -40,6 +40,7 @@ input, select {
   font-size: 20px;
   font-family: sans-serif;
   height: 32px;
+  background-color: white;
 }
 article {
   margin: 0 0 15px 0;
@@ -213,32 +214,11 @@ section {
   display: none;
 }
 
-@media print {
-
-  @page {
-    margin: 1cm 1cm;
-  }
-  #sally,
-  article {
-    page-break-inside: avoid;
-    margin-bottom: 40px;
-  }
-  a::after{
-    content: " (" attr(href) ") ";
-  }
-  .field > label > span.grey {
-    display: none;
-  }
-  section {
-    border: none;
-    border-bottom: 2px solid silver;
-  }
-  .print-only{
-    margin: 40px 0 30px;
-    display: inline-block;
-  }
+.fullStar {
+  position: absolute;
+  top: 0;
+  min-height: 220px;
 }
-
 #star-holder {
   z-index: 200;
   padding: 20px;
@@ -355,4 +335,49 @@ section {
   position: absolute;
   top: 68px;
   left: 41px;
+}
+
+@media only screen and (max-width: 670px) {
+  .ml210{
+    margin-left: 10px;
+  }
+  .fullStar {
+    position: relative;
+  }
+
+  .meaning > .num {
+    left: -10px;
+  }
+  .meaning > div {
+      padding-left: 60px;
+  }
+  .fl {
+      margin: 10px 0px;
+  }
+}
+
+@media print {
+
+  @page {
+    margin: 1cm 1cm;
+  }
+  #sally,
+  article {
+    page-break-inside: avoid;
+    margin-bottom: 40px;
+  }
+  a::after{
+    content: " (" attr(href) ") ";
+  }
+  .field > label > span.grey {
+    display: none;
+  }
+  section {
+    border: none;
+    border-bottom: 2px solid silver;
+  }
+  .print-only{
+    margin: 40px 0 30px;
+    display: inline-block;
+  }
 }
