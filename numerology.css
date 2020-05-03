@@ -42,8 +42,8 @@ input, select {
   height: 32px;
 }
 article {
-  padding: 5px 0 20px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  padding: 5px 5px 10px 30px;
 }
 section {
   position: relative;
@@ -67,6 +67,7 @@ section {
   font-weight: 600;
 }
 .field {
+  line-height: 32px;
 	margin-bottom: 30px;
 }
 section {
@@ -76,10 +77,10 @@ section {
     border: 2px solid rgb(200, 225, 255);
     border-radius: 4px;
 }
-.inputForm{
+.inputForm {
+  z-index: 300;
   min-height: 190px;
-}
-
+} 
 .desc {
   display: inline-block;
 	margin: 10px 0 20px;
@@ -96,7 +97,7 @@ section {
   border-left: 5px solid rgb(200, 225, 255);
 }
 .calc > .meaning {
-  margin: 10px 0 15px -10px;
+  margin: 15px 0 20px -10px;
   color: #1a1a1a;
   border-left: none;
   min-height: 50px;
@@ -104,14 +105,19 @@ section {
 .meaning {
   position: relative;
   width: 100%;
+  margin-bottom: 10px;;
 }
 .meaning > div {
-  padding: 7px 0 0 60px;
+  padding: 7px 0 0 90px;
 }
 .meaning > .num {
   position: absolute;
   top: 0;
   left: 10px;
+  font-size: 35px;
+  border-width: 6px;
+  height: 42px;
+  width: 42px;
   padding: 5px;
   display: inline-block;
   border-radius: 50%;
@@ -138,7 +144,6 @@ section {
 }
 .artnum {
   border-left: 10px solid grey;
-  padding: 10px 40px;
 }
 .ml210{
   margin-left: 260px;
