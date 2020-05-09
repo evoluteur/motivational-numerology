@@ -366,9 +366,10 @@ section {
     page-break-inside: avoid;
     margin-bottom: 40px;
   }
-  a::after{
+  a[href^="http"]::after{
     content: " (" attr(href) ") ";
   }
+  .num > span,
   .field > label > span.grey {
     display: none;
   }
