@@ -81,9 +81,9 @@ function makeReport(category, number, calc) {
 
 	if(isMasterNumber(number)) {
 		rpt.master = true;
-		rpt.number2 = number === '11' ? '2' : '4';
-		rpt.calc2 = number === '11' ? '1 + 1 = 2' : '2 + 2 = 4';
-		rpt.meaning2 = m[rpt.number2]
+		//rpt.number2 = number === '11' ? '2' : '4';
+		//rpt.calc2 = number === '11' ? '1 + 1 = 2' : '2 + 2 = 4';
+		//rpt.meaning2 = m[rpt.number2]
 	}
 	return rpt
 }
