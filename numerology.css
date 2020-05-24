@@ -347,7 +347,6 @@ section {
 }
 
 @media print {
-
   @page {
     margin: 1cm 1cm;
   }
@@ -361,7 +360,7 @@ section {
   }
   .num > span,
   .field > label > span.grey {
-    display: none;
+    display: none !important;
   }
   section {
     border: none;
