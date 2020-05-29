@@ -26,7 +26,8 @@ var dest, char;
 
 function dateReport(month, day, year){
 	const cats = ['destiny', 'personality', 'attitude']
-	if(month && day && year && parseInt(day)>0 && parseInt(year)>1900){
+	const d = parseInt(day)
+	if(month && day && year && d>0 && d<32 && parseInt(year)>0){
 		var info = dateInfo(month, day, year);
 		cats.forEach(cat => myNumbers[cat] = info[cat])
 		dest = info.destiny.number
@@ -203,7 +204,7 @@ function calcExtra(){
 				<div class="t2"></div>
 				<div class="t3"></div>
 				<div class="t4"></div>
-				<div class="t5 "></div>
+				<div class="t5"></div>
 			</div>
 			<div id="star-holder"></div>
 		</div>
