@@ -79,7 +79,7 @@ var meaning = {
 		description: 'This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.',
 		func: 'Letters',
 		1: 'Possessing an original and innovative mind, with a steadfast focus on your goals qualifies you as a leader.',
-		2: 'Being naturally diplomatic, good-natured and a peacemaker, your pubic persona is like that of an ambassador for the people.',
+		2: 'Being naturally diplomatic, good-natured and a peacemaker, your public persona is like that of an ambassador for the people.',
 		3: 'Your optimistic, enthusiastic, and creative abilities give you the capacity to engage, inspire, and entertain others in any line of work you choose.',
 		4: 'Your conscientious, organized, systematic and reliable public persona makes you a sought-after worker-bee or Chairman of the Board.',
 		5: 'Your charming, articulate, flexible and style-conscious nature make you a trendsetter who can engage and inspire many when focused on a mission',
