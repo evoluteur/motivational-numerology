@@ -61,42 +61,31 @@ letterCV = {
 	"Z": 1,
 }
 
-var equal = ' = ', 
-	plus = ' + '
+var plus = '+'
 
 function isMasterNumber(num) {
 	return num == '11' || num == '22'
 }
 
-function makeReport(category, number, calc) {
-	var m = meaning[category],
-		rpt = {
-			title: m.title,
-			category: category,
-			number: number,
-			calc: calc,
-			meaning: m[number],
-			description: m.description,
-		}
-
-	if(isMasterNumber(number)) {
-		rpt.master = true;
-		//rpt.number2 = number === '11' ? '2' : '4';
-		//rpt.calc2 = number === '11' ? '1 + 1 = 2' : '2 + 2 = 4';
-		//rpt.meaning2 = m[rpt.number2]
+function makeReport(category, number) {
+	var m = meaning[category]
+	return {
+		title: m.title,
+		category: category,
+		number: number,
+		master: isMasterNumber(number),
+		meaning: m[number],
+		description: m.description,
 	}
-	return rpt
 }
 
 function purposeInfo(destiny, character){
-	var m = meaning.purpose,
-		sumOp = (destiny && character) ? (destiny + plus + character) : '',
-		sum = sumOp ? '' + eval(sumOp) : '',
-		txt = [m.func + equal + sumOp + equal + sum]
+	var sumOp = (destiny && character) ? (destiny + plus + character) : '',
+		sum = sumOp ? '' + eval(sumOp) : ''
 	
-	sum = reduceNumber(sum, txt)
+	sum = reduceNumber(sum)
 
-	return makeReport('purpose', sum, txt)
+	return makeReport('purpose', sum)
 }
 
 function nameInfo(name){
@@ -161,29 +150,21 @@ function nameInfo(name){
 }
 
 function nameCalc(category, name, nums){
-	var txt = [], sumOp, sum;
-	var m = meaning[category]
+	var sumOp, sum;
 
 	if(name && name.replace(/ /, '')){
-		txt.push(m.func + equal + name);
 		sumOp = nums.join(plus);
 		sum = ''+eval(sumOp);
-		txt.push(sumOp.replace(/\+0\+/g, plus) + equal + sum)
-		sum = reduceNumber(sum, txt)
-	}else{
-		txt = [m.func + ' = N/A = 0']
+		sum = reduceNumber(sum)
 	}
 
-	return makeReport(category, sum || '0', txt)
+	return makeReport(category, sum || '0')
 }
 
-function reduceNumber(number, steps){
-	var sumOp;
+function reduceNumber(number, skipMaster){
 	if(number!='NaN'){
-		while(number.length>1 && !isMasterNumber(number)){
-			sumOp = sumString(number)
-			number = ''+eval(sumOp)
-			steps.push(sumOp + equal + number)
+		while(number.length>1 && (skipMaster || !isMasterNumber(number))){
+			number = ''+eval(sumString(number))
 		}
 	}
 	return number
@@ -194,31 +175,16 @@ function sumString(number){
 }
 
 function dateInfo(month, day, year){
-	var txt, sum, rpt={}, buffer;
-
-	// - Destiny
-	buffer = month + plus + day + plus + year;
-	sum = '' + eval(buffer);
-	txt = [meaning.destiny.func + equal + buffer + equal + sum];
-	sum = reduceNumber(sum, txt)
-	rpt.destiny = makeReport('destiny', sum, txt)
-
-	// - Personality
-	rpt.personality = makeReport('personality', day, [meaning.personality.func + equal + day])
-
-	// - Attitude
-	buffer = sumString(month) + plus + sumString(day)
-	sum = '' + eval(buffer)
-	txt = [meaning.attitude.func + equal + buffer + equal + sum]
-	sum = reduceNumber(sum, txt)
-	rpt.attitude = makeReport('attitude', sum, txt)
-
-	return rpt
+	return {
+		destiny: makeReport('destiny', reduceNumber(month+day+year)),
+		personality: makeReport('personality', day),
+		attitude: makeReport('attitude', reduceNumber(month+day))
+	}
 }
 
 function fullInfo(name, month, day, year){
-	var buffer = nameInfo(name),
-		rpt = dateInfo(month, day, year);
+	var rpt = dateInfo(month, day, year),
+		buffer = nameInfo(name)
 
 	rpt.character = buffer.character
 	rpt.soul = buffer.soul

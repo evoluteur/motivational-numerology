@@ -92,9 +92,7 @@ section {
 }
 .calc > div {
   color: #0091ea;
-  padding-left: 10px;
   margin: 5px 0;
-  border-left: 5px solid #c8e1ff;
 }
 .calc > .meaning {
   margin: 15px 0 20px -10px;
@@ -197,9 +195,6 @@ section {
 #sally li {
   margin-bottom: 10px;
 }
-.print-only{
-  display: none;
-}
 
 .fullStar {
   position: absolute;
@@ -222,8 +217,7 @@ section {
   border-radius: 50%;
 }
 #star-holder .num > span {
-  display: block;
-  opacity: 0;
+  display: none;
   position: relative;
   top: 17px;
   left: -34px;
@@ -232,8 +226,7 @@ section {
   font-size: .9rem;
 }
 #star-holder .num:hover > span { 
-  opacity: 1;
-  transition: opacity .5s .4s;
+  display: block;
 }
 
 #star-holder .character{
@@ -355,6 +348,7 @@ section {
     margin-bottom: 40px;
   }
   a[href^="http"]::after{
+    font-weight: 500;
     content: " (" attr(href) ") ";
   }
   .num > span,
@@ -364,9 +358,5 @@ section {
   section {
     border: none;
     border-bottom: 2px solid silver;
-  }
-  .print-only{
-    margin: 40px 0 30px;
-    display: inline-block;
   }
 }
