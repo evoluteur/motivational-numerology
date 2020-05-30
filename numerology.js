@@ -81,10 +81,7 @@ function makeReport(category, number) {
 
 function purposeInfo(destiny, character){
 	var sumOp = (destiny && character) ? (destiny + plus + character) : '',
-		sum = sumOp ? '' + eval(sumOp) : ''
-	
-	sum = reduceNumber(sum)
-
+		sum = reduceNumber(sumOp ? '' + eval(sumOp) : '')
 	return makeReport('purpose', sum)
 }
 
@@ -150,28 +147,21 @@ function nameInfo(name){
 }
 
 function nameCalc(category, name, nums){
-	var sumOp, sum;
+	var sum='0';
 
 	if(name && name.replace(/ /, '')){
-		sumOp = nums.join(plus);
-		sum = ''+eval(sumOp);
-		sum = reduceNumber(sum)
+		sum = reduceNumber(''+eval(nums.join(plus)))
 	}
-
-	return makeReport(category, sum || '0')
+	return makeReport(category, sum)
 }
 
-function reduceNumber(number, skipMaster){
+function reduceNumber(number){
 	if(number!='NaN'){
-		while(number.length>1 && (skipMaster || !isMasterNumber(number))){
-			number = ''+eval(sumString(number))
+		while(number.length>1 && !isMasterNumber(number)){
+			number = ''+eval((''+number).split('').join(plus))
 		}
 	}
 	return number
-}
-
-function sumString(number){
-	return (''+number).split('').join(plus);
 }
 
 function dateInfo(month, day, year){
@@ -190,6 +180,5 @@ function fullInfo(name, month, day, year){
 	rpt.soul = buffer.soul
 	rpt.agenda = buffer.agenda
 	rpt.purpose = purposeInfo(rpt.destiny.number, rpt.character.number)
-
 	return rpt
 }
