@@ -5,6 +5,7 @@ body {
   font-size: 1.2em;
   font-family: sans-serif;
   color: #1d1d1d;
+  background-image: url(bg.gif);
 }
 body > div {
 	margin-bottom: 20px;
