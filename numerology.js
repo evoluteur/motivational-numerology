@@ -156,7 +156,7 @@ function nameCalc(category, name, nums){
 }
 
 function reduceNumber(number){
-	if(number!='NaN'){
+	if(number!='NaN' && number!='undefined'){
 		while(number.length>1 && !isMasterNumber(number)){
 			number = ''+eval((''+number).split('').join(plus))
 		}

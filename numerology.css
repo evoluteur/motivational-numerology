@@ -165,10 +165,10 @@ section {
 .c4, .c13, .c31 { border-color: #4caf50 !important}
 .c5, .c14, .c23 { border-color: #48d1cc !important}
 .c6, .c15, .c24 { border-color: #2196f3 !important}
-.c7, .c16, .c25 { border-color: #9c27b0 !important}
+.c7, .c16, .c25 { border-color: #6a0dad !important}
 .c8, .c17, .c26 { border-color: #d000d0 !important}
 .c9, .c18, .c27 { border-color: #ffc107 !important}
-.c11, .c29 { border-color: #6a0dad !important}
+.c11, .c29 { border-color: #9c27b0 !important}
 .c22 { border-color: #3f51b5 !important}
 
 .k1, .k10, .k19, .k28 { border-bottom-color: #f44336 !important}
@@ -177,10 +177,10 @@ section {
 .k4, .k13, .k31 { border-bottom-color: #4caf50 !important}
 .k5, .k14, .k23 { border-bottom-color: #48d1cc !important}
 .k6, .k15, .k24 { border-bottom-color: #2196f3 !important}
-.k7, .k16, .k25 { border-bottom-color: #9c27b0 !important}
+.k7, .k16, .k25 { border-bottom-color: #6a0dad !important}
 .k8, .k17, .k26 { border-bottom-color: #d000d0 !important}
 .k9, .k18, .k27 { border-bottom-color: #ffc107 !important}
-.k11, .k29 { border-bottom-color: #6a0dad !important}
+.k11, .k29 { border-bottom-color: #9c27b0 !important}
 .k22 { border-bottom-color: #3f51b5 !important}
 
 .copy {
@@ -286,8 +286,6 @@ section {
   border: solid 39px #c8e1ff;
   top: 81px;
   left: 86px;
-  height: 0;
-  width: 0;
   background-color: #c8e1ff;
 }
 .t1 {
