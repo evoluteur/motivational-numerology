@@ -78,16 +78,15 @@ function htmlSection(rpt){
 	return html
 }
 
-function elem(id){
-	return document.getElementById(id);
-}
-function getValue(id){
-	return elem(id).value || '';
-}
+const elem = id => document.getElementById(id);
+const getValue = id => elem(id).value || '';
+const setValue = (id, value) => {elem(id).value = value || ''};
 
-function calcName(){
-	elem('report1').innerHTML = nameReport(getValue('txt'));
-	calcExtra();
+function calcName(skipExtra){
+	elem('report1').innerHTML = nameReport(getValue('name'));
+	if(!skipExtra){
+		calcExtra();
+	}
 }
 function calcBDay(){
 	elem('report2').innerHTML = dateReport(getValue('month'), getValue('day'), getValue('year'));
@@ -95,7 +94,7 @@ function calcBDay(){
 }
 function calcExtra(){
 	if(showPurpose){
-		elem('report3').innerHTML = purposeReport(getValue('txt'));
+		elem('report3').innerHTML = purposeReport(getValue('name'));
 	}
 
 	// - Numbers on star
@@ -141,10 +140,31 @@ function calcExtra(){
 	elem('allNumbers').innerHTML = numNumbers.map(num => '<span class="num c' + num + '">' + num + '</span>').join('')
 
 }
+
+function checkInfo(){
+	const queryString = window.location.search
+	if(queryString){
+		const urlParams = new URLSearchParams(queryString)
+		const fields = ['name', 'month', 'day', 'year']
+		let hasValue = false
+
+		fields.forEach(fid => {
+			const param = urlParams.get(fid)
+			if(param){
+				setValue(fid, param)
+				hasValue = true
+			}
+		})
+		if(hasValue){
+			calcName(true);
+			calcBDay();
+		}
+	}
+}
 </script>
 </head>
 
-<body>
+<body onload="checkInfo()">
 
 	<h1>Motivational Numerology <span>by Sally Faubion</span></h1>
 
@@ -152,7 +172,7 @@ function calcExtra(){
 		<div class="ml210">
 			<div class="field name">
 				<label>Full name <span class="grey">(Firstname, middle name, and lastname)</span></label>
-				<input id="txt" value="" onKeyUp="calcName()">
+				<input id="name" value="" onKeyUp="calcName()">
 			</div>
 			<div class="field bdate">
 				<label>Birth date <span class="grey">(Month/Day/Year)</span></label>
