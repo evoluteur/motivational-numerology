@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#bbdefb" />
 
 	<link href="numerology.css" rel="stylesheet" />
 	<script src="meaning.js"></script>
@@ -70,9 +71,9 @@ function htmlSection(rpt){
 		'<article class="artnum c'+rpt.number + '""><h2>' + rpt.title + ' = ' + rpt.number + '</h2>' +
 		'<div class="desc">' + rpt.description + '</div>'
 	if(rpt.meaning){
-		html += '<div class="calc"><div>'+
-		(rpt.master ? ' Master number' : '')+'</div>' + 
-		htmlMeaning(rpt.number, rpt.meaning)+'</div>'
+		html += '<div class="calc">'+
+		(rpt.master ? '<div>Master number</div>' : '')+ 
+		htmlMeaning(rpt.number, rpt.meaning)
 	}
 	html += '</article>'
 	return html

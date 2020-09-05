@@ -66,7 +66,7 @@ var meaning = {
 		3: 'You are born somewhat shy but once you learn to speak, you can become a natural entertainer, adventuresome, and captivating.',
 		4: 'You are born with a sensitive, stubborn temperament, but can be very sweet and dutiful when given praise and encouragement.',
 		5: 'You are born with energy abounding! You need constant mental and physical stimulation and your temper flares when impatient.',
-		6: 'You are born to be responsible, conscientious, considerate, kind and caring to everyone, especially your parents\', siblings, friends, and all things of nature.',
+		6: 'You are born to be responsible, conscientious, considerate, kind and caring to everyone, especially your parents, siblings, friends, and all things of nature.',
 		7: 'You are born with a brilliant mind that needs alone time to indulge your quest for knowledge and vast interests and intrigues.',
 		8: 'You are born to be exemplary in everything you do; which originates from your need to feel in control. You are the "straight A student" when encouraged.',
 		9: 'You are born with a more adult-like sensibility at a very early age. Praise and encouragement from those closest to you fuel your achievements.',
