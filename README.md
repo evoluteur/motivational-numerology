@@ -1,4 +1,4 @@
-# Motivational-Numerology
+# Motivational-Numerology [![npm version](https://img.shields.io/npm/v/motivational-numerology)](https://www.npmjs.com/package/motivational-numerology)
 
 Simple web page to get the numerology numbers derived from your name and birth date as well as a brief interpretation by [Sally Faubion](http://sallysnumbers.com/).
 
