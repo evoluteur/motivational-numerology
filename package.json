@@ -1,18 +1,20 @@
 {
   "name": "motivational-numerology",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Motivational Numerology",
-  "main": "numerology.js",
+  "main": "js/numerology.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/motivational-numerology.git"
   },
   "author": "Sally Faubion (http://sallysnumbers.com)",
-  "copyright": "(c) 2020 Sally Faubion",
-  "homepage": "https://github.com/evoluteur/motivational-numerology",
+  "copyright": "(c) 2020 Sally Faubion & Olivier Giulieri",
+  "homepage": "https://evoluteur.github.io/motivational-numerology/",
   "keywords": [
     "numerology",
     "numbers",
+    "gematria",
+    "pythagore",
     "javascript"
   ]
 }
