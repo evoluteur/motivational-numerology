@@ -8,7 +8,8 @@ Simple web page to get the numerology numbers derived from your name and birth d
 
 Check out [your numerology star and a brief interpretation of your numbers](https://evoluteur.github.io/motivational-numerology/).
 
-![Star](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif)
+[![Star](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif)](https://evoluteur.github.io/motivational-numerology/)
+
 
 Look at a few famous actors' numbers: 
 [Keanu Reeves](https://evoluteur.github.io/motivational-numerology/?name=Keanu+Charles+Reeves&month=9&day=2&year=1964), 
