@@ -48,6 +48,11 @@ article {
 }
 section {
   position: relative;
+  background-color: rgb(241, 248, 255);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #c8e1ff;
+  border-radius: 4px;
 }
 #day {
 	width: 60px;
@@ -70,13 +75,6 @@ section {
 .field {
   line-height: 32px;
 	margin-bottom: 30px;
-}
-section {
-    background-color: rgb(241, 248, 255);
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 2px solid #c8e1ff;
-    border-radius: 4px;
 }
 .inputForm {
   z-index: 300;
@@ -141,6 +139,23 @@ section {
   height: 0;
   width: 0;
 }
+.i18n{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 10px;
+  height: 31px;
+  width: 36px;
+}
+.i18n:hover{
+  border: solid 1px darkcyan;
+}
+.i18n img{
+  height: 22px;
+  width: 32px;
+}
+
 .artnum {
   border-left: 10px solid grey;
 }
@@ -189,6 +204,9 @@ section {
 }
 .grey {
   color: silver;
+}
+.grey:hover {
+  color: darkcyan;
 }
 #sally {
   display: none;

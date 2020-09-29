@@ -3,6 +3,8 @@
 
 var meaning = {
 
+	master: 'Master Number',
+
 	destiny: {
 		title: 'Destiny',
 		description: 'This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.',
