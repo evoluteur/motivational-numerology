@@ -23,7 +23,7 @@ Look at a few famous actors' numbers:
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951), 
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
-Available in [![English](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/en.gif) English](https://evoluteur.github.io/motivational-numerology/) and [![French](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/fr.gif) French](https://evoluteur.github.io/motivational-numerology/index-french.html).
+Available in [![English](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/en.gif) English](https://evoluteur.github.io/motivational-numerology/) and [![French](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/fr.gif) French](https://evoluteur.github.io/motivational-numerology/index-french.html?).
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
