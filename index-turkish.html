@@ -7,15 +7,15 @@
     <meta name="theme-color" content="#bbdefb" />
 
 	<link href="css/numerology.css" rel="stylesheet" />
-	<script src="js/meaning_en.js"></script>
+	<script src="js/meaning_tr.js"></script>
 	<script src="js/numerology.js"></script>
 	<script src="js/demo.js"></script>
 	<link rel="shortcut icon" href="favicon.gif">
 
 	<title>Motivasyonel Numeroloji</title>
 
-	<meta name="description" content="Get the numerology numbers derived from your birthdate and name." />
-	<meta name="keywords" content="Free Numerology Gematria Pythagore Charts Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude Forecast" />
+	<meta name="description" content="Doğum tarihinizden ve adınızdan türetilen numeroloji sayılarını alın." />
+	<meta name="keywords" content="Numeroloji Gematry Numaraları" />
 
 </head>
 
@@ -23,7 +23,7 @@
 
 	<h1>Motivasyonel Numeroloji <span> Sally Faubion</span></h1>
 
-	<div class="i18n" onclick="goToLanguage(event, 'fr')"><img src="pix/fr.gif"></div>
+	<div class="i18n" onclick="goToLanguage(event, 'en')"><img src="pix/en.gif"></div>
 
 	<section class="inputForm">
 		<div class="ml210">
@@ -32,7 +32,8 @@
 				<input id="name" value="" onKeyUp="calcName()">
 			</div>
 			<div class="field bdate">
-				<label>Doğum tarihi <span class="grey">(Ay/Gün/Yıl)</span></label>
+				<label>Doğum tarihi <span class="grey">(Gün/Ay/Yıl)</span></label>
+				<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31" maxlength="2">
 					<select id="month" name="month" onChange="calcBDay()">
 						<option></option>
 						<option value="1">Ocak</option>
@@ -48,7 +49,6 @@
 						<option value="11">Kasım</option>
 						<option value="12">Aralık</option>
 					</select>
-				<input id="day" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="1" max="31" maxlength="="2">
 				<input id="year" onKeyUp="calcBDay()" onClick="calcBDay()" type="number" min="0" maxlength="4">
 			</div>
 		</div>
