@@ -158,3 +158,16 @@ function goToLanguage(evt, language) {
 	})
 	window.location.replace(url)
 }
+
+function goToLanguageTwo(evt, language) {
+	evt.stopPropagation();
+	let url = 'index' + (language==='tr' ? '-turkish.html?' : '.html?')
+	const props = ['name', 'month', 'day', 'year']
+	props.forEach(prop => {
+		const pv = getValue(prop)
+		if(pv){
+			url += prop + '=' + pv + '&'
+		}
+	})
+	window.location.replace(url)
+}
