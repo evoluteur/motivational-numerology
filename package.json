@@ -1,6 +1,6 @@
 {
   "name": "motivational-numerology",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple web page to calculate and interpret the numerology numbers derived from your name and birth date (in English or French).",
   "main": "js/numerology.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "git://github.com/evoluteur/motivational-numerology.git"
   },
   "author": "Sally Faubion (http://sallysnumbers.com)",
-  "copyright": "(c) 2020 Sally Faubion & Olivier Giulieri",
+  "copyright": "(c) 2021 Sally Faubion & Olivier Giulieri",
   "homepage": "https://evoluteur.github.io/motivational-numerology/",
   "keywords": [
     "numerology",
