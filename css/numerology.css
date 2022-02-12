@@ -457,3 +457,8 @@ section {
     border-bottom: 2px solid silver;
   }
 }
+.rpt-perso .num {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 4px;
+}
