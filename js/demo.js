@@ -1,3 +1,9 @@
+/*
+  Motivational-Numerology
+  (c) 2022 Sally Faubion & Olivier Giulieri
+  http://www.sallysnumbers.com
+*/
+
 var showPurpose = true; // use showPurpose = true to show "Divine Purpose" number
 var myNumbers = {};
 var dest, char;
