@@ -41,7 +41,7 @@ select {
   padding-left: 4px;
   font-size: 20px;
   font-family: sans-serif;
-  height: 32px;
+  height: 32px !important;
 }
 article {
   margin: 0 0 15px 0;
@@ -53,7 +53,7 @@ section {
   margin-bottom: 20px;
   padding: 20px;
   border: 2px solid #c8e1ff;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 #day {
   width: 60px;
@@ -282,13 +282,12 @@ section {
 .copy {
   margin: 50px 0 20px;
   color: gray;
+  font-size: 0.8em;
 }
 .grey {
-  color: silver;
+  color: gray;
 }
-.grey:hover {
-  color: darkcyan;
-}
+
 #sally {
   display: none;
 }
