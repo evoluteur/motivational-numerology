@@ -19,12 +19,12 @@
     <section class="inputForm">
       <div class="field bdate">
         <label>Birth date <span class="grey">(Month/Day)</span></label>
-        <select id="month" name="month" onChange="calcBDay()">
+        <select id="month" name="month" onChange="calcPerso()">
           <option></option>
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
-          <option value="4" selected>April</option>
+          <option value="4">April</option>
           <option value="5">May</option>
           <option value="6">June</option>
           <option value="7">July</option>
@@ -36,13 +36,13 @@
         </select>
         <input
           id="day"
-          onKeyUp="calcBDay()"
-          onClick="calcBDay()"
+          onKeyUp="calcPerso()"
+          onClick="calcPerso()"
           type="number"
           min="1"
           max="31"
           maxlength="2"
-          value="23"
+          value=""
         />
       </div>
       <div id="report1" class="rpt-perso"></div>

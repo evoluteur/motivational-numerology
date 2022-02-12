@@ -14,7 +14,7 @@ const trim2C = (n) => {
 const numRpt = (name, number) =>
   `<h2><div class="num c${number}">${number}</div> Personal ${name}</h2>`;
 
-function calcBDay() {
+function calcPerso() {
   const now = new Date();
   const cMonth = new Date().getMonth() + 1;
   const cYear = now.getFullYear();
