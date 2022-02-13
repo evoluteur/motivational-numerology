@@ -38,10 +38,13 @@ label {
 }
 input,
 select {
-  padding-left: 4px;
+  padding: 5px 4px 3px 8px;
   font-size: 20px;
+  line-height: 25px;
   font-family: sans-serif;
-  height: 32px !important;
+  background-color: white;
+  border: solid grey 1px;
+  border-radius: 5px;
 }
 article {
   margin: 0 0 15px 0;
@@ -135,6 +138,9 @@ section {
 .fl > a {
   border-bottom: none;
 }
+.fl img {
+  border-radius: 10px;
+}
 .clearer {
   clear: both;
   height: 0;
@@ -157,7 +163,7 @@ section {
   border-left: 10px solid grey;
 }
 .ml210 {
-  margin-left: 260px;
+  margin: 0 20px 0 260px;
 }
 #allNumbers {
   margin: 0 0 20px 0;
@@ -316,16 +322,18 @@ section {
   border-radius: 50%;
 }
 #star-holder .num > span {
-  display: none;
+  display: block;
+  opacity: 0;
   position: relative;
   top: 17px;
   left: -34px;
   width: 100px;
   z-index: 100;
   font-size: 0.9rem;
+  transition: opacity 0.3s ease 0.1s;
 }
 #star-holder .num:hover > span {
-  display: block;
+  opacity: 1;
 }
 
 #star-holder .character {
