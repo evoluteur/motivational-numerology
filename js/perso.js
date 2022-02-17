@@ -16,9 +16,9 @@ const numRpt = (name, number) =>
 
 function calcPerso() {
   const now = new Date();
-  const cMonth = new Date().getMonth() + 1;
+  const cMonth = now.getMonth() + 1;
   const cYear = now.getFullYear();
-  const cDay = new Date().getDate();
+  const cDay = now.getDate();
   const m = getNumValue("month"),
     d = getNumValue("day");
   const bDay = new Date(cYear + "-" + trim2C(m) + "-" + trim2C(d));
