@@ -1,6 +1,6 @@
 /*
   Motivational-Numerology
-  (c) 2022 Sally Faubion & Olivier Giulieri
+  (c) 2023 Sally Faubion & Olivier Giulieri
   http://www.sallysnumbers.com
 */
 

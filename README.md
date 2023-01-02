@@ -27,4 +27,4 @@ Available in [English](https://evoluteur.github.io/motivational-numerology/), [F
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
-(c) 2022 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
+(c) 2023 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
