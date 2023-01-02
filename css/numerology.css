@@ -39,6 +39,7 @@ label {
   color: #1d1d1d;
   display: block;
   margin-bottom: 3px;
+  font-size: 0.9em;
 }
 input,
 select {
