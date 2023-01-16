@@ -2,15 +2,39 @@
 
 Simple web page to get the numerology numbers derived from your name and birth date as well as a brief interpretation by [Sally Faubion](http://sallysnumbers.com/).
 
-- Birth date => Destiny + Personality + Attitude
-- Full name => Character + Soul Urge + Hidden Agenda
-- Destiny + Character => Divine Purpose
-
 Check out [your numerology star and a brief interpretation of your numbers](https://evoluteur.github.io/motivational-numerology/).
 
 [![Star](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif)](https://evoluteur.github.io/motivational-numerology/)
 
-Look at a few famous actors' numbers:
+<strong>Character</strong>:
+This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.
+ 
+<strong>Soul Urge </strong>:
+This influence presents a view of your intuitive, soulful self.
+
+<strong>Hidden Agenda</strong>:
+This vibration offers your innate (hidden) desires.
+
+<strong>Destiny</strong>:
+This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.
+
+<strong>Personality</strong>:
+This number describes the behind-the-scenes or private you.
+
+<strong>Attitude</strong>:
+This number is most powerful in the first 30-35 years of your life and represents the how and why you react to circumstances in your youth.
+
+<strong>Divine Purpose</strong>:
+This is your farewell-performance number vibration. It is what your Soulful Self has chosen to achieve in your latter years of life.
+
+Numbers from your <strong>Name</strong> and <strong>Birth date</strong>.
+
+- Birth date => Destiny + Personality + Attitude
+- Full name => Character + Soul Urge + Hidden Agenda
+- Destiny + Character => Divine Purpose
+
+Check out [your numerology](https://evoluteur.github.io/motivational-numerology/) or
+look at a few famous actors' numbers:
 [Keanu Reeves](https://evoluteur.github.io/motivational-numerology/?name=Keanu+Charles+Reeves&month=9&day=2&year=1964),
 [Matt Damon](https://evoluteur.github.io/motivational-numerology/?name=Matthew+Paige+Damon&month=8&day=8&year=1970),
 [Anthony Hopkins](https://evoluteur.github.io/motivational-numerology/?name=Philip+Anthony+Hopkins&month=12&day=31&year=1937),
