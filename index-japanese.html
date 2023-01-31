@@ -7,22 +7,22 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="js/meaning_fr.js"></script>
+    <script src="js/meaning_ja.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>Numérologie Motivationnelle</title>
+    <title>やる気を起こさせる数秘術</title>
 
     <meta
       name="description"
-      content="Numérologie Motivationnelle: Decouvrez les chiffres dérivés de votre date de naissance et de votre nom."
+      content="生年月日と名前から数秘術番号を取得します。"
     />
     <meta name="keywords" content="Numérologie Gematrie Chiffres" />
   </head>
 
   <body onload="checkInfo()">
-    <h1>Numérologie Motivationnelle <span>par Sally Faubion</span></h1>
+    <h1>やる気をそそる数秘術 <span>サリーフォービオン作</span></h1>
 
     <div class="i18n">
       <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
@@ -35,18 +35,39 @@
       <div class="ml210">
         <div class="field name">
           <label
-            >Nom
+            >名前
             <span class="grey"
-              >(Prénom, autres prénoms et nom de famille)</span
+              >(名前と苗字、半角ローマ字でお願いします)</span
             ></label
           >
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label
-            >Date de naissance
-            <span class="grey">(Jour/Mois/Année)</span></label
-          >
+          <label>生年月日
+            <span class="grey">(年/月/日)</span></label>
+          <input
+          id="year"
+          onKeyUp="calcBDay()"
+          onClick="calcBDay()"
+          type="number"
+          min="0"
+          maxlength="4"
+        /><span id="toshi">年</span> 
+        <select id="month" name="month" onChange="calcBDay()">
+          <option></option>
+          <option value="1">１月</option>
+          <option value="2">２月</option>
+          <option value="3">３月</option>
+          <option value="4">４月</option>
+          <option value="5">５月</option>
+          <option value="6">６月</option>
+          <option value="7">７月</option>
+          <option value="8">８月</option>
+          <option value="9">９月</option>
+          <option value="10">１０月</option>
+          <option value="11">１１月</option>
+          <option value="12">１２月</option>
+        </select>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -55,30 +76,7 @@
             min="1"
             max="31"
             maxlength="2"
-          />
-          <select id="month" name="month" onChange="calcBDay()">
-            <option></option>
-            <option value="1">Janvier</option>
-            <option value="2">Fevrier</option>
-            <option value="3">Mars</option>
-            <option value="4">Avril</option>
-            <option value="5">Mai</option>
-            <option value="6">Juin</option>
-            <option value="7">Juillet</option>
-            <option value="8">Aout</option>
-            <option value="9">Septembre</option>
-            <option value="10">Octobre</option>
-            <option value="11">Novembre</option>
-            <option value="12">Decembre</option>
-          </select>
-          <input
-            id="year"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
-            type="number"
-            min="0"
-            maxlength="4"
-          />
+          /><span id="date">日</span> 
         </div>
       </div>
       <div class="fullStar">
@@ -115,27 +113,26 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            Apprenez-en plus sur vos chiffres et ce qu'ils signifient pour vous
-            avec
+            自分の番号を知って、その意味を知りたい方へ
             <strong
               ><a href="http://sallysnumbers.com" target="news"
-                >Sally Faubion</a
+                >サリーフォービオン</a
               ></strong
             >:
           </p>
           <ul class="linespace">
             <li>
-              Abonnez-vous à la
+              サリーのニュースレター
               <a href="http://sallysnumbers.com" target="news"
-                >newsletter de Sally</a
+                >登録はこちら</a
               >
             </li>
             <li>
-              Réservez une
+              サリーとの個人面談
               <a href="http://sallysnumbers.com/services/" target="reading"
-                >consultation personnelle avec Sally</a
+                >予約はこちら</a
               >
-              (en Anglais)
+              (英語版のみ)
             </li>
           </ul>
         </div>
@@ -146,7 +143,7 @@
     <div class="copy">
       <div>
         <br />
-        Version 2.0.1 - Code sur
+        Version 2.0.1 - Code
         <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a
         >. <br /><br />&#169; 2023
         <a href="http://sallysnumbers.com">Sally Faubion</a> &
