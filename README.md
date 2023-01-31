@@ -8,7 +8,7 @@ Check out [your numerology star and a brief interpretation of your numbers](http
 
 <strong>Character</strong>:
 This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.
- 
+
 <strong>Soul Urge </strong>:
 This influence presents a view of your intuitive, soulful self.
 
@@ -47,7 +47,7 @@ look at a few famous actors' numbers:
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951),
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
-Available in [English](https://evoluteur.github.io/motivational-numerology/), [French](https://evoluteur.github.io/motivational-numerology/index-french.html?) and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html?).
+Available in [English](https://evoluteur.github.io/motivational-numerology/), [French](https://evoluteur.github.io/motivational-numerology/index-french.html?), [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html?), and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html?).
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
