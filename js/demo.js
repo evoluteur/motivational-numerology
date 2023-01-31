@@ -212,6 +212,7 @@ const langMap = {
   en: "",
   fr: "-french",
   tr: "-turkish",
+  jp: "-japanese"
 };
 function goToLanguage(evt, language) {
   evt.stopPropagation();
