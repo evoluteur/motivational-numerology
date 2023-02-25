@@ -32,6 +32,15 @@ var letter2number = {
     X: 6,
     Y: 7,
     Z: 8,
+    1:1,
+    2:2,
+    3:3,
+    4:4,
+    5:5,
+    6:6,
+    7:7,
+    8:8,
+    9:9
   },
   // Vowel/Consonant map
   letterCV = {
