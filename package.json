@@ -1,7 +1,7 @@
 {
   "name": "motivational-numerology",
-  "version": "2.0.1",
-  "description": "Simple web page to calculate and interpret the numerology numbers derived from your name and birth date (in English or French).",
+  "version": "2.2.0",
+  "description": "Simple web page to calculate and interpret the numerology numbers derived from your name and birth date (in English, French, Japanese, and Turkish).",
   "main": "js/numerology.js",
   "repository": {
     "type": "git",
@@ -14,6 +14,10 @@
     "numerology",
     "numbers",
     "gematria",
+    "arithmancy",
+    "motivation",
+    "forcast",
+    "interpretation",
     "pythagore",
     "javascript"
   ]
