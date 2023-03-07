@@ -5,7 +5,7 @@
 */
 
 // letters to number map
-var letter2number = {
+const letter2number = {
     A: 1,
     B: 2,
     C: 3,
@@ -41,9 +41,9 @@ var letter2number = {
     7:7,
     8:8,
     9:9
-  },
-  // Vowel/Consonant map
-  letterCV = {
+  }
+// Vowel/Consonant map
+const  letterCV = {
     A: 0,
     B: 1,
     C: 1,
@@ -72,18 +72,17 @@ var letter2number = {
     Z: 1,
   };
 
-var plus = "+";
+const plus = "+";
 
-function isMasterNumber(num) {
-  return num == "11" || num == "22";
-}
+const isMasterNumber = (num) => num == "11" || num == "22";
 
 function makeReport(category, number) {
   var m = meaning[category];
   return {
     title: m.title,
-    category: category,
-    number: number,
+    category,
+    func: m.func,
+    number,
     master: isMasterNumber(number),
     meaning: m[number],
     description: m.description,
@@ -106,12 +105,12 @@ function nameInfo(name) {
     ln = uName.length,
     prevLetterCat = null;
 
-  function addV(letter, lNum) {
+  const addV = (letter, lNum) => {
     numV.push(lNum);
     uNameV += letter;
     prevLetterCat = 0;
   }
-  function addC(letter, lNum) {
+  const addC = (letter, lNum) => {
     numC.push(lNum);
     uNameC += letter;
     prevLetterCat = 1;
@@ -157,16 +156,15 @@ function nameInfo(name) {
   }
 }
 
-function nameCalc(category, name, nums) {
+const nameCalc = (category, name, nums) => {
   var sum = "0";
-
   if (name && name.replace(/ /, "")) {
     sum = reduceNumber("" + eval(nums.join(plus)));
   }
   return makeReport(category, sum);
 }
 
-function reduceNumber(number) {
+const reduceNumber = (number) => {
   if (number != "NaN" && number != "undefined") {
     while (number.length > 1 && !isMasterNumber(number)) {
       number = "" + eval(("" + number).split("").join(plus));
@@ -175,13 +173,11 @@ function reduceNumber(number) {
   return number;
 }
 
-function dateInfo(month, day, year) {
-  return {
+const dateInfo=(month, day, year) => ({
     destiny: makeReport("destiny", reduceNumber(month + day + year)),
     personality: makeReport("personality", day),
     attitude: makeReport("attitude", reduceNumber(month + day)),
-  };
-}
+  })
 
 function fullInfo(name, month, day, year) {
   var rpt = dateInfo(month, day, year),

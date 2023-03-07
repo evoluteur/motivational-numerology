@@ -11,7 +11,7 @@ var meaning = {
     title: "Destiny",
     description:
       "This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.",
-    func: "Month + Day + Year",
+    func: "Month + Day + Year of birth",
     1: "This is the path of the risk-taker, the entrepreneur, the wholly independent trail-blazer.",
     2: "This is the path of the homemaker, the team player, the caretaker, and the collector.",
     3: 'This is the path of the adventurous, creative, proverbial "Peter Pan", and/or the disciplined scientific "Dapper Dan/Danielle".',
@@ -28,7 +28,7 @@ var meaning = {
   personality: {
     title: "Personality",
     description: "This number describes the behind-the-scenes or private you.",
-    func: "Day",
+    func: "Day of birth",
     1: "You are dynamic, strong-willed and a natural leader, and your single-minded focus sets the stage for your success.",
     2: "You are a peacemaker, nurturing, caring and kind, and an indispensable friend, mate, employee or boss.",
     3: "You are awesomely creative, imaginary and entertaining, and a superlative host or hostess.",
@@ -66,7 +66,7 @@ var meaning = {
     title: "Attitude",
     description:
       "This number is most powerful in the first 30-35 years of your life and represents the how and why you react to circumstances in your youth.",
-    func: "Month + Day",
+    func: "Month + Day of birth",
     1: "You are born with a strong will and independent nature. You prefer to make your own choices and are stubborn when pushed in a different direction.",
     2: "You are born to be a sweet, gentle, kind and caring child and young adult. You love to nurture and be nurtured and are perceptive and sensitive.",
     3: "You are born somewhat shy but once you learn to speak, you can become a natural entertainer, adventuresome, and captivating.",
@@ -84,7 +84,7 @@ var meaning = {
     title: "Character",
     description:
       "This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.",
-    func: "Letters",
+    func: "Letters in name",
     1: "Possessing an original and innovative mind, with a steadfast focus on your goals qualifies you as a leader.",
     2: "Being naturally diplomatic, good-natured and a peacemaker, your public persona is like that of an ambassador for the people.",
     3: "Your optimistic, enthusiastic, and creative abilities give you the capacity to engage, inspire, and entertain others in any line of work you choose.",
@@ -102,7 +102,7 @@ var meaning = {
     title: "Soul Urge",
     description:
       "This influence presents a view of your intuitive, soulful self.",
-    func: "Vowels",
+    func: "Vowels in name",
     1: "Your Soul's Urge is to be innovative, creative, and lead the masses to a higher realm of consciousness and understanding that engenders compassion for all.",
     2: "Your Soul's Urge is to effect peace, harmony, and finesse to bring about greater nurturing and loving qualities in those you know and comfort.",
     3: "Your Soul's Urge is to bring JOY, enthusiasm, passion, and arouse the imagination of others with creativity and heart-warming concepts and interests.",
@@ -119,7 +119,7 @@ var meaning = {
   agenda: {
     title: "Hidden Agenda",
     description: "This vibration offers your innate (hidden) desires.",
-    func: "Consonants",
+    func: "Consonants in name",
     1: "This agenda incites an innate desire to be independent, to lead, to innovate, and to create original and unique concepts and things.",
     2: "This agenda brings forth the innate desire to live life in peace and harmony, effecting a non-aggressive, cooperative and congenial nature for all.",
     3: "This agenda inspires an innate desire to be more creative, entertaining, and to travel the world, delivering greater pleasure and joy to all who engage with your uplifting persona.",

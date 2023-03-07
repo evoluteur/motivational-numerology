@@ -8,6 +8,7 @@ var showPurpose = true; // use showPurpose = true to show "Divine Purpose" numbe
 var myNumbers = {};
 var dest, char;
 
+const mn="Motivational Numerology";
 function dateReport(month, day, year) {
   const cats = ["destiny", "personality", "attitude"];
   const d = parseInt(day);
@@ -95,7 +96,9 @@ const setValue = (id, value) => {
 };
 
 function calcName(skipExtra) {
-  elem("report1").innerHTML = nameReport(getValue("name"));
+  const name = getValue("name");
+  document.title = name ? name + ' - '+ mn : mn
+  elem("report1").innerHTML = nameReport(name);
   if (!skipExtra) {
     calcExtra();
   }
