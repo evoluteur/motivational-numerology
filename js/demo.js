@@ -4,6 +4,18 @@
   http://www.sallysnumbers.com
 */
 
+const dimensions = [
+  "character",
+  "soul",
+  "agenda",
+  "attitude",
+  "personality",
+  "destiny",
+  "purpose",
+]
+const dimensionsName = ["character", "soul", "agenda"];
+const dimensionsMain = ["character", "agenda", "attitude", "personality", "soul"]
+
 var showPurpose = true; // use showPurpose = true to show "Divine Purpose" number
 var myNumbers = {};
 var dest, char;
@@ -25,12 +37,11 @@ function dateReport(month, day, year) {
 }
 
 function nameReport(name) {
-  const cats = ["character", "soul", "agenda"];
   if (name) {
     var info = nameInfo(name);
-    cats.forEach((cat) => (myNumbers[cat] = info[cat]));
+    dimensionsName.forEach((cat) => (myNumbers[cat] = info[cat]));
     char = info.character.number;
-    return cats
+    return dimensionsName
       .map(function (id) {
         return htmlSection(info[id]);
       })
@@ -65,20 +76,9 @@ function htmlMeaning(number, meaning) {
 }
 
 function htmlSection(rpt) {
-  html =
-    '<a name="' +
-    rpt.category +
-    '"></a>' +
-    '<article class="artnum c' +
-    rpt.number +
-    '""><h2>' +
-    rpt.title +
-    " = " +
-    rpt.number +
-    "</h2>" +
-    '<div class="desc">' +
-    rpt.description +
-    "</div>";
+  html = `<a name="${rpt.category}"></a><article class="artnum c${rpt.number}">
+    <h2>${rpt.title} = ${rpt.number}</h2>
+    <div class="desc">${rpt.description}</div>`;
   if (rpt.meaning) {
     html +=
       '<div class="calc">' +
@@ -147,7 +147,7 @@ function calcExtra() {
   } else {
     h += '<span class="t0"></span>';
   }
-  ["character", "agenda", "attitude", "personality", "soul"].forEach(
+  dimensionsMain.forEach(
     (cat, idx) => {
       const num = myNumbers[cat] ? myNumbers[cat].number : "";
       h += '<div class="t' + (idx + 1) + " k" + num + '"></div>';
@@ -172,15 +172,7 @@ function calcExtra() {
   };
 
   if (myNumbers) {
-    [
-      "character",
-      "soul",
-      "agenda",
-      "attitude",
-      "personality",
-      "destiny",
-      "purpose",
-    ].forEach(collectNumbers(myNumbers));
+    dimensions.forEach(collectNumbers(myNumbers));
   }
   numNumbers = numNumbers.sort(function (a, b) {
     return a - b;

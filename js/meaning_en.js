@@ -4,7 +4,7 @@
   http://www.sallysnumbers.com
 */
 
-var meaning = {
+const meaning = {
   master: "Master Number",
 
   destiny: {
@@ -113,7 +113,7 @@ var meaning = {
     8: "Your Soul's Urge is to bring quality, consistency and inspiration to others and to effect your natural finesse, and quality in you all touch.",
     9: "Your Souls Urge is to use your aristocratic, gentile and humane qualities with consistency which will help to set the stage for others to emulate.",
     11: "Your Soul's Urge is to bring peace, harmony, beauty and honorability as examples of your highest spiritual qualities for all to appreciate and hopefully imitate.",
-    22: 'Your Soul\'s Urge is that of a "Master Builder," one whose soulful desire is to help and serve mankind and the earth with high-mindedness and humanitarianism.',
+    22: 'Your Soul\'s Urge is that of a "Master Builder", one whose soulful desire is to help and serve mankind and the earth with high-mindedness and humanitarianism.',
   },
 
   agenda: {

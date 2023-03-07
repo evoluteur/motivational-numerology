@@ -179,7 +179,7 @@ const dateInfo=(month, day, year) => ({
     attitude: makeReport("attitude", reduceNumber(month + day)),
   })
 
-function fullInfo(name, month, day, year) {
+const fullInfo = (name, month, day, year) => {
   var rpt = dateInfo(month, day, year),
     buffer = nameInfo(name);
 
