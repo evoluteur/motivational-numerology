@@ -42,9 +42,7 @@ function nameReport(name) {
     dimensionsName.forEach((cat) => (myNumbers[cat] = info[cat]));
     char = info.character.number;
     return dimensionsName
-      .map(function (id) {
-        return htmlSection(info[id]);
-      })
+      .map(id => htmlSection(info[id]))
       .join("");
   }
   char = "";
@@ -122,17 +120,7 @@ function calcExtra() {
       if (myNumbers[cat]) {
         const num = myNumbers[cat].number;
         return (
-          '<a href="#' +
-          cat +
-          '"><div class="' +
-          cat +
-          " num c" +
-          num +
-          '">' +
-          num +
-          "<span>" +
-          myNumbers[cat].title +
-          "</span></div></a>"
+          `<a href="#${cat}"><div class="${cat} num c${num}">${num}<span>${myNumbers[cat].title}</span></div></a>`
         );
       }
       return "";
@@ -178,7 +166,7 @@ function calcExtra() {
     return a - b;
   });
   elem("allNumbers").innerHTML = numNumbers
-    .map((num) => '<span class="num c' + num + '">' + num + "</span>")
+    .map((num) => `<span class="num c${num}">${num}</span>`)
     .join("");
 }
 
