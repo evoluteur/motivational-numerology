@@ -41,7 +41,7 @@ const letter2number = {
     7:7,
     8:8,
     9:9
-  }
+}
 // Vowel/Consonant map
 const  letterCV = {
     A: 0,
@@ -70,7 +70,7 @@ const  letterCV = {
     X: 1,
     Y: 0, // or 1
     Z: 1,
-  };
+};
 
 const plus = "+";
 
@@ -96,7 +96,7 @@ function purposeInfo(destiny, character) {
 }
 
 function nameInfo(name) {
-  var uName = name.toUpperCase(),
+  var uName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase(),
     uNameV = "",
     uNameC = "",
     num = [],
@@ -147,7 +147,6 @@ function nameInfo(name) {
         prevLetterCat = null;
       }
     }
-
     return {
       character: nameCalc("character", uName, num),
       soul: nameCalc("soul", uNameV, numV),
@@ -180,7 +179,7 @@ const dateInfo=(month, day, year) => ({
   })
 
 const fullInfo = (name, month, day, year) => {
-  var rpt = dateInfo(month, day, year),
+  const rpt = dateInfo(month, day, year),
     buffer = nameInfo(name);
 
   rpt.character = buffer.character;
