@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -7,26 +7,24 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="i18n/meaning_en.js"></script>
+    <script src="i18n/meaning_es.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>Motivational Numerology</title>
+    <title>Numerología Motivacional</title>
 
     <meta
       name="description"
-      content="Get the numerology numbers derived from your birthdate and name."
+      content="Obtén los números de numerología derivados de tu fecha de nacimiento y nombre."
     />
-    <meta
-      name="keywords"
-      content="Free Numerology Gematria Pythagore Charts Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude Forecast"
-    />
+    <meta name="keywords" content="Numerología Motivacional" />
     <meta property="og:image" content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif" />
+
   </head>
 
   <body onload="checkInfo()">
-    <h1>Motivational Numerology <span>by Sally Faubion</span></h1>
+    <h1>Numerología Motivacional <span>por Sally Faubion</span></h1>
 
     <div class="i18n">
       <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
@@ -39,31 +37,15 @@
     <section class="inputForm">
       <div class="ml210">
         <div class="field name">
-          <label
-            >Full name
-            <span class="grey"
-              >(Firstname, middle name, and lastname)</span
-            ></label
-          >
+          <label>Nombre
+              <span class="grey">(Nombre de pila, otros nombres y apellidos)</span>
+          </label>
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label>Birth date <span class="grey">(Month/Day/Year)</span></label>
-          <select id="month" name="month" onChange="calcBDay()">
-            <option></option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
+          <label>Fecha de nacimiento
+            <span class="grey">(Día/Mes/Año)</span>
+          </label>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -73,6 +55,21 @@
             max="31"
             maxlength="2"
           />
+          <select id="month" name="month" onChange="calcBDay()">
+            <option></option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
           <input
             id="year"
             onKeyUp="calcBDay()"
@@ -101,12 +98,10 @@
       <div id="report2"></div>
       <div id="report3"></div>
     </section>
-
     <section>
       <div>
         <p id="sally">
-          This content is only a brief explanation of the wonderful qualities
-          you possess.
+          Este contenido es solo una breve explicación de las maravillosas cualidades que posees.
         </p>
         <div class="fl">
           <a href="http://sallysnumbers.com" target="news"
@@ -117,34 +112,18 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            Learn more about your numbers and what they mean for you with
-            <strong
-              ><a href="http://sallysnumbers.com" target="news"
-                >Sally Faubion</a
-              ></strong
-            >:
+            Aprende más sobre tus números y lo que significan para ti con
+            <strong><a href="http://sallysnumbers.com" target="news">Sally Faubion</a></strong>:
           </p>
           <ul class="linespace">
             <li>
-              Subscribe to
-              <a href="http://sallysnumbers.com" target="news"
-                >Sally's Newsletter</a
-              >
+              Suscríbete al
+              <a href="http://sallysnumbers.com" target="news">boletín de noticias de Sally</a>
             </li>
             <li>
-              Get Sally's
-              <a
-                href="https://smile.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974"
-                target="book"
-                >Motivational Numerology</a
-              >
-              book
-            </li>
-            <li>
-              Book a
-              <a href="http://sallysnumbers.com/services/" target="reading"
-                >personal reading with Sally</a
-              >
+              Reserva una
+              <a href="http://sallysnumbers.com/services/" target="reading">consulta personal con Sally</a>
+              (en inglés)
             </li>
           </ul>
         </div>
@@ -155,20 +134,11 @@
     <div class="copy">
       <div>
         <br />
-        Version 2.2.0 - Code available at
-        <a
-          target="github"
-          rel="noopener"
-          href="https://github.com/evoluteur/motivational-numerology"
-          >GitHub</a
+        Version 2.2.0 - Código
+        <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a
         >. <br /><br />&#169; 2023
-        <a target="_blank" rel="noopener" href="http://sallysnumbers.com"
-          >Sally Faubion</a
-        >
-        &
-        <a target="_blank" rel="noopener" href="https://evoluteur.github.io/"
-          >Olivier Giulieri</a
-        >.
+        <a href="http://sallysnumbers.com">Sally Faubion</a> &
+        <a href="https://evoluteur.github.io/">Olivier Giulieri</a>.
       </div>
     </div>
   </body>

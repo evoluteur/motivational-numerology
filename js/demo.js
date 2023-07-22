@@ -138,7 +138,7 @@ function calcExtra() {
   dimensionsMain.forEach(
     (cat, idx) => {
       const num = myNumbers[cat] ? myNumbers[cat].number : "";
-      h += '<div class="t' + (idx + 1) + " k" + num + '"></div>';
+      h += `<div class="t${idx + 1} k${num}"></div>`;
     }
   );
   elem("star").innerHTML = h;
@@ -193,6 +193,7 @@ function checkInfo() {
 
 const langMap = {
   en: "",
+  es: "-spanish",
   fr: "-french",
   tr: "-turkish",
   jp: "-japanese"
