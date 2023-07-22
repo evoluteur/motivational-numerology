@@ -7,66 +7,45 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="i18n/meaning_en.js"></script>
+    <script src="i18n/meaning_it.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>Motivational Numerology</title>
+    <title>Numerologia Motivazionale</title>
 
-    <meta
-      name="description"
-      content="Get the numerology numbers derived from your birthdate and name."
-    />
-    <meta
-      name="keywords"
-      content="Free Numerology Gematria Pythagore Charts Numbers Character Soul Urge Hidden Agenda Destiny Personality Attitude Forecast"
-    />
+    <meta name="description" content="Ottieni i numeri della numerologia derivati dalla tua data di nascita e dal nome." />
+    <meta name="keywords" content="Numerologia gratuita Gematria Tabelle di Pitagora Numeri Carattere Desiderio dell'Anima Agenda Nascosta Destino Personalità Atteggiamento Previsione" />
     <meta property="og:image" content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif" />
   </head>
 
   <body onload="checkInfo()">
-    <h1>Motivational Numerology <span>by Sally Faubion</span></h1>
+    <h1>Numerologia Motivazionale <span>di Sally Faubion</span></h1>
 
     <div class="i18n">
-      <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" title="English" />
-      <img src="pix/es.gif" onclick="goToLanguage(event, 'es')" title="Spanish" />
-      <img src="pix/fr.gif" onclick="goToLanguage(event, 'fr')" title="French" />
-      <img src="pix/de.gif" onclick="goToLanguage(event, 'de')" title="German" />
-      <img src="pix/pt.gif" onclick="goToLanguage(event, 'pt')" title="Portuguese" />
-      <img src="pix/it.gif" onclick="goToLanguage(event, 'it')" title="Italian" />
-      <img src="pix/tr.gif" onclick="goToLanguage(event, 'tr')" title="Turkish" />
-      <img src="pix/jp.gif" onclick="goToLanguage(event, 'jp')" title="Japanese" />
+      <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
+      <img src="pix/es.gif" onclick="goToLanguage(event, 'es')" />
+      <img src="pix/fr.gif" onclick="goToLanguage(event, 'fr')" />
+      <img src="pix/de.gif" onclick="goToLanguage(event, 'de')" />
+      <img src="pix/pt.gif" onclick="goToLanguage(event, 'pt')" />
+      <img src="pix/it.gif" onclick="goToLanguage(event, 'it')" />
+      <img src="pix/tr.gif" onclick="goToLanguage(event, 'tr')" />
+      <img src="pix/jp.gif" onclick="goToLanguage(event, 'jp')" />
     </div>
 
     <section class="inputForm">
       <div class="ml210">
         <div class="field name">
           <label
-            >Full name
+            >Nome completo
             <span class="grey"
-              >(Firstname, middle name, and lastname)</span
+              >(Nome, secondo nome e cognome)</span
             ></label
           >
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label>Birth date <span class="grey">(Month/Day/Year)</span></label>
-          <select id="month" name="month" onChange="calcBDay()">
-            <option></option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
+          <label>Data di nascita <span class="grey">(Giorno/Mese/Anno)</span></label>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -76,6 +55,21 @@
             max="31"
             maxlength="2"
           />
+          <select id="month" name="month" onChange="calcBDay()">
+            <option></option>
+            <option value="1">Gennaio</option>
+            <option value="2">Febbraio</option>
+            <option value="3">Marzo</option>
+            <option value="4">Aprile</option>
+            <option value="5">Maggio</option>
+            <option value="6">Giugno</option>
+            <option value="7">Luglio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Settembre</option>
+            <option value="10">Ottobre</option>
+            <option value="11">Novembre</option>
+            <option value="12">Dicembre</option>
+          </select>
           <input
             id="year"
             onKeyUp="calcBDay()"
@@ -108,8 +102,7 @@
     <section>
       <div>
         <p id="sally">
-          This content is only a brief explanation of the wonderful qualities
-          you possess.
+          Questo contenuto è solo una breve spiegazione delle meravigliose qualità che possiedi.
         </p>
         <div class="fl">
           <a href="http://sallysnumbers.com" target="news"
@@ -120,7 +113,7 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            Learn more about your numbers and what they mean for you with
+            Scopri di più sui tuoi numeri e cosa significano per te con
             <strong
               ><a href="http://sallysnumbers.com" target="news"
                 >Sally Faubion</a
@@ -129,24 +122,23 @@
           </p>
           <ul class="linespace">
             <li>
-              Subscribe to
+              Iscriviti alla
               <a href="http://sallysnumbers.com" target="news"
-                >Sally's Newsletter</a
+                >Newsletter di Sally</a
               >
             </li>
             <li>
-              Get Sally's
+              Acquista il libro di Sally
               <a
                 href="https://smile.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974"
                 target="book"
                 >Motivational Numerology</a
               >
-              book
             </li>
             <li>
-              Book a
+              Prenota una
               <a href="http://sallysnumbers.com/services/" target="reading"
-                >personal reading with Sally</a
+                >lettura personale con Sally</a
               >
             </li>
           </ul>
@@ -158,7 +150,7 @@
     <div class="copy">
       <div>
         <br />
-        Version 2.2.0 - Code available at
+        Versione 2.2.0 - Codice disponibile su
         <a
           target="github"
           rel="noopener"

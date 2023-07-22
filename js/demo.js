@@ -195,6 +195,9 @@ const langMap = {
   en: "",
   es: "-spanish",
   fr: "-french",
+  de: "-german",
+  pt: "-portuguese",
+  it: "-italian",
   tr: "-turkish",
   jp: "-japanese"
 };

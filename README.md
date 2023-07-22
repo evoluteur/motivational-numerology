@@ -6,28 +6,28 @@ Check out [your numerology star and a brief interpretation of your numbers](http
 
 [![Star](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif)](https://evoluteur.github.io/motivational-numerology/)
 
-<strong>Character</strong>:
+**Character**:
 This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.
 
-<strong>Soul Urge </strong>:
+**Soul Urge**:
 This influence presents a view of your intuitive, soulful self.
 
-<strong>Hidden Agenda</strong>:
+**Hidden Agenda**:
 This vibration offers your innate (hidden) desires.
 
-<strong>Destiny</strong>:
+**Destiny**:
 This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.
 
-<strong>Personality</strong>:
+**Personality**:
 This number describes the behind-the-scenes or private you.
 
-<strong>Attitude</strong>:
+**Attitude**:
 This number is most powerful in the first 30-35 years of your life and represents the how and why you react to circumstances in your youth.
 
-<strong>Divine Purpose</strong>:
+**Divine Purpose**:
 This is your farewell-performance number vibration. It is what your Soulful Self has chosen to achieve in your latter years of life.
 
-Numbers from your <strong>Name</strong> and <strong>Birth date</strong>.
+Numbers from your **Name** and **Birth date**.
 
 - Birth date => Destiny + Personality + Attitude
 - Full name => Character + Soul Urge + Hidden Agenda
@@ -47,7 +47,7 @@ look at a few famous actors' numbers:
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951),
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
-Available in [English](https://evoluteur.github.io/motivational-numerology/), [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html), [French](https://evoluteur.github.io/motivational-numerology/index-french.html), [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html), and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
+Available in [English](https://evoluteur.github.io/motivational-numerology/), [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html), [French](https://evoluteur.github.io/motivational-numerology/index-french.html), [German](https://evoluteur.github.io/motivational-numerology/index-german.html), [Portuguese](https://evoluteur.github.io/motivational-numerology/index-portuguese.html), [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html), [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html), and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
