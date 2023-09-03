@@ -19,7 +19,10 @@
       content="生年月日と名前から数秘術番号を取得します。"
     />
     <meta name="keywords" content="Numérologie Gematrie Chiffres" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif"
+    />
   </head>
 
   <body onload="checkInfo()">
@@ -48,31 +51,30 @@
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label>生年月日
-            <span class="grey">(年/月/日)</span></label>
+          <label>生年月日 <span class="grey">(年/月/日)</span></label>
           <input
-          id="year"
-          onKeyUp="calcBDay()"
-          onClick="calcBDay()"
-          type="number"
-          min="0"
-          maxlength="4"
-        /><span id="toshi">年</span>
-        <select id="month" name="month" onChange="calcBDay()">
-          <option></option>
-          <option value="1">1月</option>
-          <option value="2">2月</option>
-          <option value="3">3月</option>
-          <option value="4">4月</option>
-          <option value="5">5月</option>
-          <option value="6">6月</option>
-          <option value="7">7月</option>
-          <option value="8">8月</option>
-          <option value="9">9月</option>
-          <option value="10">10月</option>
-          <option value="11">11月</option>
-          <option value="12">12月</option>
-        </select>
+            id="year"
+            onKeyUp="calcBDay()"
+            onClick="calcBDay()"
+            type="number"
+            min="0"
+            maxlength="4"
+          /><span id="toshi">年</span>
+          <select id="month" name="month" onChange="calcBDay()">
+            <option></option>
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+            <option value="7">7月</option>
+            <option value="8">8月</option>
+            <option value="9">9月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
+          </select>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -119,14 +121,16 @@
           <div id="allNumbers"></div>
           <p>
             自分の番号を知って、その意味を知りたい方へ
-            <strong><a href="http://sallysnumbers.com" target="news">サリー・フォービオン</a></strong>:
+            <strong
+              ><a href="http://sallysnumbers.com" target="news"
+                >サリー・フォービオン</a
+              ></strong
+            >:
           </p>
           <ul class="linespace">
             <li>
               サリーのニュースレター
-              <a href="http://sallysnumbers.com" target="news"
-                >登録はこちら</a
-              >
+              <a href="http://sallysnumbers.com" target="news">登録はこちら</a>
             </li>
             <li>
               サリーとの個人面談

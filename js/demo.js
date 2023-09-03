@@ -12,15 +12,21 @@ const dimensions = [
   "personality",
   "destiny",
   "purpose",
-]
+];
 const dimensionsName = ["character", "soul", "agenda"];
-const dimensionsMain = ["character", "agenda", "attitude", "personality", "soul"]
+const dimensionsMain = [
+  "character",
+  "agenda",
+  "attitude",
+  "personality",
+  "soul",
+];
 
 var showPurpose = true; // use showPurpose = true to show "Divine Purpose" number
 var myNumbers = {};
 var dest, char;
 
-const mn="Motivational Numerology";
+const mn = "Motivational Numerology";
 function dateReport(month, day, year) {
   const cats = ["destiny", "personality", "attitude"];
   const d = parseInt(day);
@@ -41,9 +47,7 @@ function nameReport(name) {
     var info = nameInfo(name);
     dimensionsName.forEach((cat) => (myNumbers[cat] = info[cat]));
     char = info.character.number;
-    return dimensionsName
-      .map(id => htmlSection(info[id]))
-      .join("");
+    return dimensionsName.map((id) => htmlSection(info[id])).join("");
   }
   char = "";
   cats.forEach((cat) => (myNumbers[cat] = null));
@@ -95,7 +99,7 @@ const setValue = (id, value) => {
 
 function calcName(skipExtra) {
   const name = getValue("name");
-  document.title = name ? name + ' - '+ mn : mn
+  document.title = name ? name + " - " + mn : mn;
   elem("report1").innerHTML = nameReport(name);
   if (!skipExtra) {
     calcExtra();
@@ -119,9 +123,7 @@ function calcExtra() {
     .map((cat) => {
       if (myNumbers[cat]) {
         const num = myNumbers[cat].number;
-        return (
-          `<a href="#${cat}"><div class="${cat} num c${num}">${num}<span>${myNumbers[cat].title}</span></div></a>`
-        );
+        return `<a href="#${cat}"><div class="${cat} num c${num}">${num}<span>${myNumbers[cat].title}</span></div></a>`;
       }
       return "";
     })
@@ -135,12 +137,10 @@ function calcExtra() {
   } else {
     h += '<span class="t0"></span>';
   }
-  dimensionsMain.forEach(
-    (cat, idx) => {
-      const num = myNumbers[cat] ? myNumbers[cat].number : "";
-      h += `<div class="t${idx + 1} k${num}"></div>`;
-    }
-  );
+  dimensionsMain.forEach((cat, idx) => {
+    const num = myNumbers[cat] ? myNumbers[cat].number : "";
+    h += `<div class="t${idx + 1} k${num}"></div>`;
+  });
   elem("star").innerHTML = h;
 
   // - Summary list of all numbers
