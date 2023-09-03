@@ -38,13 +38,16 @@ look at a few famous actors' numbers:
 [Keanu Reeves](https://evoluteur.github.io/motivational-numerology/?name=Keanu+Charles+Reeves&month=9&day=2&year=1964),
 [Matt Damon](https://evoluteur.github.io/motivational-numerology/?name=Matthew+Paige+Damon&month=8&day=8&year=1970),
 [Anthony Hopkins](https://evoluteur.github.io/motivational-numerology/?name=Philip+Anthony+Hopkins&month=12&day=31&year=1937),
+[Julia Roberts](https://evoluteur.github.io/motivational-numerology/?name=Julia+Fiona+Roberts&month=10&day=28&year=1967),
 [Jack Nicholson](https://evoluteur.github.io/motivational-numerology/?name=John+Joseph+Nicholson&month=4&day=22&year=1937),
 [Johnny Depp](https://evoluteur.github.io/motivational-numerology/?name=John+Christopher+Depp+II&month=6&day=9&year=1963),
+[Sandra Bullock](https://evoluteur.github.io/motivational-numerology/?name=Sandra+Annette+Bullock&month=7&day=26&year=1964),
 [Brad Pitt](https://evoluteur.github.io/motivational-numerology/?name=William+Bradley+Pitt&month=12&day=18&year=1963),
 [Morgan Freeman](https://evoluteur.github.io/motivational-numerology/?name=Morgan+Freeman&month=6&day=1&year=1937),
 [Leonardo DiCaprio](https://evoluteur.github.io/motivational-numerology/?name=Leonardo+Wilhelm+DiCaprio&month=11&day=11&year=1974),
 [Robert De Niro](https://evoluteur.github.io/motivational-numerology/?name=Robert+Anthony+De+Niro+Jr.&month=8&day=17&year=1943),
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951),
+[Angelina Jolie](https://evoluteur.github.io/motivational-numerology/?name=Angelina+Jolie+Voight&month=6&day=4&year=1975)
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
 Available in [English](https://evoluteur.github.io/motivational-numerology/), [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html), [French](https://evoluteur.github.io/motivational-numerology/index-french.html), [German](https://evoluteur.github.io/motivational-numerology/index-german.html), [Portuguese](https://evoluteur.github.io/motivational-numerology/index-portuguese.html), [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html), [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html), [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html), and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
