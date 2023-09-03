@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -7,18 +7,18 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="i18n/meaning_jp.js"></script>
+    <script src="i18n/meaning_nl.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>やる気を起こさせる数秘術</title>
+    <title>Motiverende Numerologie</title>
 
     <meta
       name="description"
-      content="生年月日と名前から数秘術番号を取得します。"
+      content="Krijg de numerologiegetallen afgeleid van je geboortedatum en naam."
     />
-    <meta name="keywords" content="Numérologie Gematrie Chiffres" />
+    <meta name="keywords" content="Motiverende Numerologie" />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif"
@@ -26,7 +26,7 @@
   </head>
 
   <body onload="checkInfo()">
-    <h1>やる気をそそる数秘術 <span>サリーフォービオン</span></h1>
+    <h1>Motiverende Numerologie <span>door Sally Faubion</span></h1>
 
     <div class="i18n">
       <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
@@ -44,38 +44,16 @@
       <div class="ml210">
         <div class="field name">
           <label
-            >名前
-            <span class="grey"
-              >(名前と苗字、半角ローマ字でお願いします)</span
-            ></label
-          >
+            >Naam
+            <span class="grey">(Voornaam, andere namen en achternaam)</span>
+          </label>
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label>生年月日 <span class="grey">(年/月/日)</span></label>
-          <input
-            id="year"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
-            type="number"
-            min="0"
-            maxlength="4"
-          /><span id="toshi">年</span>
-          <select id="month" name="month" onChange="calcBDay()">
-            <option></option>
-            <option value="1">1月</option>
-            <option value="2">2月</option>
-            <option value="3">3月</option>
-            <option value="4">4月</option>
-            <option value="5">5月</option>
-            <option value="6">6月</option>
-            <option value="7">7月</option>
-            <option value="8">8月</option>
-            <option value="9">9月</option>
-            <option value="10">10月</option>
-            <option value="11">11月</option>
-            <option value="12">12月</option>
-          </select>
+          <label
+            >Geboortedatum
+            <span class="grey">(Dag/Maand/Jaar)</span>
+          </label>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -84,7 +62,30 @@
             min="1"
             max="31"
             maxlength="2"
-          /><span id="date">日</span>
+          />
+          <select id="month" name="month" onChange="calcBDay()">
+            <option></option>
+            <option value="1">Januari</option>
+            <option value="2">Februari</option>
+            <option value="3">Maart</option>
+            <option value="4">April</option>
+            <option value="5">Mei</option>
+            <option value="6">Juni</option>
+            <option value="7">Juli</option>
+            <option value="8">Augustus</option>
+            <option value="9">September</option>
+            <option value="10">Oktober</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <input
+            id="year"
+            onKeyUp="calcBDay()"
+            onClick="calcBDay()"
+            type="number"
+            min="0"
+            maxlength="4"
+          />
         </div>
       </div>
       <div class="fullStar">
@@ -105,12 +106,11 @@
       <div id="report2"></div>
       <div id="report3"></div>
     </section>
-
     <section>
       <div>
         <p id="sally">
-          Ce contenu n'est qu'une brève explication des merveilleuses qualités
-          que vous possédez.
+          Deze inhoud is slechts een korte uitleg van de prachtige eigenschappen
+          die je bezit.
         </p>
         <div class="fl">
           <a href="http://sallysnumbers.com" target="news"
@@ -121,24 +121,26 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            自分の番号を知って、その意味を知りたい方へ
+            Leer meer over je getallen en wat ze voor je betekenen met
             <strong
               ><a href="http://sallysnumbers.com" target="news"
-                >サリー・フォービオン</a
+                >Sally Faubion</a
               ></strong
             >:
           </p>
           <ul class="linespace">
             <li>
-              サリーのニュースレター
-              <a href="http://sallysnumbers.com" target="news">登録はこちら</a>
+              Abonneer je op de
+              <a href="http://sallysnumbers.com" target="news"
+                >nieuwsbrief van Sally</a
+              >
             </li>
             <li>
-              サリーとの個人面談
+              Boek een
               <a href="http://sallysnumbers.com/services/" target="reading"
-                >予約はこちら</a
+                >persoonlijke afspraak met Sally</a
               >
-              (英語版のみ)
+              (in het Engels)
             </li>
           </ul>
         </div>
@@ -149,11 +151,11 @@
     <div class="copy">
       <div>
         <br />
-        Version 2.3.0 - Code
+        Versie 2.3.0 - Code
         <a href="https://github.com/evoluteur/motivational-numerology">GitHub</a
         >. <br /><br />&#169; 2023
-        <a href="http://sallysnumbers.com">サリー・フォービオン</a> &
-        <a href="https://evoluteur.github.io/">オリビエ・ジュリエリ</a>.
+        <a href="http://sallysnumbers.com">Sally Faubion</a> &
+        <a href="https://evoluteur.github.io/">Olivier Giulieri</a>.
       </div>
     </div>
   </body>

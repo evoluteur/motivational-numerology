@@ -198,8 +198,9 @@ const langMap = {
   de: "-german",
   pt: "-portuguese",
   it: "-italian",
+  nl: "-dutch",
   tr: "-turkish",
-  jp: "-japanese"
+  jp: "-japanese",
 };
 function goToLanguage(evt, language) {
   evt.stopPropagation();
