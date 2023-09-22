@@ -1,40 +1,75 @@
 # Motivational-Numerology [![npm version](https://img.shields.io/npm/v/motivational-numerology)](https://www.npmjs.com/package/motivational-numerology)
 
-Simple web page to get the numerology numbers derived from your name and birth date as well as a brief interpretation by [Sally Faubion](http://sallysnumbers.com/).
+Motivational-Numerology is a web page to calculate the numerology numbers derived from your name and birth date and get a brief interpretation by [Sally Faubion](http://sallysnumbers.com/).
 
-Check out [your numerology star and a brief interpretation of your numbers](https://evoluteur.github.io/motivational-numerology/).
+Check out [your numerology star](https://evoluteur.github.io/motivational-numerology/).
 
 [![Star](https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif)](https://evoluteur.github.io/motivational-numerology/)
 
-**Character**:
+To better understand your personal numerology numbers and go deeper in their interpretation, [book a private phone reading](https://sallysnumbers.com/services/) with Sally Faubion.
+
+##Numerology Numbers##
+
+Your numerology numbers are calculated based on your birthdate and your full name.
+
+Your **Destiny**, **Personality**, and **Attitude** derive from your **birth date**.
+
+<ul style="margin-left:20px">
+<li><strong>Destiny</strong> - <span>This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.
+</span><br/><br/>
+
+<li><strong>Personality</strong>
+- <span>This number describes the behind-the-scenes or private you.
+</span><br/><br/>
+
+<li><strong>Attitude</strong>
+- <span>This number is most powerful in the first 30-35 years of your life and represents the how and why you react to circumstances in your youth.
+</span><br/><br/>
+</ul>
+
+ Your **Character**, **Soul Urge**, and **Hidden Agenda** derive from your **full name**.
+
+<div style="padding-left:20px">
+<ul>
+
+<li><strong>Character</strong>
+- <span>
 This number represents primarily your public and social qualities, but you would also exhibit much of the same in your personal relations, too.
+</span><br/><br/>
 
-**Soul Urge**:
+<li><strong>Soul Urge</strong>
+- <span>
 This influence presents a view of your intuitive, soulful self.
+</span><br/><br/>
 
-**Hidden Agenda**:
+<li><strong>Hidden Agenda</strong>
+- <span>
 This vibration offers your innate (hidden) desires.
+</span><br/><br/>
 
-**Destiny**:
-This is the most influential number in relation to your personal motivations, what and who you like in your surroundings, and the career(s) you would be most likely to aspire toward.
+</div>
 
-**Personality**:
-This number describes the behind-the-scenes or private you.
 
-**Attitude**:
-This number is most powerful in the first 30-35 years of your life and represents the how and why you react to circumstances in your youth.
+With your
+**Destiny** and **Character** we determine your **Divine Purpose**.
 
-**Divine Purpose**:
+<div style="padding-left:20px">
+<ul>
+<li><strong>Divine Purpose</strong>
+- <span>
 This is your farewell-performance number vibration. It is what your Soulful Self has chosen to achieve in your latter years of life.
 
-Numbers from your **Name** and **Birth date**.
+</span>
 
-- Birth date => Destiny + Personality + Attitude
-- Full name => Character + Soul Urge + Hidden Agenda
-- Destiny + Character => Divine Purpose
+ </div>
 
-Check out [your numerology](https://evoluteur.github.io/motivational-numerology/) or
-look at a few famous actors' numbers:
+Check out [your numerology numbers](https://evoluteur.github.io/motivational-numerology/).
+
+
+##Examples##
+
+Let's look at the numbers of some famous actors:
+
 [Keanu Reeves](https://evoluteur.github.io/motivational-numerology/?name=Keanu+Charles+Reeves&month=9&day=2&year=1964),
 [Matt Damon](https://evoluteur.github.io/motivational-numerology/?name=Matthew+Paige+Damon&month=8&day=8&year=1970),
 [Anthony Hopkins](https://evoluteur.github.io/motivational-numerology/?name=Philip+Anthony+Hopkins&month=12&day=31&year=1937),
@@ -50,8 +85,41 @@ look at a few famous actors' numbers:
 [Angelina Jolie](https://evoluteur.github.io/motivational-numerology/?name=Angelina+Jolie+Voight&month=6&day=4&year=1975)
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
-Available in [English](https://evoluteur.github.io/motivational-numerology/), [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html), [French](https://evoluteur.github.io/motivational-numerology/index-french.html), [German](https://evoluteur.github.io/motivational-numerology/index-german.html), [Portuguese](https://evoluteur.github.io/motivational-numerology/index-portuguese.html), [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html), [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html), [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html), and [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
+       
+##Localization##
+
+Motivational-Numerology is available in <img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/>[English](https://evoluteur.github.io/motivational-numerology/)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/es.gif" style="margin:0 5px;"/> [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/fr.gif" style="margin:0 5px;"/> [French](https://evoluteur.github.io/motivational-numerology/index-french.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/de.gif" style="margin:0 5px;"/> [German](https://evoluteur.github.io/motivational-numerology/index-german.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/pt.gif" style="margin:0 5px;"/> [Portuguese](https://evoluteur.github.io/motivational-numerology/index-portuguese.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/it.gif" style="margin:0 5px;"/> [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/nl.gif" style="margin:0 5px;"/> [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/jp.gif" style="margin:0 5px;"/> [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html)
+<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
+
+Please feel free to contribute by submitting a [Pull Request](https://github.com/evoluteur/motivational-numerology/pulls) to support new languages.
+
+##Code##
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
+
+[<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+</svg>](https://github.com/evoluteur/motivational-numerology) Motivational-Numerology is Open Source and hosted on [GitHub](https://github.com/evoluteur/motivational-numerology).
+
+Contribute to Motivational-Numerology: 
+
+<ul>
+<li>
+<a href="https://github.com/evoluteur/motivational-numerology//labels/bug">Report a Bug</a>
+</li>
+<li><a href="https://github.com/evoluteur/motivational-numerology/labels/enhancement">Propose a Feature Request</a>
+</li>
+<li><a href="https://github.com/evoluteur/motivational-numerology/pulls">Submit a Pull Request</a>
+</li>
+</ul>
+
+ 
 
 (c) 2023 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
