@@ -8,7 +8,7 @@ Check out [your numerology star](https://evoluteur.github.io/motivational-numero
 
 To better understand your personal numerology numbers and go deeper in their interpretation, [book a private phone reading](https://sallysnumbers.com/services/) with Sally Faubion.
 
-##Numerology Numbers##
+## Numerology Numbers 
 
 Your numerology numbers are calculated based on your birthdate and your full name.
 
@@ -66,7 +66,7 @@ This is your farewell-performance number vibration. It is what your Soulful Self
 Check out [your numerology numbers](https://evoluteur.github.io/motivational-numerology/).
 
 
-##Examples##
+## Examples
 
 Let's look at the numbers of some famous actors:
 
@@ -86,7 +86,7 @@ Let's look at the numbers of some famous actors:
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
        
-##Localization##
+## Localization
 
 Motivational-Numerology is available in <img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/>[English](https://evoluteur.github.io/motivational-numerology/)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/es.gif" style="margin:0 5px;"/> [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html)
@@ -100,7 +100,7 @@ Motivational-Numerology is available in <img src="https://evoluteur.github.io/mo
 
 Please feel free to contribute by submitting a [Pull Request](https://github.com/evoluteur/motivational-numerology/pulls) to support new languages.
 
-##Code##
+## Code
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
@@ -121,5 +121,4 @@ Contribute to Motivational-Numerology:
 </ul>
 
  
-
 (c) 2023 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
