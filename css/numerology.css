@@ -114,7 +114,7 @@ section {
   margin-bottom: 10px;
 }
 .meaning > div {
-  padding: 0 0 0 90px;
+  padding: 0 0 0 100px;
 }
 .meaning > .num {
   position: absolute;
@@ -480,10 +480,14 @@ section {
   }
 }
 #report1 > article .num,
+#report2 > article .num,
+#report3 > article .num,
 #allNumbers > span {
   transition: transform 0.3s 0.1s;
 }
 #report1 > article:hover .num,
+#report2 > article:hover .num,
+#report3 > article:hover .num,
 #allNumbers > span:hover {
   transform: scale(1.4);
 }
