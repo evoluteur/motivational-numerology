@@ -479,6 +479,14 @@ section {
     border-bottom: 2px solid silver;
   }
 }
+#report1 > article .num,
+#allNumbers > span {
+  transition: transform 0.3s 0.1s;
+}
+#report1 > article:hover .num,
+#allNumbers > span:hover {
+  transform: scale(1.4);
+}
 
 .heart {
   font-size: 20px;
