@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -7,18 +7,21 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="i18n/meaning_tr.js"></script>
+    <script src="i18n/meaning_id.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>Motivasyonel Numeroloji</title>
+    <title>Numerologi Motivasi</title>
 
     <meta
       name="description"
-      content="Doğum tarihinizden ve adınızdan türetilen numeroloji sayılarını alın."
+      content="Dapatkan angka numerologi yang berasal dari tanggal lahir dan nama Anda."
     />
-    <meta name="keywords" content="Numeroloji Gematry Numaraları" />
+    <meta
+      name="keywords"
+      content="Grafik Numerologi Gematria Pythagore Angka Karakter Jiwa Hasrat Tersembunyi Agenda Takdir Kepribadian Sikap Ramalan"
+    />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif"
@@ -26,7 +29,7 @@
   </head>
 
   <body onload="checkInfo()">
-    <h1>Motivasyonel Numeroloji <span> Sally Faubion</span></h1>
+    <h1>Numerologi Motivasi <span>oleh Sally Faubion</span></h1>
 
     <div class="i18n">
       <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
@@ -45,13 +48,17 @@
       <div class="ml210">
         <div class="field name">
           <label
-            >Tam isim
-            <span class="grey">(İsim, ikinci isim, ve soyadı)</span></label
+            >Nama lengkap
+            <span class="grey"
+              >(Nama depan, nama tengah, dan nama belakang)</span
+            ></label
           >
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label>Doğum tarihi <span class="grey">(Gün/Ay/Yıl)</span></label>
+          <label
+            >Tanggal lahir <span class="grey">(Hari/Bulan/Tahun)</span></label
+          >
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -63,18 +70,18 @@
           />
           <select id="month" name="month" onChange="calcBDay()">
             <option></option>
-            <option value="1">Ocak</option>
-            <option value="2">Şubat</option>
-            <option value="3">Mart</option>
-            <option value="4">Nisan</option>
-            <option value="5">Mayıs</option>
-            <option value="6">Haziran</option>
-            <option value="7">Temmuz</option>
-            <option value="8">Ağustos</option>
-            <option value="9">Eylül</option>
-            <option value="10">Ekim</option>
-            <option value="11">Kasım</option>
-            <option value="12">Aralık</option>
+            <option value="1">Januari</option>
+            <option value="2">Februari</option>
+            <option value="3">Maret</option>
+            <option value="4">April</option>
+            <option value="5">Mei</option>
+            <option value="6">Juni</option>
+            <option value="7">Juli</option>
+            <option value="8">Agustus</option>
+            <option value="9">September</option>
+            <option value="10">Oktober</option>
+            <option value="11">November</option>
+            <option value="12">Desember</option>
           </select>
           <input
             id="year"
@@ -108,8 +115,8 @@
     <section>
       <div>
         <p id="sally">
-          Bu içerik, sahip olduğunuz harika niteliklerin yalnızca kısa bir
-          açıklamasıdır.
+          Konten ini hanya penjelasan singkat tentang kualitas luar biasa yang
+          Anda miliki.
         </p>
         <div class="fl">
           <a href="http://sallysnumbers.com" target="news"
@@ -120,8 +127,8 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            Sayılarınız ve sizin için ne anlama geldikleri hakkında daha fazla
-            bilgi edinin
+            Pelajari lebih lanjut tentang angka Anda dan apa artinya bagi Anda
+            dengan
             <strong
               ><a href="http://sallysnumbers.com" target="news"
                 >Sally Faubion</a
@@ -130,25 +137,25 @@
           </p>
           <ul class="linespace">
             <li>
+              Berlangganan
               <a href="http://sallysnumbers.com" target="news"
-                >Sally'nin Haber Bültenine</a
+                >Newsletter Sally</a
               >
-              abone olun
             </li>
             <li>
-              Sally'nin
+              Dapatkan
               <a
                 href="https://smile.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974"
                 target="book"
-                >Motvasyonel Numeroloji</a
+                >buku Numerologi Motivasi</a
               >
-              kitabını edinin
+              dari Sally
             </li>
             <li>
+              Pesan
               <a href="http://sallysnumbers.com/services/" target="reading"
-                >Sally ile kişisel bir okuma</a
+                >bacaan pribadi dengan Sally</a
               >
-              yapın
             </li>
           </ul>
         </div>
@@ -158,14 +165,21 @@
 
     <div class="copy">
       <div>
+        <div class="evo-footer" role="contentinfo">
+          <div>
+            Dibuat di California dengan
+            <div class="heart">♥</div>
+          </div>
+        </div>
         <br />
-        Version 2.3.2 - Kod
+        Versi 2.3.2 - Kode tersedia di
         <a
           target="github"
           rel="noopener"
           href="https://github.com/evoluteur/motivational-numerology"
           >GitHub</a
-        >'ta mevcuttur. <br /><br />&#169; 2024
+        >. <br />
+        <br />&#169; 2024
         <a target="_blank" rel="noopener" href="http://sallysnumbers.com"
           >Sally Faubion</a
         >

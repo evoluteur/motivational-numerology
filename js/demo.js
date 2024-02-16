@@ -200,6 +200,7 @@ const langMap = {
   it: "-italian",
   nl: "-dutch",
   tr: "-turkish",
+  id: "-indonesian",
   jp: "-japanese",
 };
 function goToLanguage(evt, language) {

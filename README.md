@@ -96,7 +96,8 @@ Motivational-Numerology is available in <img src="https://evoluteur.github.io/mo
 <img src="https://evoluteur.github.io/motivational-numerology/pix/it.gif" style="margin:0 5px;"/> [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/nl.gif" style="margin:0 5px;"/> [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/jp.gif" style="margin:0 5px;"/> [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html).
+<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html) 
+<img src="https://evoluteur.github.io/motivational-numerology/pix/id.gif" style="margin:0 5px;"/> [Indonesian](https://evoluteur.github.io/motivational-numerology/index-indonesian.html).
 
 Please feel free to contribute by submitting a [Pull Request](https://github.com/evoluteur/motivational-numerology/pulls) to support new languages.
 
