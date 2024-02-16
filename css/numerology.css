@@ -10,9 +10,9 @@ body {
   font-family: sans-serif;
   color: #1d1d1d;
   background-image: url(bg.gif);
-}
-body > div {
-  margin-bottom: 20px;
+  > div {
+    margin-bottom: 20px;
+  }
 }
 a {
   text-decoration: none;
@@ -25,11 +25,11 @@ a:hover {
 }
 h1 {
   margin: 10px 0 40px;
-}
-h1 > span {
-  font-weight: 300;
-  font-size: 0.6em;
-  white-space: nowrap;
+  > span {
+    font-weight: 300;
+    font-size: 0.6em;
+    white-space: nowrap;
+  }
 }
 h2 {
   margin: 12px 0 5px;
@@ -82,7 +82,7 @@ section {
   font-weight: 600;
 }
 .field {
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .inputForm {
   z-index: 300;
@@ -97,36 +97,36 @@ section {
 .calc {
   display: block;
   margin: 10px 0;
-}
-.calc > div {
-  color: #0091ea;
-  margin: 5px 0;
-}
-.calc > .meaning {
-  margin: 15px 0 20px -10px;
-  color: #1a1a1a;
-  border-left: none;
-  min-height: 50px;
+  > div {
+    color: #0091ea;
+    margin: 5px 0;
+  }
+  > .meaning {
+    margin: 15px 0 20px -10px;
+    color: #1a1a1a;
+    border-left: none;
+    min-height: 50px;
+  }
 }
 .meaning {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
-}
-.meaning > div {
-  padding: 0 0 0 100px;
-}
-.meaning > .num {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  font-size: 35px;
-  border-width: 6px;
-  line-height: 42px;
-  height: 42px;
-  width: 42px;
-  padding: 5px;
-  margin-right: 10px;
+  > div {
+    padding: 0 0 0 100px;
+  }
+  > .num {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 35px;
+    border-width: 6px;
+    line-height: 42px;
+    height: 42px;
+    width: 42px;
+    padding: 5px;
+    margin-right: 10px;
+  }
 }
 .num {
   display: inline-block;
@@ -141,12 +141,12 @@ section {
 .fl {
   float: left;
   margin: 10px 30px;
-}
-.fl > a {
-  border-bottom: none;
-}
-.fl img {
-  border-radius: 10px;
+  > a {
+    border-bottom: none;
+  }
+  img {
+    border-radius: 10px;
+  }
 }
 .clearer {
   clear: both;
@@ -158,12 +158,13 @@ section {
   top: 10px;
   right: 20px;
   padding: 4px;
-}
-.i18n img {
-  cursor: pointer;
-  margin-left: 4px;
-  height: 11px;
-  width: 16px;
+  > img {
+    cursor: pointer;
+    margin-left: 4px;
+    height: 11px;
+    width: 16px;
+    border: solid 1px grey;
+  }
 }
 
 .artnum {
@@ -174,13 +175,13 @@ section {
 }
 #allNumbers {
   margin: 0 0 20px 0;
-}
-#allNumbers > span {
-  padding: 5px;
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-  margin-right: 10px;
+  > span {
+    padding: 5px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
 }
 .c1,
 .c10,
@@ -320,66 +321,65 @@ section {
   position: absolute;
   height: 240px;
   width: 240px;
-}
-#star-holder .num {
-  position: absolute;
-  padding: 4px;
-}
-#star-holder .num > span {
-  display: block;
-  opacity: 0;
-  position: relative;
-  top: 17px;
-  left: -34px;
-  width: 100px;
-  z-index: 100;
-  font-size: 0.9rem;
-  transition: opacity 0.3s ease 0.1s;
-}
-#star-holder .num:hover > span {
-  opacity: 1;
-}
+  .num {
+    position: absolute;
+    padding: 4px;
+  }
+  .num > span {
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 17px;
+    left: -34px;
+    width: 100px;
+    z-index: 100;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease 0.1s;
+  }
+  .num:hover > span {
+    opacity: 1;
+  }
 
-#star-holder .character {
-  top: 0px;
-  left: 95px;
+  .character {
+    top: 0px;
+    left: 95px;
+  }
+  .soul {
+    top: 66px;
+    left: 9px;
+  }
+  .agenda {
+    top: 65px;
+    left: 179px;
+  }
+  .attitude {
+    top: 158px;
+    left: 144px;
+  }
+  .personality {
+    top: 158px;
+    left: 44px;
+  }
+  .destiny {
+    top: 88px;
+    left: 95px;
+  }
+  .purpose {
+    display: none;
+  }
+  .character > span {
+    left: 12px;
+    top: 0;
+  }
+  .destiny > span {
+    left: 28px;
+    top: 0;
+  }
+  .agenda > span {
+    top: 22px;
+    left: -28px;
+  }
 }
-#star-holder .soul {
-  top: 66px;
-  left: 9px;
-}
-#star-holder .agenda {
-  top: 65px;
-  left: 179px;
-}
-#star-holder .attitude {
-  top: 158px;
-  left: 144px;
-}
-#star-holder .personality {
-  top: 158px;
-  left: 44px;
-}
-#star-holder .destiny {
-  top: 88px;
-  left: 95px;
-}
-#star-holder .purpose {
-  display: none;
-}
-#star-holder .character > span {
-  left: 12px;
-  top: 0;
-}
-#star-holder .destiny > span {
-  left: 28px;
-  top: 0;
-}
-#star-holder .agenda > span {
-  top: 22px;
-  left: -28px;
-}
-
 .star > div {
   z-index: 110;
   width: 0;

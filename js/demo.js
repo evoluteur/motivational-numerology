@@ -84,7 +84,7 @@ function htmlSection(rpt) {
   if (rpt.meaning) {
     html +=
       '<div class="calc">' +
-      (rpt.master ? "<div>" + meaning.master + "</div>" : "") +
+      (rpt.master ? `<div>${meaning.master}</div>` : "") +
       htmlMeaning(rpt.number, rpt.meaning);
   }
   html += "</article>";
@@ -170,11 +170,11 @@ function calcExtra() {
     .join("");
 }
 
+const fields = ["name", "month", "day", "year"];
 function checkInfo() {
   const queryString = window.location.search;
   if (queryString) {
     const urlParams = new URLSearchParams(queryString);
-    const fields = ["name", "month", "day", "year"];
     let hasValue = false;
 
     fields.forEach((fid) => {
@@ -205,11 +205,10 @@ const langMap = {
 function goToLanguage(evt, language) {
   evt.stopPropagation();
   let url = "index" + langMap[language] + ".html?";
-  const props = ["name", "month", "day", "year"];
-  props.forEach((prop) => {
-    const pv = getValue(prop);
+  fields.forEach((f) => {
+    const pv = getValue(f);
     if (pv) {
-      url += prop + "=" + pv + "&";
+      url += `${f}=${pv}&`;
     }
   });
   window.location.replace(url);

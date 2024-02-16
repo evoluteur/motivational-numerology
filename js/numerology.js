@@ -6,70 +6,70 @@
 
 // letters to number map
 const letter2number = {
-    A: 1,
-    B: 2,
-    C: 3,
-    D: 4,
-    E: 5,
-    F: 6,
-    G: 7,
-    H: 8,
-    I: 9,
-    J: 1,
-    K: 2,
-    L: 3,
-    M: 4,
-    N: 5,
-    O: 6,
-    P: 7,
-    Q: 8,
-    R: 9,
-    S: 1,
-    T: 2,
-    U: 3,
-    V: 4,
-    W: 5,
-    X: 6,
-    Y: 7,
-    Z: 8,
-    1:1,
-    2:2,
-    3:3,
-    4:4,
-    5:5,
-    6:6,
-    7:7,
-    8:8,
-    9:9
-}
+  A: 1,
+  B: 2,
+  C: 3,
+  D: 4,
+  E: 5,
+  F: 6,
+  G: 7,
+  H: 8,
+  I: 9,
+  J: 1,
+  K: 2,
+  L: 3,
+  M: 4,
+  N: 5,
+  O: 6,
+  P: 7,
+  Q: 8,
+  R: 9,
+  S: 1,
+  T: 2,
+  U: 3,
+  V: 4,
+  W: 5,
+  X: 6,
+  Y: 7,
+  Z: 8,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+};
 // Vowel/Consonant map
-const  letterCV = {
-    A: 0,
-    B: 1,
-    C: 1,
-    D: 1,
-    E: 0,
-    F: 1,
-    G: 1,
-    H: 1,
-    I: 0,
-    J: 1,
-    K: 1,
-    L: 1,
-    M: 1,
-    N: 1,
-    O: 0,
-    P: 1,
-    Q: 1,
-    R: 1,
-    S: 1,
-    T: 1,
-    U: 0,
-    V: 1,
-    W: 1,
-    X: 1,
-    Y: 0, // or 1
-    Z: 1,
+const letterCV = {
+  A: 0,
+  B: 1,
+  C: 1,
+  D: 1,
+  E: 0,
+  F: 1,
+  G: 1,
+  H: 1,
+  I: 0,
+  J: 1,
+  K: 1,
+  L: 1,
+  M: 1,
+  N: 1,
+  O: 0,
+  P: 1,
+  Q: 1,
+  R: 1,
+  S: 1,
+  T: 1,
+  U: 0,
+  V: 1,
+  W: 1,
+  X: 1,
+  Y: 0, // or 1
+  Z: 1,
 };
 
 const plus = "+";
@@ -77,7 +77,7 @@ const plus = "+";
 const isMasterNumber = (num) => num == "11" || num == "22";
 
 function makeReport(category, number) {
-  var m = meaning[category];
+  const m = meaning[category];
   return {
     title: m.title,
     category,
@@ -96,7 +96,10 @@ function purposeInfo(destiny, character) {
 }
 
 function nameInfo(name) {
-  var uName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase(),
+  var uName = name
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toUpperCase(),
     uNameV = "",
     uNameC = "",
     num = [],
@@ -109,15 +112,15 @@ function nameInfo(name) {
     numV.push(lNum);
     uNameV += letter;
     prevLetterCat = 0;
-  }
+  };
   const addC = (letter, lNum) => {
     numC.push(lNum);
     uNameC += letter;
     prevLetterCat = 1;
-  }
+  };
 
   if (name) {
-    for (var i = 0; i < ln; i++) {
+    for (let i = 0; i < ln; i++) {
       var letter = uName[i],
         lNum = letter2number[letter] || 0,
         cv = letterCV[letter];
@@ -156,12 +159,12 @@ function nameInfo(name) {
 }
 
 const nameCalc = (category, name, nums) => {
-  var sum = "0";
+  let sum = "0";
   if (name && name.replace(/ /, "")) {
     sum = reduceNumber("" + eval(nums.join(plus)));
   }
   return makeReport(category, sum);
-}
+};
 
 const reduceNumber = (number) => {
   if (number != "NaN" && number != "undefined") {
@@ -170,13 +173,13 @@ const reduceNumber = (number) => {
     }
   }
   return number;
-}
+};
 
-const dateInfo=(month, day, year) => ({
-    destiny: makeReport("destiny", reduceNumber(month + day + year)),
-    personality: makeReport("personality", day),
-    attitude: makeReport("attitude", reduceNumber(month + day)),
-  })
+const dateInfo = (month, day, year) => ({
+  destiny: makeReport("destiny", reduceNumber(month + day + year)),
+  personality: makeReport("personality", day),
+  attitude: makeReport("attitude", reduceNumber(month + day)),
+});
 
 const fullInfo = (name, month, day, year) => {
   const rpt = dateInfo(month, day, year),
@@ -187,4 +190,4 @@ const fullInfo = (name, month, day, year) => {
   rpt.agenda = buffer.agenda;
   rpt.purpose = purposeInfo(rpt.destiny.number, rpt.character.number);
   return rpt;
-}
+};
