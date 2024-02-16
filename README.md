@@ -82,7 +82,7 @@ Let's look at the numbers of some famous actors:
 [Leonardo DiCaprio](https://evoluteur.github.io/motivational-numerology/?name=Leonardo+Wilhelm+DiCaprio&month=11&day=11&year=1974),
 [Robert De Niro](https://evoluteur.github.io/motivational-numerology/?name=Robert+Anthony+De+Niro+Jr.&month=8&day=17&year=1943),
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951),
-[Angelina Jolie](https://evoluteur.github.io/motivational-numerology/?name=Angelina+Jolie+Voight&month=6&day=4&year=1975)
+[Angelina Jolie](https://evoluteur.github.io/motivational-numerology/?name=Angelina+Jolie+Voight&month=6&day=4&year=1975),
 [Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
 
 
@@ -96,7 +96,7 @@ Motivational-Numerology is available in <img src="https://evoluteur.github.io/mo
 <img src="https://evoluteur.github.io/motivational-numerology/pix/it.gif" style="margin:0 5px;"/> [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/nl.gif" style="margin:0 5px;"/> [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/jp.gif" style="margin:0 5px;"/> [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html) 
+<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/id.gif" style="margin:0 5px;"/> [Indonesian](https://evoluteur.github.io/motivational-numerology/index-indonesian.html).
 
 Please feel free to contribute by submitting a [Pull Request](https://github.com/evoluteur/motivational-numerology/pulls) to support new languages.
