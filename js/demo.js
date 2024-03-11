@@ -50,7 +50,6 @@ function nameReport(name) {
     return dimensionsName.map((id) => htmlSection(info[id])).join("");
   }
   char = "";
-  cats.forEach((cat) => (myNumbers[cat] = null));
   myNumbers.purpose = null;
   return "";
 }
@@ -176,7 +175,6 @@ function checkInfo() {
   if (queryString) {
     const urlParams = new URLSearchParams(queryString);
     let hasValue = false;
-
     fields.forEach((fid) => {
       const param = urlParams.get(fid);
       if (param) {
