@@ -37,7 +37,8 @@ h2 {
   margin: 12px 0 5px;
   font-size: 1.2em;
   > span {
-    font-weight: 300;
+    font-weight: normal;
+    font-size: 1em;
   }
 }
 label {

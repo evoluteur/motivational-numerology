@@ -5,7 +5,7 @@
 */
 
 var meaning = {
-  master: "Maître-Nombre",
+  master: "Maître nombre",
 
   destiny: {
     title: "Destin",

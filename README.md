@@ -93,7 +93,7 @@ Let's look at the numbers of a few famous actors:
 
 ## Localization
 
-Motivational-Numerology is available in <img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/>[English](https://evoluteur.github.io/motivational-numerology/)
+Motivational-Numerology is available in <img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/> [English](https://evoluteur.github.io/motivational-numerology/)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/es.gif" style="margin:0 5px;"/> [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/fr.gif" style="margin:0 5px;"/> [French](https://evoluteur.github.io/motivational-numerology/index-french.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/de.gif" style="margin:0 5px;"/> [German](https://evoluteur.github.io/motivational-numerology/index-german.html)
@@ -118,7 +118,7 @@ Contribute to Motivational-Numerology:
 
 <ul>
 <li>
-<a href="https://github.com/evoluteur/motivational-numerology//labels/bug">Report a Bug</a>
+<a href="https://github.com/evoluteur/motivational-numerology/labels/bug">Report a Bug</a>
 </li>
 <li><a href="https://github.com/evoluteur/motivational-numerology/labels/enhancement">Propose a Feature Request</a>
 </li>

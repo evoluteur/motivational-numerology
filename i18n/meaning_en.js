@@ -5,7 +5,7 @@
 */
 
 const meaning = {
-  master: "Master Number",
+  master: "Master number",
 
   destiny: {
     title: "Destiny",
