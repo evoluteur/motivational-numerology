@@ -181,13 +181,13 @@ const dateInfo = (month, day, year) => ({
   attitude: makeReport("attitude", reduceNumber(month + day)),
 });
 
-const fullInfo = (name, month, day, year) => {
-  const rpt = dateInfo(month, day, year),
-    buffer = nameInfo(name);
+// const fullInfo = (name, month, day, year) => {
+//   const rpt = dateInfo(month, day, year),
+//     buffer = nameInfo(name);
 
-  rpt.character = buffer.character;
-  rpt.soul = buffer.soul;
-  rpt.agenda = buffer.agenda;
-  rpt.purpose = purposeInfo(rpt.destiny.number, rpt.character.number);
-  return rpt;
-};
+//   rpt.character = buffer.character;
+//   rpt.soul = buffer.soul;
+//   rpt.agenda = buffer.agenda;
+//   rpt.purpose = purposeInfo(rpt.destiny.number, rpt.character.number);
+//   return rpt;
+// };

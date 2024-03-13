@@ -78,7 +78,6 @@ var meaning = {
     22: "Vous êtes né avec une tendance obstinée, mais avec des encouragements, vous pouvez être un homme très déterminé, entreprenant, inspiré et ingénieux.",
   },
   character: {
-    //title: "Character",
     title: "Personnage",
     description:
       "Ce nombre représente principalement vos qualités publiques et sociales, mais vous afficheriez également une grande partie de la même chose dans vos relations personnelles.",
@@ -89,7 +88,7 @@ var meaning = {
     4: "Votre personnalité publique consciencieuse, organisée, systématique et fiable fait de vous un travailleur-abeille recherché ou un président du conseil d'administration.",
     5: "Votre nature charmante, articulée, flexible et soucieuse de votre style fait de vous un pionnier qui peut engager et inspirer beaucoup de monde lorsqu'il est concentré sur une mission",
     6: 'En tant que parent / enseignant / être humain né humanitaire, orienté vers la communauté et exceptionnel, qui "fait toujours un effort supplémentaire", vous êtes un comité exemplaire ou un leader de cause.',
-    7: "En tant que génie philosophiquement avant-gardiste et à la recherche de connaissances, vous ne recherchez pas les feux de la rampe, mais vous êtes des enseignants, des professeurs et des spécialistes de carrière exceptionnels.",
+    7: "En tant que génie philosophiquement avant-gardiste et à la recherche de connaissances, vous ne recherchez pas les feux de la rampe, mais vous êtes un enseignant, professeur et spécialiste de carrière exceptionnelle.",
     8: "Votre maître d'enseignants, votre juge / jury, votre personnage de producteur / réalisateur, exemplaire et exemplaire, possède un sixième sens qui vous permet de distinguer facilement le bien du mal en quoi que ce soit.",
     9: 'En tant que sage né, aristocratique, humanitaire socialement agréable, vous vous dirigez vers la communauté qui peut le plus bénéficier de votre mission de "serveur désintéressé".',
     11: "En tant que conseiller ou leader communautaire empathique, éclairé et compréhensif, vous êtes sous les feux de la rampe; le 11 est associé à la renommée et à l'illumination. ",

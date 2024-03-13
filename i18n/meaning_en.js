@@ -91,7 +91,7 @@ const meaning = {
     4: "Your conscientious, organized, systematic and reliable public persona makes you a sought-after worker-bee or Chairman of the Board.",
     5: "Your charming, articulate, flexible and style-conscious nature make you a trendsetter who can engage and inspire many when focused on a mission",
     6: 'As a born humanitarian, community-oriented, outstanding parent/teacher/human being who always "goes the extra mile" you are an exemplary committee or cause leader.',
-    7: "As a philosophically avant-garde, knowledge-seeking genius, you don't seek the limelight but are superlative teachers, professors, and career specialists.",
+    7: "As a philosophically avant-garde, knowledge-seeking genius, you don't seek the limelight but are a superlative teacher, professor, and career specialist.",
     8: "Your commanding, exemplary teacher-of-teachers, judge/jury, producer/director persona possesses a sixth sense that enables you to readily distinguish right from wrong in anything.",
     9: 'As a born sage, aristocratic, socially pleasing humanitarian, you gravitate toward the community that can benefit most from  your "selfless server" mission.',
     11: "As an empathetic, enlightened and understanding counselor or community leader, you belong in the limelight; the 11 is associated with fame and illumination.",

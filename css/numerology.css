@@ -3,7 +3,9 @@
   (c) 2024 Sally Faubion & Olivier Giulieri
   http://www.sallysnumbers.com
 */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 30px;
   font-size: 1.2em;
@@ -18,10 +20,10 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #0091ea;
   color: #1d1d1d;
-}
-a:hover {
-  background-color: rgb(241, 248, 255);
-  border-bottom-color: #0091ea;
+  &:hover {
+    background-color: rgb(241, 248, 255);
+    border-bottom-color: #0091ea;
+  }
 }
 h1 {
   margin: 10px 0 40px;
@@ -34,6 +36,9 @@ h1 {
 h2 {
   margin: 12px 0 5px;
   font-size: 1.2em;
+  > span {
+    font-weight: 300;
+  }
 }
 label {
   color: #1d1d1d;
@@ -77,9 +82,9 @@ section {
 }
 .linespace > li {
   margin: 10px;
-}
-.linespace > li > a {
-  font-weight: 600;
+  > a {
+    font-weight: 600;
+  }
 }
 .field {
   margin: 30px 0;
@@ -97,10 +102,6 @@ section {
 .calc {
   display: block;
   margin: 10px 0;
-  > div {
-    color: #0091ea;
-    margin: 5px 0;
-  }
   > .meaning {
     margin: 15px 0 20px -10px;
     color: #1a1a1a;
@@ -155,7 +156,7 @@ section {
 }
 .i18n {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 20px;
   padding: 4px;
   > img {
@@ -164,6 +165,10 @@ section {
     height: 11px;
     width: 16px;
     border: solid 1px grey;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 }
 
@@ -302,9 +307,9 @@ section {
 
 #sally {
   display: none;
-}
-#sally li {
-  margin-bottom: 10px;
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 .fullStar {
@@ -343,6 +348,10 @@ section {
   .character {
     top: 0px;
     left: 95px;
+    > span {
+      left: 12px;
+      top: 0;
+    }
   }
   .soul {
     top: 66px;
@@ -351,6 +360,10 @@ section {
   .agenda {
     top: 65px;
     left: 179px;
+    > span {
+      top: 22px;
+      left: -28px;
+    }
   }
   .attitude {
     top: 158px;
@@ -363,21 +376,13 @@ section {
   .destiny {
     top: 88px;
     left: 95px;
+    > span {
+      left: 28px;
+      top: 0;
+    }
   }
   .purpose {
     display: none;
-  }
-  .character > span {
-    left: 12px;
-    top: 0;
-  }
-  .destiny > span {
-    left: 28px;
-    top: 0;
-  }
-  .agenda > span {
-    top: 22px;
-    left: -28px;
   }
 }
 .star > div {
@@ -491,7 +496,10 @@ section {
 #allNumbers > span:hover {
   transform: scale(1.4);
 }
-
+.sally {
+  height: 206px;
+  width: 195px;
+}
 .heart {
   font-size: 20px;
   position: relative;

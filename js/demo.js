@@ -22,16 +22,16 @@ const dimensionsMain = [
   "soul",
 ];
 
-var showPurpose = true; // use showPurpose = true to show "Divine Purpose" number
-var myNumbers = {};
-var dest, char;
+const showPurpose = true; // use showPurpose = true to show "Divine Purpose" number
+const myNumbers = {};
+let dest, char;
 
 const mn = "Motivational Numerology";
 function dateReport(month, day, year) {
   const cats = ["destiny", "personality", "attitude"];
   const d = parseInt(day);
   if (month && day && year && d > 0 && d < 32 && parseInt(year) > 0) {
-    var info = dateInfo(month, day, year);
+    const info = dateInfo(month, day, year);
     cats.forEach((cat) => (myNumbers[cat] = info[cat]));
     dest = info.destiny.number;
     return cats.map((id) => htmlSection(info[id])).join("");
@@ -48,6 +48,10 @@ function nameReport(name) {
     dimensionsName.forEach((cat) => (myNumbers[cat] = info[cat]));
     char = info.character.number;
     return dimensionsName.map((id) => htmlSection(info[id])).join("");
+  } else {
+    myNumbers.character = null;
+    myNumbers.agenda = null;
+    myNumbers.soul = null;
   }
   char = "";
   myNumbers.purpose = null;
@@ -64,27 +68,25 @@ function purposeReport() {
   return "";
 }
 
-function htmlMeaning(number, meaning) {
-  return (
-    '<div class="meaning"><div class="num c' +
-    number +
-    '">' +
-    number +
-    "</div><div>" +
-    (meaning || "N/A") +
-    "</div></div>"
-  );
-}
+const htmlMeaning = (number, meaning) =>
+  '<div class="meaning"><div class="num c' +
+  number +
+  '">' +
+  number +
+  "</div><div>" +
+  (meaning || "N/A") +
+  "</div></div>";
+
+const ms = (master, meaning) =>
+  master ? `<span>(${meaning.master})</span>` : "";
 
 function htmlSection(rpt) {
-  html = `<a name="${rpt.category}"></a><article class="artnum c${rpt.number}">
-    <h2>${rpt.title} = ${rpt.number}</h2>
+  let html = `<a name="${rpt.category}"></a>
+  <article class="artnum c${rpt.number}">
+    <h2>${rpt.title} = ${rpt.number} ${ms(rpt.master, meaning)}</h2>
     <div class="desc">${rpt.description}</div>`;
   if (rpt.meaning) {
-    html +=
-      '<div class="calc">' +
-      (rpt.master ? `<div>${meaning.master}</div>` : "") +
-      htmlMeaning(rpt.number, rpt.meaning);
+    html += '<div class="calc">' + htmlMeaning(rpt.number, rpt.meaning);
   }
   html += "</article>";
   return html;
@@ -98,7 +100,7 @@ const setValue = (id, value) => {
 
 function calcName(skipExtra) {
   const name = getValue("name");
-  document.title = name ? name + " - " + mn : mn;
+  document.title = name ? `${name} - ${mn}` : mn;
   elem("report1").innerHTML = nameReport(name);
   if (!skipExtra) {
     calcExtra();
@@ -127,15 +129,8 @@ function calcExtra() {
       return "";
     })
     .join("");
-  var h = "";
-  if (myNumbers.destiny) {
-    h +=
-      '<span class="t0 c' +
-      (myNumbers.destiny ? myNumbers.destiny.number : "") +
-      '"></span>';
-  } else {
-    h += '<span class="t0"></span>';
-  }
+  const css = "t0" + (myNumbers.destiny ? " c" + myNumbers.destiny.number : "");
+  let h = `<span class="${css}"></span>`;
   dimensionsMain.forEach((cat, idx) => {
     const num = myNumbers[cat] ? myNumbers[cat].number : "";
     h += `<div class="t${idx + 1} k${num}"></div>`;
@@ -161,9 +156,7 @@ function calcExtra() {
   if (myNumbers) {
     dimensions.forEach(collectNumbers(myNumbers));
   }
-  numNumbers = numNumbers.sort(function (a, b) {
-    return a - b;
-  });
+  numNumbers = numNumbers.sort((a, b) => a - b);
   elem("allNumbers").innerHTML = numNumbers
     .map((num) => `<span class="num c${num}">${num}</span>`)
     .join("");
