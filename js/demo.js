@@ -100,7 +100,7 @@ const setValue = (id, value) => {
 
 function calcName(skipExtra) {
   const name = getValue("name");
-  document.title = name ? `${name} - ${mn}` : mn;
+  document.title = name ? `${mn} - ${name}` : mn;
   elem("report1").innerHTML = nameReport(name);
   if (!skipExtra) {
     calcExtra();

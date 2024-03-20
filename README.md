@@ -88,7 +88,9 @@ Let's look at the numbers of a few famous actors:
 [Leonardo DiCaprio](https://evoluteur.github.io/motivational-numerology/?name=Leonardo+Wilhelm+DiCaprio&month=11&day=11&year=1974),
 [Robert De Niro](https://evoluteur.github.io/motivational-numerology/?name=Robert+Anthony+De+Niro+Jr.&month=8&day=17&year=1943),
 [Robin Williams](https://evoluteur.github.io/motivational-numerology/?name=Robin+McLaurin+Williams&month=7&day=21&year=1951),
-[Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968)...
+[Will Smith](https://evoluteur.github.io/motivational-numerology/?name=Willard+Carroll+Smith+Jr.&month=9&day=25&year=1968),
+[Danny DeVito](https://evoluteur.github.io/motivational-numerology/?name=Daniel+Michael+DeVito+Jr.&month=11&day=17&year=1944),
+[Nicolas Cage](https://evoluteur.github.io/motivational-numerology/?name=Nicolas+Kim+Coppola&month=1&day=7&year=1964)...
 
 
 ## Localization
