@@ -118,15 +118,11 @@ The [code](https://github.com/evoluteur/motivational-numerology) is based on the
 
 Contribute to Motivational-Numerology:
 
-<ul>
-<li>
-<a href="https://github.com/evoluteur/motivational-numerology/labels/bug">Report a Bug</a>
-</li>
-<li><a href="https://github.com/evoluteur/motivational-numerology/labels/enhancement">Propose a Feature Request</a>
-</li>
-<li><a href="https://github.com/evoluteur/motivational-numerology/pulls">Submit a Pull Request</a>
-</li>
-</ul>
+- [Report a Bug](https://github.com/evoluteur/motivational-numerology/labels/bug)
+- [Propose a Feature Request](https://github.com/evoluteur/motivational-numerology/labels/enhancement)
+- [Submit a Pull Request](https://github.com/evoluteur/motivational-numerology/pulls)
+
+To learn more about your numerology numbers, [book a personal reading with Sally Faubion](https://sallysnumbers.com/services/).
 
 
 (c) 2024 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
