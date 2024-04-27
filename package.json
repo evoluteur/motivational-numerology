@@ -1,11 +1,15 @@
 {
   "name": "motivational-numerology",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Simple web page to calculate and interpret the numerology numbers derived from your name and birth date.",
   "main": "js/numerology.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/motivational-numerology.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/evoluteur"
   },
   "author": "Sally Faubion (http://sallysnumbers.com)",
   "copyright": "(c) 2024 Sally Faubion & Olivier Giulieri",
@@ -19,7 +23,10 @@
     "motivation",
     "forcast",
     "interpretation",
-    "pythagore",
+    "pythagoras",
+    "predictions",
+    "mental-health",
+    "occult",
     "javascript"
   ]
 }

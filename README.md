@@ -92,6 +92,7 @@ Let's look at the numbers of a few famous actors:
 [Danny DeVito](https://evoluteur.github.io/motivational-numerology/?name=Daniel+Michael+DeVito+Jr.&month=11&day=17&year=1944),
 [Nicolas Cage](https://evoluteur.github.io/motivational-numerology/?name=Nicolas+Kim+Coppola&month=1&day=7&year=1964)...
 
+Like in the above examples, you can use the url parameters "name", "month", "day", "year" to set the values on the numerology page.
 
 ## Localization
 
@@ -106,23 +107,23 @@ Motivational-Numerology is available in <img src="https://evoluteur.github.io/mo
 <img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html)
 <img src="https://evoluteur.github.io/motivational-numerology/pix/id.gif" style="margin:0 5px;"/> [Indonesian](https://evoluteur.github.io/motivational-numerology/index-indonesian.html).
 
+For each language an HTML page "index-&lt;language&gt;.html" and a Javascript object with translated strings "/i18n/meaning_&lt;languageId&gt;.js".
+
 Please feel free to contribute by submitting a [Pull Request](https://github.com/evoluteur/motivational-numerology/pulls) to support new languages.
 
 ## Code
 
 The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
 
-[<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
-    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-</svg>](https://github.com/evoluteur/motivational-numerology) Motivational-Numerology is Open Source at [GitHub](https://github.com/evoluteur/motivational-numerology) with AGPLv3 license.
+To learn more about your numerology numbers and they mean for you, [book a personal reading with Sally Faubion](https://sallysnumbers.com/services/).
+
+
+[Motivational-Numerology](https://github.com/evoluteur/motivational-numerology)  is Open Source at [GitHub](https://github.com/evoluteur/motivational-numerology) with AGPLv3 license.
 
 Contribute to Motivational-Numerology:
 
 - [Report a Bug](https://github.com/evoluteur/motivational-numerology/labels/bug)
 - [Propose a Feature Request](https://github.com/evoluteur/motivational-numerology/labels/enhancement)
 - [Submit a Pull Request](https://github.com/evoluteur/motivational-numerology/pulls)
-
-To learn more about your numerology numbers, [book a personal reading with Sally Faubion](https://sallysnumbers.com/services/).
-
 
 (c) 2024 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
