@@ -126,4 +126,6 @@ Contribute to Motivational-Numerology:
 - [Propose a Feature Request](https://github.com/evoluteur/motivational-numerology/labels/enhancement)
 - [Submit a Pull Request](https://github.com/evoluteur/motivational-numerology/pulls)
 
+You may also be interested in my other project [Healing Frequencies](https://github.com/evoluteur/healing-frequencies).
+
 (c) 2024 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
