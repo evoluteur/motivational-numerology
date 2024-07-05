@@ -4,6 +4,20 @@
   http://www.sallysnumbers.com
 */
 
+const langMap = {
+  en: "",
+  es: "-spanish",
+  fr: "-french",
+  de: "-german",
+  pt: "-portuguese",
+  it: "-italian",
+  nl: "-dutch",
+  tr: "-turkish",
+  id: "-indonesian",
+  jp: "-japanese",
+  vi: "-vietnamese",
+};
+
 const dimensions = [
   "character",
   "soul",
@@ -182,18 +196,6 @@ function checkInfo() {
   }
 }
 
-const langMap = {
-  en: "",
-  es: "-spanish",
-  fr: "-french",
-  de: "-german",
-  pt: "-portuguese",
-  it: "-italian",
-  nl: "-dutch",
-  tr: "-turkish",
-  id: "-indonesian",
-  jp: "-japanese",
-};
 function goToLanguage(evt, language) {
   evt.stopPropagation();
   let url = "index" + langMap[language] + ".html?";

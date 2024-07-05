@@ -96,16 +96,17 @@ Like in the above examples, you can use the url parameters "name", "month", "day
 
 ## Localization
 
-Motivational-Numerology is available in <img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/> [English](https://evoluteur.github.io/motivational-numerology/)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/es.gif" style="margin:0 5px;"/> [Spanish](https://evoluteur.github.io/motivational-numerology/index-spanish.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/fr.gif" style="margin:0 5px;"/> [French](https://evoluteur.github.io/motivational-numerology/index-french.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/de.gif" style="margin:0 5px;"/> [German](https://evoluteur.github.io/motivational-numerology/index-german.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/pt.gif" style="margin:0 5px;"/> [Portuguese](https://evoluteur.github.io/motivational-numerology/index-portuguese.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/it.gif" style="margin:0 5px;"/> [Italian](https://evoluteur.github.io/motivational-numerology/index-italian.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/nl.gif" style="margin:0 5px;"/> [Dutch](https://evoluteur.github.io/motivational-numerology/index-dutch.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/jp.gif" style="margin:0 5px;"/> [Japanese](https://evoluteur.github.io/motivational-numerology/index-japanese.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/> [Turkish](https://evoluteur.github.io/motivational-numerology/index-turkish.html)
-<img src="https://evoluteur.github.io/motivational-numerology/pix/id.gif" style="margin:0 5px;"/> [Indonesian](https://evoluteur.github.io/motivational-numerology/index-indonesian.html).
+Motivational-Numerology is available in [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/en.gif" style="margin:0 5px;"/>English</nobr>](https://evoluteur.github.io/motivational-numerology/)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/es.gif" style="margin:0 5px;"/>Spanish</nobr>](https://evoluteur.github.io/motivational-numerology/index-spanish.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/fr.gif" style="margin:0 5px;"/>French</nobr>](https://evoluteur.github.io/motivational-numerology/index-french.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/de.gif" style="margin:0 5px;"/>German</nobr>](https://evoluteur.github.io/motivational-numerology/index-german.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/pt.gif" style="margin:0 5px;"/>Portuguese</nobr>](https://evoluteur.github.io/motivational-numerology/index-portuguese.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/it.gif" style="margin:0 5px;"/>Italian</nobr>](https://evoluteur.github.io/motivational-numerology/index-italian.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/nl.gif" style="margin:0 5px;"/>Dutch</nobr>](https://evoluteur.github.io/motivational-numerology/index-dutch.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/jp.gif" style="margin:0 5px;"/>Japanese</nobr>](https://evoluteur.github.io/motivational-numerology/index-japanese.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/tr.gif" style="margin:0 5px;"/>Turkish</nobr>](https://evoluteur.github.io/motivational-numerology/index-turkish.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/id.gif" style="margin:0 5px;"/>Indonesian</nobr>](https://evoluteur.github.io/motivational-numerology/index-indonesian.html)
+ [<nobr><img src="https://evoluteur.github.io/motivational-numerology/pix/vi.gif" style="margin:0 5px;"/>Vietnamese</nobr>](https://evoluteur.github.io/motivational-numerology/index-vietnamese.html).
 
 For each language an HTML page "index-&lt;language&gt;.html" and a Javascript object with translated strings "/i18n/meaning_&lt;languageId&gt;.js".
 

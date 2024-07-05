@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="vi">
   <head>
     <script
       async
@@ -19,15 +19,15 @@
     <meta name="theme-color" content="#bbdefb" />
 
     <link href="css/numerology.css" rel="stylesheet" />
-    <script src="i18n/meaning_id.js"></script>
+    <script src="i18n/meaning_vi.js"></script>
     <script src="js/numerology.js"></script>
     <script src="js/demo.js"></script>
     <link rel="shortcut icon" href="favicon.gif" />
 
-    <title>Numerologi Motivasi</title>
+    <title>Thần Số Học Động Lực</title>
     <link
       rel="canonical"
-      href="https://evoluteur.github.io/motivational-numerology/index-indonesian.html"
+      href="https://evoluteur.github.io/motivational-numerology/index-french.html"
     />
 
     <link
@@ -93,12 +93,9 @@
 
     <meta
       name="description"
-      content="Dapatkan angka numerologi yang berasal dari tanggal lahir dan nama Anda."
+      content="Thần Số Học Động Lực: Khám phá các con số từ ngày sinh và tên của bạn."
     />
-    <meta
-      name="keywords"
-      content="Grafik, Numerologi, Gematria, Pythagore, Angka, Karakter, Jiwa, Hasrat, Tersembunyi, Agenda, Takdir, Kepribadian, Sikap, Ramalan"
-    />
+    <meta name="keywords" content="Thần Số Học, Gematrie, Chữ Số, Pythagore" />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/evoluteur/motivational-numerology/master/pix/numerology-star-labels.gif"
@@ -106,7 +103,7 @@
   </head>
 
   <body onload="checkInfo()">
-    <h1>Numerologi Motivasi <span>oleh Sally Faubion</span></h1>
+    <h1>Thần Số Học Động Lực <span>của Sally Faubion</span></h1>
 
     <div class="i18n">
       <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
@@ -125,18 +122,11 @@
     <section class="inputForm">
       <div class="ml210">
         <div class="field name">
-          <label
-            >Nama lengkap
-            <span class="grey"
-              >(Nama depan, nama tengah, dan nama belakang)</span
-            ></label
-          >
+          <label>Tên <span class="grey">(Tên, tên đệm và họ)</span></label>
           <input id="name" value="" onKeyUp="calcName()" />
         </div>
         <div class="field bdate">
-          <label
-            >Tanggal lahir <span class="grey">(Hari/Bulan/Tahun)</span></label
-          >
+          <label>Ngày sinh <span class="grey">(Ngày/Tháng/Năm)</span></label>
           <input
             id="day"
             onKeyUp="calcBDay()"
@@ -148,18 +138,18 @@
           />
           <select id="month" onChange="calcBDay()">
             <option></option>
-            <option value="1">Januari</option>
-            <option value="2">Februari</option>
-            <option value="3">Maret</option>
-            <option value="4">April</option>
-            <option value="5">Mei</option>
-            <option value="6">Juni</option>
-            <option value="7">Juli</option>
-            <option value="8">Agustus</option>
-            <option value="9">September</option>
-            <option value="10">Oktober</option>
-            <option value="11">November</option>
-            <option value="12">Desember</option>
+            <option value="1">Tháng 1</option>
+            <option value="2">Tháng 2</option>
+            <option value="3">Tháng 3</option>
+            <option value="4">Tháng 4</option>
+            <option value="5">Tháng 5</option>
+            <option value="6">Tháng 6</option>
+            <option value="7">Tháng 7</option>
+            <option value="8">Tháng 8</option>
+            <option value="9">Tháng 9</option>
+            <option value="10">Tháng 10</option>
+            <option value="11">Tháng 11</option>
+            <option value="12">Tháng 12</option>
           </select>
           <input
             id="year"
@@ -193,8 +183,8 @@
     <section>
       <div>
         <p id="sally">
-          Konten ini hanya penjelasan singkat tentang kualitas luar biasa yang
-          Anda miliki.
+          Nội dung này chỉ là một giải thích ngắn gọn về những phẩm chất tuyệt
+          vời mà bạn sở hữu.
         </p>
         <div class="fl">
           <a href="http://sallysnumbers.com" target="news"
@@ -209,8 +199,8 @@
         <div class="fl">
           <div id="allNumbers"></div>
           <p>
-            Pelajari lebih lanjut tentang angka Anda dan apa artinya bagi Anda
-            dengan
+            Tìm hiểu thêm về các con số của bạn và ý nghĩa của chúng đối với bạn
+            với
             <strong
               ><a href="http://sallysnumbers.com" target="news"
                 >Sally Faubion</a
@@ -219,25 +209,17 @@
           </p>
           <ul class="linespace">
             <li>
-              Berlangganan
+              Đăng ký nhận
               <a href="http://sallysnumbers.com" target="news"
-                >Newsletter Sally</a
+                >bản tin của Sally</a
               >
             </li>
             <li>
-              Dapatkan
-              <a
-                href="https://smile.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974"
-                target="book"
-                >buku Numerologi Motivasi</a
-              >
-              dari Sally
-            </li>
-            <li>
-              Pesan
+              Đặt lịch
               <a href="http://sallysnumbers.com/services/" target="reading"
-                >bacaan pribadi dengan Sally</a
+                >tư vấn cá nhân với Sally</a
               >
+              (bằng tiếng Anh)
             </li>
           </ul>
         </div>
@@ -249,18 +231,29 @@
       <div>
         <div class="evo-footer" role="contentinfo">
           <div>
-            Dibuat di California dengan
+            Được thực hiện tại California với
             <div class="heart">♥</div>
           </div>
         </div>
         <br />
-        Versi 2.3.3 - Kode tersedia di
+        Phiên bản 2.3.4 - Mã nguồn có sẵn trên
         <a
           target="github"
           rel="noopener"
           href="https://github.com/evoluteur/motivational-numerology"
           >GitHub</a
         >. <br />
+        <br />
+
+        Bạn có thể quan tâm đến dự án khác của tôi
+        <a
+          href="https://evoluteur.github.io/healing-frequencies/"
+          target="og"
+          rel="noopener"
+          >Tần Số Chữa Lành</a
+        >.
+
+        <br />
         <br />&#169; 2024
         <a target="_blank" rel="noopener" href="http://sallysnumbers.com"
           >Sally Faubion</a
