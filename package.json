@@ -1,6 +1,6 @@
 {
   "name": "motivational-numerology",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Simple web page to calculate and interpret the numerology numbers derived from your name and birth date.",
   "main": "js/numerology.js",
   "repository": {
