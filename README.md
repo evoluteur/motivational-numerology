@@ -129,4 +129,4 @@ Contribute to Motivational-Numerology:
 
 You may also be interested in my other project [Healing Frequencies](https://github.com/evoluteur/healing-frequencies).
 
-(c) 2024 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
+(c) 2025 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
