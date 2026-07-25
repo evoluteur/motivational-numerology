@@ -72,8 +72,6 @@ const letterCV = {
   Z: 1,
 };
 
-const plus = "+";
-
 const isMasterNumber = (num) => num == "11" || num == "22";
 
 function makeReport(category, number) {
@@ -90,8 +88,9 @@ function makeReport(category, number) {
 }
 
 function purposeInfo(destiny, character) {
-  var sumOp = destiny && character ? destiny + plus + character : "",
-    sum = reduceNumber(sumOp ? "" + eval(sumOp) : "");
+  var sum = reduceNumber(
+    destiny && character ? "" + (Number(destiny) + Number(character)) : ""
+  );
   return makeReport("purpose", sum);
 }
 
@@ -161,7 +160,7 @@ function nameInfo(name) {
 const nameCalc = (category, name, nums) => {
   let sum = "0";
   if (name && name.replace(/ /, "")) {
-    sum = reduceNumber("" + eval(nums.join(plus)));
+    sum = reduceNumber("" + nums.reduce((a, b) => a + b, 0));
   }
   return makeReport(category, sum);
 };
@@ -169,7 +168,11 @@ const nameCalc = (category, name, nums) => {
 const reduceNumber = (number) => {
   if (number != "NaN" && number != "undefined") {
     while (number.length > 1 && !isMasterNumber(number)) {
-      number = "" + eval(("" + number).split("").join(plus));
+      number =
+        "" +
+        ("" + number)
+          .split("")
+          .reduce((a, digit) => a + Number(digit), 0);
     }
   }
   return number;

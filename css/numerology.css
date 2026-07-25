@@ -81,12 +81,6 @@ section {
 .spaced {
   margin: 0 10px;
 }
-.linespace > li {
-  margin: 10px;
-  > a {
-    font-weight: 600;
-  }
-}
 .field {
   margin: 30px 0;
 }
