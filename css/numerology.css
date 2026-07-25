@@ -26,7 +26,7 @@ a {
   }
 }
 h1 {
-  margin: 10px 0 40px;
+  margin: 50px 0 40px;
   > span {
     font-weight: 300;
     font-size: 0.6em;
@@ -73,7 +73,7 @@ section {
   width: 60px;
 }
 #year {
-  width: 100px;
+  width: 80px;
 }
 .name > input {
   width: 100%;
