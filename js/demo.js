@@ -207,3 +207,17 @@ function goToLanguage(evt, language) {
   });
   window.location.replace(url);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  elem("name").addEventListener("keyup", () => calcName());
+  elem("month").addEventListener("change", () => calcBDay());
+  ["day", "year"].forEach((id) => {
+    elem(id).addEventListener("keyup", () => calcBDay());
+    elem(id).addEventListener("click", () => calcBDay());
+  });
+  document.querySelectorAll(".i18n img").forEach((img) => {
+    const [, lang] = img.getAttribute("src").match(/([a-z]{2})\.gif$/);
+    img.addEventListener("click", (evt) => goToLanguage(evt, lang));
+  });
+  checkInfo();
+});

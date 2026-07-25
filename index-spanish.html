@@ -122,21 +122,21 @@
     />
   </head>
 
-  <body onload="checkInfo()">
+  <body>
     <h1>Numerología Motivacional <span>por Sally Faubion</span></h1>
 
     <div class="i18n">
-      <img src="pix/en.gif" onclick="goToLanguage(event, 'en')" />
-      <img src="pix/es.gif" onclick="goToLanguage(event, 'es')" />
-      <img src="pix/fr.gif" onclick="goToLanguage(event, 'fr')" />
-      <img src="pix/de.gif" onclick="goToLanguage(event, 'de')" />
-      <img src="pix/pt.gif" onclick="goToLanguage(event, 'pt')" />
-      <img src="pix/it.gif" onclick="goToLanguage(event, 'it')" />
-      <img src="pix/nl.gif" onclick="goToLanguage(event, 'nl')" />
-      <img src="pix/tr.gif" onclick="goToLanguage(event, 'tr')" />
-      <img src="pix/id.gif" onclick="goToLanguage(event, 'id')" />
-      <img src="pix/jp.gif" onclick="goToLanguage(event, 'jp')" />
-      <img src="pix/vi.gif" onclick="goToLanguage(event, 'vi')" />
+      <img src="pix/en.gif" />
+      <img src="pix/es.gif" />
+      <img src="pix/fr.gif" />
+      <img src="pix/de.gif" />
+      <img src="pix/pt.gif" />
+      <img src="pix/it.gif" />
+      <img src="pix/nl.gif" />
+      <img src="pix/tr.gif" />
+      <img src="pix/id.gif" />
+      <img src="pix/jp.gif" />
+      <img src="pix/vi.gif" />
     </div>
 
     <section class="inputForm">
@@ -148,7 +148,7 @@
               >(Nombre de pila, otros nombres y apellidos)</span
             >
           </label>
-          <input id="name" value="" onKeyUp="calcName()" />
+          <input id="name" value="" />
         </div>
         <div class="field bdate">
           <label
@@ -157,14 +157,12 @@
           </label>
           <input
             id="day"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
             type="number"
             min="1"
             max="31"
             maxlength="2"
           />
-          <select id="month" onChange="calcBDay()">
+          <select id="month">
             <option></option>
             <option value="1">Enero</option>
             <option value="2">Febrero</option>
@@ -181,8 +179,6 @@
           </select>
           <input
             id="year"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
             type="number"
             min="0"
             maxlength="4"

@@ -172,83 +172,72 @@
     </script>
   </head>
 
-  <body onload="checkInfo()">
+  <body>
     <h1>Motivational Numerology <span>by Sally Faubion</span></h1>
 
     <div class="i18n">
       <img
         src="pix/en.gif"
-        onclick="goToLanguage(event, 'en')"
         title="English"
         alt="English"
         loading="lazy"
       />
       <img
         src="pix/es.gif"
-        onclick="goToLanguage(event, 'es')"
         title="Spanish"
         alt="Spanish"
         loading="lazy"
       />
       <img
         src="pix/fr.gif"
-        onclick="goToLanguage(event, 'fr')"
         title="French"
         alt="French"
         loading="lazy"
       />
       <img
         src="pix/de.gif"
-        onclick="goToLanguage(event, 'de')"
         title="German"
         alt="German"
         loading="lazy"
       />
       <img
         src="pix/pt.gif"
-        onclick="goToLanguage(event, 'pt')"
         title="Portuguese"
         alt="Portuguese"
         loading="lazy"
       />
       <img
         src="pix/it.gif"
-        onclick="goToLanguage(event, 'it')"
         title="Italian"
         alt="Italian"
         loading="lazy"
       />
       <img
         src="pix/nl.gif"
-        onclick="goToLanguage(event, 'nl')"
         title="Dutch"
         alt="Dutch"
         loading="lazy"
       />
       <img
         src="pix/tr.gif"
-        onclick="goToLanguage(event, 'tr')"
         title="Turkish"
         alt="Turkish"
         loading="lazy"
       />
       <img
         src="pix/id.gif"
-        onclick="goToLanguage(event, 'id')"
         title="Indonesian"
         alt="Indonesian"
         loading="lazy"
       />
       <img
         src="pix/jp.gif"
-        onclick="goToLanguage(event, 'jp')"
         title="Japanese"
         alt="Japanese"
         loading="lazy"
       />
       <img
         src="pix/vi.gif"
-        onclick="goToLanguage(event, 'vi')"
         title="Vietnamese"
         alt="Vietnamese"
         loading="lazy"
@@ -264,11 +253,11 @@
               >(Firstname, middle name, and lastname)</span
             ></label
           >
-          <input id="name" value="" onKeyUp="calcName()" />
+          <input id="name" value="" />
         </div>
         <div class="field bdate">
           <label>Birth date <span class="grey">(Month/Day/Year)</span></label>
-          <select id="month" onChange="calcBDay()">
+          <select id="month">
             <option></option>
             <option value="1">January</option>
             <option value="2">February</option>
@@ -285,8 +274,6 @@
           </select>
           <input
             id="day"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
             type="number"
             min="1"
             max="31"
@@ -294,8 +281,6 @@
           />
           <input
             id="year"
-            onKeyUp="calcBDay()"
-            onClick="calcBDay()"
             type="number"
             min="0"
             maxlength="4"
