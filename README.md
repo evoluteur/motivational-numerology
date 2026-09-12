@@ -127,6 +127,6 @@ Contribute to Motivational-Numerology:
 - [Propose a Feature Request](https://github.com/evoluteur/motivational-numerology/labels/enhancement)
 - [Submit a Pull Request](https://github.com/evoluteur/motivational-numerology/pulls)
 
-You may also be interested in my other projects [Healing Frequencies](https://github.com/evoluteur/healing-frequencies), [Binaural Beats](https://github.com/evoluteur/binaural-beats), [Sacred Geometry](https://github.com/evoluteur/sacred-geometry), and [Platonic Solids](https://github.com/evoluteur/platonic-solids).
+You may also be interested in my other projects [Healing Frequencies](https://github.com/evoluteur/healing-frequencies), [Binaural Beats](https://github.com/evoluteur/binaural-beats), [Sacred Geometry](https://github.com/evoluteur/sacred-geometry), [Platonic Solids](https://github.com/evoluteur/platonic-solids), [Cymatics](https://github.com/evoluteur/cymatics), and [Archimedean Solids](https://github.com/evoluteur/archimedean-solids).
 
 (c) 2026 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
