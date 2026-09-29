@@ -1,6 +1,6 @@
 # Motivational-Numerology [![npm version](https://img.shields.io/npm/v/motivational-numerology)](https://www.npmjs.com/package/motivational-numerology)
 
-Motivational-Numerology is a web page to calculate the numerology numbers derived from your name and birth date and get a brief interpretation by [Sally Faubion](http://sallysnumbers.com/).
+Motivational-Numerology is a web page to calculate the numerology numbers derived from your name and birth date and get a brief interpretation by [Sally Faubion](https://www.linkedin.com/in/sally-faubion-762a751//).
 
 Check out [your numerology star](https://evoluteur.github.io/motivational-numerology/).
 
@@ -114,7 +114,7 @@ Please feel free to contribute by submitting a [Pull Request](https://github.com
 
 ## Code
 
-The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](http://sallysnumbers.com/).
+The [code](https://github.com/evoluteur/motivational-numerology) is based on the book [Motivational Numerology](https://www.amazon.com/Motivational-Numerology-Numbers-Affect-Your/dp/0929765974) by [Sally Faubion](https://www.linkedin.com/in/sally-faubion-762a751//).
 
 To learn more about your numerology numbers and they mean for you, [book a personal reading with Sally Faubion](https://sallysnumbers.com/services/).
 
@@ -127,6 +127,6 @@ Contribute to Motivational-Numerology:
 - [Propose a Feature Request](https://github.com/evoluteur/motivational-numerology/labels/enhancement)
 - [Submit a Pull Request](https://github.com/evoluteur/motivational-numerology/pulls)
 
-You may also be interested in my other projects [Healing Frequencies](https://github.com/evoluteur/healing-frequencies), [Binaural Beats](https://github.com/evoluteur/binaural-beats), [Sacred Geometry](https://github.com/evoluteur/sacred-geometry), [Platonic Solids](https://github.com/evoluteur/platonic-solids), [Cymatics](https://github.com/evoluteur/cymatics), and [Archimedean Solids](https://github.com/evoluteur/archimedean-solids).
+Other ways to do a reading: [Tarot-Reading](https://github.com/evoluteur/tarot-reading) ([demo](https://evoluteur.github.io/tarot-reading/)), [I-Ching-Reading](https://github.com/evoluteur/i-ching-reading) ([demo](https://evoluteur.github.io/i-ching-reading/)) and [Rune-Reading](https://github.com/evoluteur/rune-reading) ([demo](https://evoluteur.github.io/rune-reading/)). For more mystic arts as small web apps, see [Esoterica](https://evoluteur.github.io/esoterica.html).
 
-(c) 2026 [Sally Faubion](http://sallysnumbers.com/) & [Olivier Giulieri](https://evoluteur.github.io/).
+(c) 2026 [Sally Faubion](https://www.linkedin.com/in/sally-faubion-762a751//) & [Olivier Giulieri](https://evoluteur.github.io/).
